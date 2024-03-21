@@ -1,7 +1,47 @@
 // Specific CSS for your home-page
+
+// home-container
 .home-container{
   height: 100vh;
-  margin: 16px;
-
-
 }
+// home-container
+
+// home-card-presentation
+.home-card-presentation{
+  display: flex;
+  height: 50vh;
+  border: 1px solid #e0e0e0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 13s ease infinite;
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+}
+
+.home-card-title{
+  width: 50%;
+  height: 30%;
+  margin: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.home-card-title h1{
+}
+
+.home-card-paragraph{
+  border: 1px solid #e0e0e0;
+}
+
+.home-card-paragraph p{
+}
+// home-card-presentation
