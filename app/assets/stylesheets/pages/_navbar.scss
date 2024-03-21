@@ -1,4 +1,67 @@
+// general container
 .navbar-container{
-height: 10vh;
-border: 1px solid #e0e0e0;
+display: flex;
+justify-content: space-between;
+height: 10vh
+}
+// general container
+
+// card-img
+.navbar-card-img img{
+  height: 9vh;
+  object-fit: cover;
+}
+// card-img
+
+// card-button
+.navbar-card-button{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-right: 16px;
+}
+// card-button
+
+// navbar-card-about-me
+.navbar-card-about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+// navbar-card-about-me
+
+// navbar-card-project
+.navbar-card-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+// navbar-card-project
+
+// navbar-card-contact
+.navbar-card-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;}
+// navbar-card-contact
+
+.navbar-container button{
+  background: #0e0224;
+    color: #ccc;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
+    transition: .6s;
+    overflow: hidden;
+
+  &:hover{
+    background: #5d0e64;
+    cursor: pointer;
+  }
 }
