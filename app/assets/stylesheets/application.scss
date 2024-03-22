@@ -11,8 +11,13 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/navbar";
+@import "pages/aboutme";
 
 
 body {
   background-color: #0e0224;
+}
+
+a {
+  text-decoration: none;
 }
