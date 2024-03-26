@@ -1,19 +1,33 @@
 // project-presentation
 .project-presentation{
   color: white;
-  border: 1px solid white;
+  margin: 16px;
 }
 // project-presentation
 
 // projects-card-fullstack
 .projects-card-fullstack{
   color: white;
+  margin: 16px;
 }
 // projects-card-fullstack
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+// projects-card-fullstack-title
+.projects-card-fullstack-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 16px;
+}
+// projects-card-fullstack-title
+
+.nft-container{
+display: flex;
 }
 
 .nft{
@@ -41,8 +55,9 @@ code {
   .main{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
+
     .tokenImage{
       border-radius: .5rem;
       max-width: 100%;
@@ -139,4 +154,14 @@ code {
     font-size: 20rem;
     filter: opacity(0.5);
   }
+}
+.main-image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main img{
+  width: 200px;
+  height: 200px;
 }
