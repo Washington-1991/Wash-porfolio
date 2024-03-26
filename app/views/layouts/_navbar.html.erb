@@ -6,6 +6,12 @@
 
   <div class="navbar-card-button">
 
+    <div class="navbar-card-home">
+      <button class="navbar-Home"><%= link_to "Home", home_path, class: "navbar-Home" %>
+      </button>
+    </div>
+
+
     <div class="navbar-card-about-me">
       <button class="navbar-about-me"><%= link_to "About Me", aboutme_path, class: "navbar-about-me" %>
       </button>
@@ -17,7 +23,7 @@
     </div>
 
     <div class="navbar-card-contact">
-      <button class="button">Contact
+      <button class="button"><%= link_to "Contact me", contact_path, class: "navbar-contact" %>
       </button>
     </div>
 
