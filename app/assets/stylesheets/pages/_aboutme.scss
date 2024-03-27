@@ -16,6 +16,7 @@
     background: rgb(5, 5, 22);
     font-size: 18px;
     font-weight: 500;
+    font-weight: bold;
     color: #fff;
     z-index: 2;
     border-radius: 15px;
@@ -86,6 +87,7 @@
   background: rgb(5, 5, 22);
   font-size: 18px;
   font-weight: 500;
+  font-weight: bold;
   color: #fff;
   z-index: 2;
   border-radius: 15px;
@@ -143,10 +145,12 @@
  }
 
 .aboutme-card-biography-h2{
+  font-weight: bold;
   width: 100%;
 }
 
 .aboutme-card-biography-image-paragraph{
+  font-weight: bold;
   display: flex;
 }
 
@@ -157,7 +161,8 @@
 }
 
 .aboutme-card-biography-h-p{
-margin: 16px;
+  font-weight: bold;
+  margin: 16px;
 }
 
 // aboutme-card-biography
