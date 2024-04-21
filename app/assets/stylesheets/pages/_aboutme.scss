@@ -169,11 +169,16 @@
 
 // aboutme-logo
 .aboutme-logo{
-  display: flex;
-  justify-content: center;
+  align-items: center;
   color: white;
   border: 1px solid white;
   margin: 16px;
+}
+
+.aboutme-logo h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 32px;
 }
 .aboutme-logo img{
   height: 100px;
