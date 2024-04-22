@@ -1,16 +1,59 @@
 // contact-container
 .contact-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border: 1px solid #f7f3f3;
   border-radius: 40px;
   margin: 16px;
 }
 
 .contact-container h1{
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: white;
   margin: 16px;
 }
 // contact-container
+
+// contact-info
+.contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin: 16px;
+}
+.contact-item{
+  margin: 16px;
+}
+
+.whatsapp{
+  background-color: green;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.Github{
+  background-color: rgb(17, 17, 17);
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.Linkedin{
+  background-color: rgb(0, 119, 181);
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.Instagram{
+  background-color: rgb(193, 53, 132);
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+// contact-info
