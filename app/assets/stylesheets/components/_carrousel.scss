@@ -1,0 +1,35 @@
+.scroller {
+  max-width: 1280px;
+  &__inner{
+    padding: 1rem 0;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  &[data-animated="true"]{
+    overflow: hidden;
+    --webkit-mask:
+      linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+    & .scroller__inner{
+      flex-wrap: nowrap;
+      animation:
+      scroll
+      var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards)
+      linear
+      infinite
+    }
+  }
+  &[data-duration= "fast"] {
+    --_animation-duration: 20s;
+  }
+}
