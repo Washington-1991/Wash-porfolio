@@ -1,0 +1,82 @@
+// general container
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background: transparent;
+  border-bottom: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 64, 1) 35%, rgba(255, 0, 146, 1) 100%);
+}
+
+// general container
+
+// card-img
+.navbar-card-img img{
+  height: 9vh;
+  object-fit: cover;
+}
+// card-img
+
+// card-button
+.navbar-card-button{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-right: 16px;
+}
+// card-button
+
+// navbar-card-about-me
+.navbar-card-about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.navbar-card-about-me a{
+ color: white;
+}
+// navbar-card-about-me
+
+// navbar-card-project
+.navbar-card-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 16px;
+}
+// navbar-card-project
+
+// navbar-card-contact
+.navbar-card-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.navbar-card-contact a{
+  color: white;
+}
+// navbar-card-contact
+
+
+// navbar-card-project
+.navbar-card-project a{
+  color: white
+}
+// navbar-card-project
+
+// navbar-card-home
+.navbar-card-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.navbar-card-home a{
+  color: white;
+}
+// navbar-card-home
