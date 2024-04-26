@@ -16,45 +16,64 @@
 // contact-info
 .contact-info{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  margin: 16px;
+  border:1px solid white;
+  padding: 4px;
+  border-radius: 50px;
 }
 .contact-item{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 30px;
   width: 180px;
-  border:1px solid white;
 }
 
 .whatsapp{
-  background-color: green;
+
   padding: 8px;
   border-radius: 20px;
   color: white;
   margin-bottom: 0px;
 }
 
+.whatsapp:hover{
+  background-color: green;
+  transition: 0.5s;
+}
+
 .Github{
-  background-color: rgb(17, 17, 17);
+
   padding: 8px;
   border-radius: 20px;
   color: white;
+}
+
+.Github:hover{
+  background-color: rgb(17, 17, 17);
+  transition: 0.5s;
 }
 
 .Linkedin{
-  background-color: rgb(0, 119, 181);
   padding: 8px;
   border-radius: 20px;
   color: white;
 }
 
+.Linkedin:hover{
+  background-color: rgb(0, 119, 181);
+  transition: 0.5s;
+}
+
 .Instagram{
-  background-color: rgb(193, 53, 132);
   padding: 8px;
   border-radius: 20px;
   color: white;
+}
+
+.Instagram:hover{
+  background-color: rgb(193, 53, 132);
+  transition: 0.5s;
 }
 // contact-info
