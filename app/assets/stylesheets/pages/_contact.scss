@@ -1,5 +1,7 @@
 // contact-container
 .contact-container{
+  justify-content: center;
+  align-items: center;
   margin: 16px;
   height: 100vh;
 }
@@ -15,12 +17,14 @@
 
 // contact-info
 .contact-info{
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border:1px solid white;
   padding: 4px;
   border-radius: 50px;
+  margin: auto;
 }
 .contact-item{
   display: flex;
