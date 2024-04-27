@@ -18,15 +18,15 @@
 // contact-info
 .contact-info{
   width: 50%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  border:1px solid white;
+  display: flex;
+  flex-wrap: wrap;
   padding: 4px;
-  border-radius: 50px;
   margin: auto;
 }
 .contact-item{
+  flex-grow: 1;
+  flex-basis: 200;
   display: flex;
   justify-content: center;
   align-items: center;
