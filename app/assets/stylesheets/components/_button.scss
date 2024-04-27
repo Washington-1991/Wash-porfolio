@@ -1,8 +1,16 @@
-.button {
+.button-navbar {
   display: flex;
   justify-content: center;
   background: transparent;
   border: none;
   color: #afffff;
   font-size: 16px;
+}
+
+.button-navbar:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.button-navbar:active {
+  border-bottom: 2px solid #00b10f;
 }
