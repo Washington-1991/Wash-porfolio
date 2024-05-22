@@ -1,16 +1,83 @@
 // contact-container
 .contact-container{
-  display: flex;
   justify-content: center;
-  border: 1px solid #f7f3f3;
-  border-radius: 40px;
+  align-items: center;
   margin: 16px;
+  height: 100vh;
 }
 
 .contact-container h1{
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: white;
   margin: 16px;
 }
 // contact-container
+
+// contact-info
+.contact-info{
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  margin: auto;
+}
+.contact-item{
+  flex-grow: 1;
+  flex-basis: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 180px;
+}
+
+.whatsapp{
+
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.whatsapp:hover{
+  background-color: green;
+  transition: 0.5s;
+}
+
+.Github{
+
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.Github:hover{
+  background-color: rgb(17, 17, 17);
+  transition: 0.5s;
+}
+
+.Linkedin{
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.Linkedin:hover{
+  background-color: rgb(0, 119, 181);
+  transition: 0.5s;
+}
+
+.Instagram{
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.Instagram:hover{
+  background-color: rgb(193, 53, 132);
+  transition: 0.5s;
+}
+// contact-info
