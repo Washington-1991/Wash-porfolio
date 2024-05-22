@@ -7,53 +7,36 @@
 // home-container
 
 // home-card-presentation
-.home-card-presentation{
-  display: block;
-  height: 50vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 6s ease infinite;
-  padding: 16px;
 
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-}
 
 .home-card-title{
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
   height: 30%;
-  margin: 16px;
+  margin-top: 32px;
 }
 
-.home-card-title h1{
-font-size: 48px;
-font-weight: bold;
-}
+
 
 .home-card-paragraph{
-  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: white;
   height: 30%;
   margin: 24px;
 }
-
-.home-card-paragraph p{
-  font-size: 16px;
-  font-weight: bold;
-}
 // home-card-presentation
+
+// home-logo
+.home-logo{
+  display: flex;
+  justify-content: center;
+}
+// home-logo
 
 // card-skills
 .card-skills {
-  margin: 16px;
   width: 168px;
   height: 254px;
   --border-radius: 15px;
@@ -165,14 +148,14 @@ font-weight: bold;
 .container-card-skills-2{
   display: flex;
   justify-content: space-between;
-  margin: 16px;
+
 }
 // container-card-skills-2
 
 // home-cards-skills-container
 .home-cards-skills-container{
   justify-content: center;
-  margin: 16px;
+
 }
 // home-cards-skills-container
 
