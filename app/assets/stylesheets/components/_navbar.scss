@@ -3,7 +3,8 @@
 .navbar-container {
   height: 10vh;
   width:  100%;
-  border-bottom: solid 1px white;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.1);
 }
 
 // navbar-card-button
@@ -14,5 +15,4 @@
   margin: 0 16px;
   height: 100%;
 
-  border-bottom: linear-gradient(to right, #e0ca01, #ffffff) 2px;
 }
