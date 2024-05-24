@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "aboutme" => "pages#aboutme"
   get "projects" => "pages#projects"
   get "contact" => "pages#contact"
+  get "blank" => "pages#blank"
   # Defines the root path route ("/")
   # root "posts#index"
 end
