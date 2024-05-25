@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "projects" => "pages#projects"
   get "contact" => "pages#contact"
   get "blank" => "pages#blank"
+  get "home" => "spanish#home_esp"
   # Defines the root path route ("/")
   # root "posts#index"
 end
