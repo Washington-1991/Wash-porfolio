@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get "aboutme_por" => "portuguese#aboutme_por"
   get "projects_por" => "portuguese#projects_por"
   get "contact_por" => "portuguese#contact_por"
+
+  get "home_fra" => "german#home_fra"
   # Defines the root path route ("/")
   # root "posts#index"
 end
