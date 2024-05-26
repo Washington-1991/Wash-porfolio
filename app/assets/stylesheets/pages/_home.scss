@@ -9,7 +9,10 @@
 // home-card-presentation
 .home-card-presentation{
   background-image: url("owl.jpg");
-  size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 // home-card-title
@@ -120,7 +123,7 @@
   width: 100px;
   height: 100px;
   margin: auto;
-  background-size: cover;
+
 }
 
 .card-skills-image{
