@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get "contact" => "pages#contact"
   get "blank" => "pages#blank"
 
+# config/routes.rb
+get 'home_esp', to: 'spanish#home_esp'
+
   get "home_esp" => "spanish#home_esp"
   get "aboutme_esp" => "spanish#aboutme_esp"
   get "projects_esp" => "spanish#projects_esp"
