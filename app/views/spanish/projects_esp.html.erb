@@ -1,5 +1,43 @@
-
 <div class="projects-container">
+
+  <div class="navbar-container">
+
+    <div class="navbar-card-button">
+
+      <div class="navbar-card-home">
+        <button class="navbar-Home"><%= link_to "Início", home_path, class: "navbar-Home" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-about-me">
+        <button class="navbar-about-me"><%= link_to "Sobre nos", aboutme_path, class: "navbar-about-me" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-project">
+        <button class="navbar-projects"><%= link_to "Projetos", projects_path, class: "navbar-projects" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-contact">
+        <button class="button"><%= link_to "Contacte-nos", contact_path, class: "navbar-contact" %>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="dropdown">
+
+      <button class="dropdown-toggle"><%= image_tag "brazil.png" %> Língua</button>
+      <div class="dropdown-menu">
+        <a href="/projects" class="dropdown-item"><%= image_tag "united-kingdom.png" %> Inglês</a>
+        <a href="/projects_esp" class="dropdown-item"><%= image_tag "spain.png" %> Espanhol</a>
+        <a href="/projects_por" class="dropdown-item"><%= image_tag "brazil.png" %> Português</a>
+        <a href="/projects_fra" class="dropdown-item"><%= image_tag "france.png" %> Francês</a>
+      </div>
+    </div>
+  </div>
+
   <div class="nft">
     <div class='main'>
       <div class="main-image">
