@@ -1,5 +1,7 @@
 <div class="contact-container">
-  <div class="navbar-card-button">
+  <div class="navbar-container">
+
+    <div class="navbar-card-button">
 
       <div class="navbar-card-home">
         <button class="navbar-Home"><%= link_to "Inicio", home_esp_path, class: "navbar-Home" %>
@@ -22,6 +24,19 @@
       </div>
 
     </div>
+
+    <div class="dropdown">
+
+      <button class="dropdown-toggle"><%= image_tag "spain.png" %> Idiomas</button>
+      <div class="dropdown-menu">
+        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> Inglés</a>
+        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Español</a>
+        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portugués</a>
+        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> Francés</a>
+      </div>
+
+    </div>
+  </div>
 
   <div class="contact-title">
     <h1>¿Cómo contactarnos?</h1>
