@@ -1,5 +1,42 @@
-
 <div class="contact-container">
+
+  <div class="navbar-container">
+
+    <div class="navbar-card-button">
+
+      <div class="navbar-card-home">
+        <button class="navbar-Home"><%= link_to "Home", home_path, class: "navbar-Home" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-about-me">
+        <button class="navbar-about-me"><%= link_to "About", aboutme_path, class: "navbar-about-me" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-project">
+        <button class="navbar-projects"><%= link_to "Projects", projects_path, class: "navbar-projects" %>
+        </button>
+      </div>
+
+      <div class="navbar-card-contact">
+        <button class="button"><%= link_to "Contact", contact_path, class: "navbar-contact" %>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="dropdown">
+
+      <button class="dropdown-toggle"><%= image_tag "united-kingdom.png" %> Language</button>
+      <div class="dropdown-menu">
+        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> English</a>
+        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Spanish</a>
+        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portuguese</a>
+        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> French</a>
+      </div>
+    </div>
+  </div>
 
   <div class="contact-title">
     <h1>How to contact us?</h1>
