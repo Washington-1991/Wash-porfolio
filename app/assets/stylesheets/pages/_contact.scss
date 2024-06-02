@@ -9,6 +9,11 @@
 
 .contact-info-container{
   background-image: url("network.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-image: fill 0 linear-gradient(#0003, #000)
+
 }
 
 .contact-container h1{
