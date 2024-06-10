@@ -68,6 +68,7 @@
   input:checked + label:after {
     left: 490px;
     transform: translatex(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
   }
 
 }
