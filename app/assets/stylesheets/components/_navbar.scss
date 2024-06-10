@@ -42,6 +42,11 @@
     cursor: pointer;
   }
 
+  label:after{
+    content: '';
+    width: 180px;
+  }
+
 }
 
 // dropdown menu
