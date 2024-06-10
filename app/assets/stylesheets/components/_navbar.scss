@@ -65,6 +65,11 @@
 
   }
 
+  input:checked + label:after {
+    left: 490px;
+    transform: translatex(-100);
+  }
+
 }
 
 // dropdown menu
