@@ -45,10 +45,11 @@ button:hover {
 #light-mode-button:hover {
   color: orange;
   padding: 8px;
-  border-radius: 30px;
-  border: 2px solid orange;
+  border-radius: 50px;
+  border-right: 2px solid orange;
+  border-left: 2px solid orange;
   transition: 1s;
-  border-bottom: none;
+
 }
 
 #dark-mode-button {
