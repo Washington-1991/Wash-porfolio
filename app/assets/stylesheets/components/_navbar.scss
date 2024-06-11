@@ -25,7 +25,16 @@
 
 }
 
+// navbar-card-lightmode
 
+.navbar-card-lightmode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 16px;
+  height: 100%;
+  border: 1px solid white;
+}
 
 // dropdown menu
 .dropdown {
