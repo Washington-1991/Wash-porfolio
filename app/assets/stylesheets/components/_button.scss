@@ -1,5 +1,6 @@
 // SCSS for the button components
 
+// general button
 button {
   background-color: transparent;
 
@@ -16,6 +17,7 @@ button:hover {
   transition: 1s;
 }
 
+// navbar dropdown menu
 .dropdown-menu {
 
   img {
@@ -32,4 +34,11 @@ button:hover {
     height: 20px;
     margin: auto;
   }
+}
+
+// navbar-card-lightmode
+#light-mode-button {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
 }
