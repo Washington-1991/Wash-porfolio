@@ -40,9 +40,13 @@ button:hover {
 #light-mode-button {
   font-size: 16px;
   color: white;
+
+  &hover {
+    background-color: orange;
+  }
 }
 
-#darko-mode-button {
+#dark-mode-button {
   font-size: 16px;
   color: black;
 }
