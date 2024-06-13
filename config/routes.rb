@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "contact" => "pages#contact"
   get "blank" => "pages#blank"
 
-  get "home_light" => "home_light#home_light"
+  get "home_light" => "pages#home_light"
 
 
   get "home_esp" => "spanish#home_esp"
