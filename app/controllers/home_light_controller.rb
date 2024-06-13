@@ -1,5 +1,5 @@
 class HomeLightController < ApplicationController
-  def home_light
+  def home
     # Your code here
   end
 end
