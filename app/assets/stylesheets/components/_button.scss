@@ -4,10 +4,7 @@
 // button {
 
 
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
+
 
 //   border: none;
 // }
@@ -71,10 +68,20 @@
   background-color: transparent;
   border-bottom: 2px solid white;
   transition: 1s;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .navbar-Home-light {
   background-color: transparent;
   border-bottom: 2px solid black;
   transition: 1s;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
