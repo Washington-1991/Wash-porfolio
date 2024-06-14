@@ -1,21 +1,6 @@
 // SCSS for the button components
 
 // general button
-// button {
-
-
-
-
-//   border: none;
-// }
-
-// button:hover {
-//   border-bottom: 2px solid white;
-//   transition: 1s;
-// }
-
-
-
 
 
 // navbar dropdown menu
@@ -66,8 +51,8 @@
 
 .navbar-Home {
   background-color: transparent;
-  border-bottom: 2px solid white;
   transition: 1s;
+  border:none
 
   a {
     color: white;
