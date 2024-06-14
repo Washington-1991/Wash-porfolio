@@ -67,6 +67,12 @@ button:hover {
 
 // SCSS for dark and light mode buttons
 
+.navbar-Home {
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
 .navbar-Home-light {
-  color: black;
+  border-bottom: 2px solid black;
+  transition: 1s;
 }
