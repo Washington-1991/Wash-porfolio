@@ -79,5 +79,16 @@
 // navbar-card-about-me button
 
 .navbar-card-about-me {
+  background-color: transparent;
+  transition: 1s;
+  border: none;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.navbar-card-about-me-light {
 
 }
