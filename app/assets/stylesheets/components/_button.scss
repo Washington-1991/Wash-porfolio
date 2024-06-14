@@ -107,7 +107,14 @@
 // navbar-card-projects button
 
 .navbar-projects {
+  background-color: transparent;
+  transition: 1s;
+  border: none;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .navbar-projects-light {
