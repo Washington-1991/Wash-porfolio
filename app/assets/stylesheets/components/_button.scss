@@ -123,6 +123,10 @@
     color: white;
     text-decoration: none;
   }
+
+  &:hover {
+    border-bottom: 1px solid white;
+  }
 }
 
 .navbar-projects-light {
