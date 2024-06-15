@@ -28,24 +28,23 @@
   font-size: 16px;
   color: white;
   padding: 0 8px;
-}
 
-#light-mode-button:hover {
-  color: orange;
-  padding: 0 8px;
-  border-radius: 50px;
-  border-right: 2px solid orange;
-  border-left: 2px solid orange;
-  border-top: none;
-  border-bottom: none;
-
-
+  &:hover {
+    color: orange;
+    padding: 0 8px;
+    border-radius: 50px;
+    border-right: 2px solid orange;
+    border-left: 2px solid orange;
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 #dark-mode-button {
   font-size: 16px;
   color: black;
 }
+
 
 // SCSS for dark and light mode buttons
 
@@ -145,7 +144,6 @@
 }
 
 // button-contact button
-
 .navbar-button-contact {
   background-color: transparent;
   transition: 1s;
