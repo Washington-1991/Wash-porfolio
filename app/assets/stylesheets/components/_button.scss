@@ -135,9 +135,27 @@
 // button-contact button
 
 .navbar-button-contact {
+  background-color: transparent;
+  transition: 1s;
+  border: none;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .navbar-contact-light {
+  background-color: transparent;
+  transition: 1s;
+  border: none;
 
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover {
+    border-bottom: 2px solid black;
+  }
 }
