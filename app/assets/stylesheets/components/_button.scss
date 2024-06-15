@@ -26,7 +26,7 @@
 // navbar-card-lightmode
 #light-mode-button {
   font-size: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 0 8px;
 
   &:hover {
@@ -42,8 +42,9 @@
 
 #dark-mode-button {
   font-size: 16px;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 0 8px;
+  background: transparent;
 
   &:hover {
     color: rgb(147, 48, 147);
