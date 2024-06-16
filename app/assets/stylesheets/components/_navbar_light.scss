@@ -40,6 +40,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  margin: 4px 16px;
+  height: 100%;
+
+  button {
+    margin: 0 16px;
+  }
 
 }
