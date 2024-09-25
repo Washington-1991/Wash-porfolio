@@ -131,21 +131,6 @@
   }
 }
 
-.navbar-projects-light {
-  background-color: transparent;
-  transition: 1s;
-  border: none;
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  &:hover {
-    border-bottom: 1px solid black;
-  }
-}
-
 // button-contact button
 .navbar-button-contact {
   background-color: transparent;
