@@ -27,43 +27,6 @@
 
 
 
-// navbar-card-lightmode
-#light-mode-button {
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  padding: 0 8px;
-  background: transparent;
-  border: none;
-
-  &:hover {
-    color: orange;
-    padding: 0 8px;
-    border-radius: 50px;
-    border-right: 2px solid orange;
-    border-left: 2px solid orange;
-    border-top: none;
-    border-bottom: none;
-  }
-}
-
-#dark-mode-button {
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  padding: 0 8px;
-  background: transparent;
-  border: none;
-
-  &:hover {
-    color: rgb(147, 48, 147);
-    padding: 0 8px;
-    border-radius: 50px;
-    border-right: 2px solid rgb(147, 48, 147);
-    border-left: 2px solid rgb(147, 48, 147);
-    border-top: none;
-    border-bottom: none;
-    transition: 1s;
-  }
-}
 
 // SCSS for dark and light mode buttons
 
