@@ -115,21 +115,6 @@
   }
 }
 
-.navbar-about-me-light {
-  background-color: transparent;
-  transition: 1s;
-  border: none;
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  &:hover {
-    border-bottom: 1px solid black;
-  }
-}
-
 // navbar-card-projects button
 
 .navbar-projects {
