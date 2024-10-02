@@ -2,7 +2,6 @@
 
 .about-me-container {
   height: 100vh;
-  border: white 1px solid;
 }
 
 .about-me-presentation {
@@ -13,6 +12,8 @@
   background-position: center;
   background-repeat: no-repeat;
   border-image: fill 0 linear-gradient(#0003, #000);
+  border: white 1px solid;
+
 }
 
 .abuoutme-card-webdeveloper {
