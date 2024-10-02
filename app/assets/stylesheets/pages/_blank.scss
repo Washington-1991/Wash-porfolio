@@ -14,3 +14,18 @@
   background-repeat: no-repeat;
   border-image: fill 0 linear-gradient(#0003, #000);
 }
+
+.abuoutme-card-webdeveloper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  margin: 16px;
+  bottom: 0;
+}
