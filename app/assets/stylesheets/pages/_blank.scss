@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0; /* Inicialmente oculta la imagen */
-  animation: fadeIn 1s ease-in-out 1s forwards; /* Animación para que aparezca suavemente después de 1s */
+  animation: fadeIn 1s ease-in-out 0,5s forwards; /* Animación para que aparezca suavemente después de 1s */
 }
 
 /* Definición de la animación */
