@@ -85,6 +85,7 @@
 
   &:hover .dropdown-menu {
     display: block;
+    z-index: 3;
   }
 
 }
