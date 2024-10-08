@@ -27,11 +27,12 @@
 
 
 // dropdown menu hacia abajo
+// Ajustar el estilo del dropdown
 .dropdown {
   height: 10vh;
   justify-content: center;
   align-items: center;
-
+  position: relative;  // Asegurar que el menú esté correctamente posicionado con respecto al botón
 
   .dropdown-toggle {
     background-color: transparent;
@@ -41,37 +42,36 @@
     font-size: 16px;
     padding: 16px;
 
-
     &:hover {
       background-color: #ffffff;
       color: black;
       border-radius: 5px;
-
     }
   }
 
+  // Ajustar el estilo del dropdown menu
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-color: #333;  // Cambiar el fondo para que sea visible
     color: white;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  // Mejora el contraste con el fondo
     border-radius: 5px;
-    margin: 0 -42px;
-
+    margin: 0;
+    padding: 10px 0;
+    z-index: 2;  // Asegurar que se superponga correctamente
 
     .dropdown-item {
       color: white;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
-      z-index: 1;
+      z-index: 2;
 
       img {
         width: 20px;
         height: 20px;
         margin-right: 8px;
-
       }
 
       &:hover {
@@ -79,19 +79,14 @@
         color: black;
         border-radius: 5px;
       }
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
   }
 
   &:hover .dropdown-menu {
-    display: block;
-    z-index: 2;
+    display: block;  // Mostrar el menú cuando se hace hover
   }
-
 }
+
 
 .navbar-right-card {
   display: flex;
