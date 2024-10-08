@@ -13,6 +13,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
   border-image: fill 0 linear-gradient(#0003, #000);
   opacity: 0; /* Inicialmente oculta la imagen */
   animation: fadeIn 1s ease-in-out 0.5s forwards; /* Animación para que aparezca suavemente después de 1s */
