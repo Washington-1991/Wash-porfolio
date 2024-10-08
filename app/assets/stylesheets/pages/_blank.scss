@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   opacity: 0; /* Inicialmente oculta la imagen */
   animation: fadeIn 1s ease-in-out 0.5s forwards; /* Animación para que aparezca suavemente después de 1s */
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); /* Sombra interna */
 }
 
 /* Definición de la animación */
