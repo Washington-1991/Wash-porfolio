@@ -26,96 +26,72 @@
 }
 
 
-// // dropdown menu hacia abajo
-// .dropdown {
-//   height: 10vh;
-//   justify-content: center;
-//   align-items: center;
-
-
-//   .dropdown-toggle {
-//     background-color: transparent;
-//     color: white;
-//     border: none;
-//     cursor: pointer;
-//     font-size: 16px;
-//     padding: 16px;
-
-
-//     &:hover {
-//       background-color: #ffffff;
-//       color: black;
-//       border-radius: 5px;
-
-//     }
-//   }
-
-//   .dropdown-menu {
-//     display: none;
-//     position: absolute;
-//     background-color: transparent;
-//     color: white;
-//     box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-//     border-radius: 5px;
-//     margin: 0 -42px;
-
-
-//     .dropdown-item {
-//       color: white;
-//       padding: 12px 16px;
-//       text-decoration: none;
-//       display: block;
-
-//       img {
-//         width: 20px;
-//         height: 20px;
-//         margin-right: 8px;
-
-//       }
-
-//       &:hover {
-//         background-color: #f1f1f1;
-//         color: black;
-//         border-radius: 5px;
-//       }
-
-//       &:last-child {
-//         border-bottom: none;
-//       }
-//     }
-//   }
-
-//   &:hover .dropdown-menu {
-//     display: block;
-//     z-index: 2;
-//   }
-
-// }
-
-.navbar-right-card {
-  display: flex;
-}
-
-
-// dropdown menu hacia la izquierda
+// dropdown menu hacia abajo
 .dropdown {
-  position: relative;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+
 
   .dropdown-toggle {
-    // Estilos del botón si es necesario
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px;
+
+
+    &:hover {
+      background-color: #ffffff;
+      color: black;
+      border-radius: 5px;
+
+    }
   }
 
   .dropdown-menu {
+    display: none;
     position: absolute;
-    top: 0; // Alineado con el botón en el eje Y
-    left: -100%; // Mueve el menú a la izquierda del botón
-    display: none; // Ocultar el menú por defecto
-    // Puedes agregar otros estilos de diseño como bordes, fondo, etc.
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 0 -42px;
 
-    // Asegúrate de que el ancho del menú sea suficiente para que no quede cortado.
+
+    .dropdown-item {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+
+      }
+
+      &:hover {
+        background-color: #f1f1f1;
+        color: black;
+        border-radius: 5px;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 
   &:hover .dropdown-menu {
-    display: block; // Muestra el menú cuando pasas el mouse por el botón
+    display: block;
+    z-index: 2;
   }
+
+}
+
+.navbar-right-card {
+  display: flex;
 }
