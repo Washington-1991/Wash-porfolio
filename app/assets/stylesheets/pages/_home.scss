@@ -10,6 +10,7 @@
 
 // carta de presentacion
 .home-presentation {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +18,6 @@
   margin: 8px 0 0 0;
 
   img {
-
     object-fit: cover;
     background-repeat: no-repeat;
 
