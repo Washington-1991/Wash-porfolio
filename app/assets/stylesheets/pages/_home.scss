@@ -4,7 +4,6 @@
 .home-container {
   justify-content: center;
   align-items: center;
-  margin: 8px 0 0 0;
   height: 100vh;
   border: 1px solid white;
 }
@@ -15,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  margin: 8px 0 0 0;
 
   img {
     width: 100%;
