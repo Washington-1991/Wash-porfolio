@@ -1,29 +1,32 @@
-<%# HTML correspondiente al Home fra %>
+<%# HTML correspondiente al Home eng %>
 <title>Paszkowicz-group</title>
 
+<%# division correspondiente a home eng %>
 <div class="home-container">
 
+  <%# barra de navegacion eng %>
   <div class="navbar-container">
 
     <div class="navbar-card-button">
 
       <div class="navbar-card-home">
-        <button class="navbar-home"><%= link_to "Accueil", home_fra_path, class: "navbar-Home" %>
+        <button class="navbar-Home">
+          <%= link_to "Home", home_path, class: "navbar-Home" %>
         </button>
       </div>
 
       <div class="navbar-card-about-me">
-        <button class="navbar-about-me"><%= link_to "À propos", aboutme_fra_path, class: "navbar-about-me" %>
+        <button class="navbar-about-me"><%= link_to "About", aboutme_path, class: "navbar-about-me" %>
         </button>
       </div>
 
       <div class="navbar-card-project">
-        <button class="navbar-projects"><%= link_to "Projets", projects_fra_path, class: "navbar-projects" %>
+        <button class="navbar-projects"><%= link_to "Projects", projects_path, class: "navbar-projects" %>
         </button>
       </div>
 
       <div class="navbar-card-contact">
-        <button class="navbar-button-contact"><%= link_to "Contactez nous", contact_fra_path, class: "navbar-contact" %>
+        <button class="button"><%= link_to "Contact", contact_path, class: "navbar-contact" %>
         </button>
       </div>
 
@@ -31,75 +34,21 @@
 
     <div class="dropdown">
 
-      <button class="dropdown-toggle">
-        <%= image_tag "france.png" %> Langue
-      </button>
-
+      <button class="dropdown-toggle">Language</button>
       <div class="dropdown-menu">
-        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> Anglais</a>
-        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Espagnol</a>
-        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portugais</a>
-        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> Français</a>
-      </div>
+        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> English</a>
+        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Spanish</a>
+        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portuguese</a>
+        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> French</a>
 
-    </div>
-  </div>
-
-  <div class="home-card-presentation">
-
-    <div class="home-logo">
-      <%= image_tag "paszkowicz.png" %>
-    </div>
-
-    <div class="home-card-paragraph">
-      <h1><strong>Développeur Web Front-End</strong></h1>
-      <p>Un développeur web front-end se spécialise dans la création
-      des parties visibles des sites web ou des applications web avec lesquelles
-      les utilisateurs interagissent directement. Ils utilisent des langages comme
-      HTML pour la structure, CSS pour le style et JavaScript
-      pour l'interactivité. Leur objectif est d'assurer une expérience utilisateur fluide
-      et visuellement attrayante sur différents appareils et tailles d'écran.
-      Ils travaillent souvent avec des frameworks comme React.js ou Angular pour rationaliser le développement
-      et collaborent étroitement avec les designers et les développeurs back-end
-      pour intégrer parfaitement les éléments front-end.</p>
-    </div>
-
-  </div>
-
-  <div class="home-card-h2">
-    <h2>Compétences</h2>
-  </div>
-
-  <div class="home-cards-skills-container">
-
-    <div class="logos">
-      <div class="logos-slide">
-        <%= image_tag "ruby-on-rails.png" %>
-        <%= image_tag "html.png" %>
-        <%= image_tag "css.png" %>
-        <%= image_tag "javascript.png" %>
-        <%= image_tag "sql.png" %>
-        <%= image_tag "figma.png" %>
-        <%= image_tag "git.png" %>
-        <%= image_tag "github.png" %>
-        <%= image_tag "bootstrap.png" %>
-        <%= image_tag "heroku.png" %>
-      </div>
-
-      <div class="logos-slide">
-        <%= image_tag "ruby-on-rails.png" %>
-        <%= image_tag "html.png" %>
-        <%= image_tag "css.png" %>
-        <%= image_tag "javascript.png" %>
-        <%= image_tag "sql.png" %>
-        <%= image_tag "figma.png" %>
-        <%= image_tag "git.png" %>
-        <%= image_tag "github.png" %>
-        <%= image_tag "bootstrap.png" %>
-        <%= image_tag "heroku.png" %>
       </div>
 
     </div>
 
+  </div>
+
+  <%# division correspondiente a la presentacion %>
+  <div class="home-presentation">
+    <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608998/Wash%20portfolio/owl_vccokp.png" alt="Owl">
   </div>
 </div>
