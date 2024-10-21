@@ -1,29 +1,35 @@
-<%# HTML correspondiente al Home esp %>
+<%# HTML correspondiente al Home fra %>
 <title>Paszkowicz-group</title>
 
-
+<%# division correspondiente a home fra %>
 <div class="home-container">
+
+  <%# barra de navegacion eng %>
   <div class="navbar-container">
 
     <div class="navbar-card-button">
 
       <div class="navbar-card-home">
-        <button class="navbar-home"><%= link_to "Inicio", home_esp_path, class: "navbar-Home" %>
+        <button class="navbar-Home">
+          <%= link_to "Accueil", home_path, class: "navbar-Home" %>
         </button>
       </div>
 
       <div class="navbar-card-about-me">
-        <button class="navbar-about-me"><%= link_to "Acerca de nosotros", aboutme_esp_path, class: "navbar-about-me" %>
+        <button class="navbar-about-me">
+          <%= link_to "À propos", aboutme_path, class: "navbar-about-me" %>
         </button>
       </div>
 
       <div class="navbar-card-project">
-        <button class="navbar-projects"><%= link_to "Projectos", projects_esp_path, class: "navbar-projects" %>
+        <button class="navbar-projects">
+          <%= link_to "Projets", projects_path, class: "navbar-projects" %>
         </button>
       </div>
 
       <div class="navbar-card-contact">
-        <button class="navbar-button-contact"><%= link_to "Contáctanos", contact_esp_path, class: "navbar-contact" %>
+        <button class="button">
+          <%= link_to "Contact", contact_path, class: "navbar-contact" %>
         </button>
       </div>
 
@@ -31,46 +37,28 @@
 
     <div class="dropdown">
 
-      <button class="dropdown-toggle"><%= image_tag "spain.png" %> Idiomas</button>
+      <button class="dropdown-toggle">Langue</button>
       <div class="dropdown-menu">
-        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> Inglés</a>
-        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Español</a>
-        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portugués</a>
-        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> Francés</a>
+        <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> English</a>
+        <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Spanish</a>
+        <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portuguese</a>
+        <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> French</a>
+
       </div>
 
     </div>
-  </div>
-
-  <div class="home-card-presentation">
-
-    <div class="home-logo">
-      <%= image_tag "paszkowicz.png" %>
-    </div>
-
-    <div class="home-card-paragraph">
-      <h1><strong>Desarrollador Web Front-End</strong></h1>
-      <p>Un desarrollador web front-end se especializa
-      en crear las partes visibles de los sitios web o
-      aplicaciones web con las que los usuarios
-      interactúan directamente. Utilizan lenguajes
-      como HTML para la estructura, CSS para el estilo
-      y JavaScript para la interactividad. Su enfoque
-      está en asegurar una experiencia de usuario fluida
-      y visualmente atractiva en diferentes dispositivos
-      y tamaños de pantalla. A menudo trabajan con
-      frameworks como React.js o Angular para agilizar
-      el desarrollo y colaboran estrechamente con
-      diseñadores y desarrolladores back-end para
-      integrar los elementos front-end de manera fluida.</p>
-    </div>
 
   </div>
 
+  <%# division correspondiente a la presentacion %>
+  <div class="home-presentation">
+    <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608998/Wash%20portfolio/owl_vccokp.png" alt="Owl">
+  </div>
+
+  <%# slide de skills %>
   <div class="home-card-h2">
     <h2>Habilidades</h2>
   </div>
-
   <div class="home-cards-skills-container">
 
     <div class="logos">
@@ -102,4 +90,5 @@
     </div>
 
   </div>
+
 </div>
