@@ -24,3 +24,18 @@
   }
 
 }
+
+// carta correspondiente a las habilidades
+.home-card-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 0 0;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+  }
+
+}
