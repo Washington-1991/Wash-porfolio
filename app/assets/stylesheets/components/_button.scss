@@ -60,7 +60,6 @@ button::after {
   width: 100%;
   height: 100%;
   background: linear-gradient(-45deg, #63A4FF 0%, #83EAF1 100% );
-  border-radius: 5px;
   transform: scale(0);
   pointer-events: none;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -96,68 +95,3 @@ button:active {
   }
 
 }
-
-
-// navbar-home button
-// .navbar-home {
-//   background-color: transparent;
-//   transition: 1s;
-//   border: none;
-
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-
-//   &:hover {
-//     border-bottom: 1px solid white;
-//   }
-// }
-
-// navbar-card-about-me button
-// .navbar-about-me {
-//   background-color: transparent;
-//   transition: 1s;
-//   border: none;
-
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-
-//   &:hover {
-//     border-bottom: 1px solid white;
-//   }
-// }
-
-// navbar-card-projects button
-// .navbar-projects {
-//   background-color: transparent;
-//   transition: 1s;
-//   border: none;
-
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-
-//   &:hover {
-//     border-bottom: 1px solid white;
-//   }
-// }
-
-// button-contact button
-// .navbar-button-contact {
-//   background-color: transparent;
-//   transition: 1s;
-//   border: none;
-
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-
-//   &:hover {
-//     border-bottom: 1px solid white;
-//   }
-// }
