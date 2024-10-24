@@ -20,9 +20,13 @@
     height: 100vh;
     object-fit: cover;
     background-repeat: no-repeat;
-
+    opacity: 0; // Inicialmente oculta la imagen
+    transition: opacity 1s ease-in; // Transición suave para mostrar la imagen
   }
 
+  &.visible img {
+    opacity: 1; // Imagen completamente visible cuando se añade la clase "visible"
+  }
 }
 
 // carta correspondiente a las habilidades
