@@ -21,7 +21,11 @@
     object-fit: cover;
     background-repeat: no-repeat;
     opacity: 0; // Inicialmente oculta la imagen
-    transition: opacity 1s ease-in; // Transición suave para mostrar la imagen
+    transition: opacity 1s ease-in, box-shadow 0.3s ease-in; // Transición suave para mostrar la imagen y la sombra interior
+
+    &:hover {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); // Sombra interior al pasar el cursor sobre la imagen
+    }
   }
 
   &.visible img {
