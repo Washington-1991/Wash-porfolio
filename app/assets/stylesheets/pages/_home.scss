@@ -24,7 +24,7 @@
     transition: opacity 1s ease-in, box-shadow 0.3s ease-in; // Transición suave para mostrar la imagen y la sombra interior
 
     &:hover {
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); // Sombra interior al pasar el cursor sobre la imagen
+      box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.5); // Sombra interior al pasar el cursor sobre la imagen
     }
   }
 
