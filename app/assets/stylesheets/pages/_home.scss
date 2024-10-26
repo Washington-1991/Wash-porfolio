@@ -9,7 +9,11 @@
 
 // carta de presentacion
 .home-presentation {
-  // ... tu código existente ...
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 0 0;
 
   &.visible img {
     opacity: 1; // Imagen completamente visible cuando se añade la clase "visible"
@@ -31,6 +35,7 @@
     transition: opacity 1s ease-in; // Transición para desaparecer
   }
 }
+
 
 // carta correspondiente a las habilidades
 .home-card-h2 {
