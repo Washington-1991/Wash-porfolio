@@ -5,7 +5,8 @@
   width:  100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
   border: 2px solid white;
+  background: transparent;
+  backdrop-filter: blur(10px);
 
 }
