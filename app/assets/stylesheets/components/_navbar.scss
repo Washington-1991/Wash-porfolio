@@ -2,11 +2,18 @@
 
 .navbar-container {
   height: 10vh;
-  width:  100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid white;
   background: transparent;
   backdrop-filter: blur(10px);
 
+  // Inner shadow
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+  // Gradient border bottom
+  border-bottom: 3px solid transparent;
+  background-image: linear-gradient(to right, yellow, red);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
