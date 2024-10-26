@@ -25,7 +25,6 @@
     height: 100vh;
     object-fit: cover;
     background-repeat: no-repeat;
-    opacity: 0; // Inicialmente oculta la imagen
     transition: opacity 1s ease-in, box-shadow 0.3s ease-in; // Transición suave para mostrar la imagen y la sombra interior
 
     // Para el efecto de desvanecimiento
