@@ -54,10 +54,27 @@
 
   <script>
     window.addEventListener('load', function() {
-      setTimeout(function() {
-        document.querySelector('.home-presentation').classList.add('visible');
-      }, 1000); // Espera 1 segundo (1000 milisegundos)
+  const homePresentation = document.querySelector('.home-presentation');
+
+  const observerOptions = {
+    root: null, // Usa el viewport como root
+    threshold: 0.1 // El porcentaje del elemento que debe estar visible para activar el callback
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        homePresentation.classList.add('visible'); // Agrega la clase visible
+      } else {
+        homePresentation.classList.remove('visible'); // Elimina la clase visible
+      }
     });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(homePresentation); // Observa el elemento home-presentation
+});
+
   </script>
 
   <%# slide de skills %>
