@@ -11,9 +11,9 @@
   // Inner shadow
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
 
-  // Gradient border bottom
-
-  border: linear-gradient(to right, yellow, red);
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
+    // Gradient border bottom
+    border-bottom: 3px solid transparent;
+    background-image: linear-gradient(to right, yellow, red);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
 }
