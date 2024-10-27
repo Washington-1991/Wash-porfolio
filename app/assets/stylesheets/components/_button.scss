@@ -14,6 +14,7 @@
       text-decoration: none;
       color: yellow;
       margin: 0 16px;
+      transition: all 0.5s
     }
 
     a:hover {
@@ -21,12 +22,6 @@
       color: red;
       font-size: 24px;
       margin:  0 16px;
-      transition: 0.5s;
-    }
-
-    a:after {
-      color: yellow;
-      font-size: 16px;
       transition: 0.5s;
     }
 
