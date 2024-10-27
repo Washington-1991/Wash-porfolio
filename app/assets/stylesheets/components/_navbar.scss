@@ -1,12 +1,13 @@
 // navbar-container
 
 .navbar-container {
+  // condiciones generales de la navbar
   height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
 
-
+  // condiciones y estilo de la navbar
   background: transparent;
   backdrop-filter: blur(10px);
   border: 10px solid;
