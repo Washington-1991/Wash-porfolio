@@ -38,7 +38,9 @@
     }
 
     button:hover {
-      color: red;
+      a {
+        color: red;
+      }
     }
   }
   .navbar-card-left {
