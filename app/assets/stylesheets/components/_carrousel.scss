@@ -8,16 +8,16 @@
 
 // logos
 .logos{
-overflow: hidden;
-padding: 10px 0;
-background-color: transparent;
-border: 2px solid yellow;
-border-image-slice: 1;
-border-image-width: 2px;
-border-width: 2px;
-border-image-source: linear-gradient(to left, red, yellow);
-white-space: nowrap;
-position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-image-slice: 1;
+  border-image-width: 2px;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, red, yellow);
+  white-space: nowrap;
+  position: relative;
 }
 
 @keyframes slide {
