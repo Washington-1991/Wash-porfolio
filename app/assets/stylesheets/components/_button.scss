@@ -19,35 +19,5 @@
       position: relative;
     }
 
-    a:hover {
-      background-color: rgb(72, 162, 197);
-      color: yellow;
-      font-size: 24px;
-      margin: 0 16px;
-      transition: 0.3s;
-      padding: 8px 16px;
-      border-radius: 25px;
-    }
-
-    // Estilos para la esfera en hover
-    a::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background-color: rgba(0, 123, 255, 0.8);
-      transition: width 0.3s ease, height 0.3s ease;
-      z-index: -1;
-    }
-
-    // Expansión de la esfera en hover
-    a:hover::before {
-      width: 30px;
-      height: 30px;
-    }
   }
 }
