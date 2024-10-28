@@ -3,6 +3,8 @@
 .navbar-container {
   // condiciones generales de la navbar
   position: absolute;
+  position: sticky;
+  top: 0;
   height: 10vh;
   width: 100%;
   display: flex;
