@@ -19,5 +19,14 @@
       position: relative;
     }
 
+    a:hover {
+      color: yellow;
+      font-size: 24px;
+      margin: 0 16px;
+      transition: 0.3s;
+      padding: 8px 16px;
+      border-radius: 25px;
+    }
+
   }
 }
