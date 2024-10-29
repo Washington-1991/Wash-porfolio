@@ -18,5 +18,7 @@
   <script>
     const target = {x: 0.5 y: 0.5 };
     const cursor = {x: 0.5 y; 0.5 };
+    const lerp = (start, target, speed) => (1 - speed) * start + speed * target;
+    let raf: number | undefined;
   </script>
 </div>
