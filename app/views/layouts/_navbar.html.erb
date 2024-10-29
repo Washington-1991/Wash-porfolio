@@ -21,7 +21,11 @@
     const lerp = (start, target, speed) => (1 - speed) * start + speed * target;
     let raf: number | undefined;
 
+    const update = () => {
+      cursor.x = lerp(cursor.x, target.x, 0.1);
+      cursor.y = lerp(cursor.y, target.y, 0.1);
 
+    };
 
   </script>
 </div>
