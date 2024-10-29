@@ -16,22 +16,6 @@
   </div>
 
   <script>
-    // Seleccionamos el contenedor de la navbar
-    const navbar = document.getElementById('navbar');
 
-    // Agregamos un evento para cambiar el color cuando el mouse esté sobre la navbar
-    navbar.addEventListener('mousemove', (event) => {
-      // Obtenemos la posición del mouse dentro de la navbar
-      const x = event.clientX / window.innerWidth;
-      const y = event.clientY / window.innerHeight;
-
-      // Generamos el color de fondo en función de la posición
-      navbar.style.background = `linear-gradient(to left, rgba(${x * 255}, 50, ${y * 255}, 1), rgba(${y * 255}, ${x * 100}, 150, 1))`;
-    });
-
-    // Restauramos el color original cuando el mouse sale de la navbar
-    navbar.addEventListener('mouseleave', () => {
-      navbar.style.background = 'linear-gradient(to left, black, #170818)';
-    });
   </script>
 </div>
