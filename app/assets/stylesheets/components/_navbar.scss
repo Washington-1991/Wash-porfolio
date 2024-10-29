@@ -47,5 +47,12 @@
     calc(100vw * var(--x) - var(--size) / 2),
     calc(100vh * var(--y) - var(--size) / 2),
     0
-  )
+  );
+
+  background: radial-gradient (
+    circle at 50% 50%, #4190ea, rgba(76, 0, 255, 0)
+  );
+
+  opacity: 0,4;
+  filter: blur(50px);
 }
