@@ -37,6 +37,17 @@
         return
       }
 
+      raf = requestAnimationFrame(update);
+
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      target.x = e.clientX / window.innerWidth;
+      target.y = e.clientY / window.innerHeight;
+
+      if (!raf) {
+        raf = requestAnimationFrame(update);
+      }
     };
 
   </script>
