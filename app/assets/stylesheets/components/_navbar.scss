@@ -46,5 +46,6 @@
   transform: translate3d(
     calc(100vw * var(--x) - var(--size) / 2),
     calc(100vh * var(--y) - var(--size) / 2),
+    0
   )
 }
