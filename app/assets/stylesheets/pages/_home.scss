@@ -19,10 +19,7 @@
   background-size: cover;
   background-position: center;
   align-items: center;
+  box-shadow: inset 80px 80px 80px 80px rgba(0, 0, 0, 0.5); // sombra interna
 
-  & :hover {
-    box-shadow: inset 80px 80px 80px 80px rgba(0, 0, 0, 0.5); // sombra interna
-    transition: 0.5s;
-  }
 
 }
