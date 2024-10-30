@@ -20,7 +20,7 @@
 
   & :hover {
     box-shadow: inset 40px 40px 40px 40px rgba(0, 0, 0, 0.5); // sombra interna
-
+    transition: 0.5s;
   }
 
 }
