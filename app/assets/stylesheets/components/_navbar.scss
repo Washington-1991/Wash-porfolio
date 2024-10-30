@@ -18,10 +18,6 @@
   border-image-source: linear-gradient(to left, red, yellow);
 
 
-  & :hover {
-    box-shadow: inset  4px 4px 4px 4px rgba(255, 255, 255, 0.5); // sombra interna
-
-  }
 
   .navbar-card-right {
     display: flex;
