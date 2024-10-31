@@ -13,12 +13,18 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-
-  // disposicion de la imagen de fondo
   background-image: url("https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608998/Wash%20portfolio/owl_vccokp.png");
   background-size: cover;
   background-position: center;
   align-items: center;
   box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
+  position: relative;
+  z-index: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
+  // Inicialmente oculta
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
