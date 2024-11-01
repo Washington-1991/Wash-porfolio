@@ -14,6 +14,12 @@
 
   <%# javascript correspondiente a la transicion de la home-presentation %>
   <script>
+
+    function showdiv() {
+      document.getElementById('home-presentation').style.visibility = "visible";
+      setTimeout("showdiv()", 3000);
+    }
+
     function showdiv() {
       document.getElementById('home-presentation').style.visibility = "visible";
       setTimeout("showdiv()", 3000);
