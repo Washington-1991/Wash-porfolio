@@ -14,27 +14,8 @@
 
   <%# javascript correspondiente a la transicion de la home-presentation %>
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const presentation = document.querySelector('.home-presentation');
 
-    // Función para mostrar la presentación con una transición
-    function showPresentation() {
-      presentation.classList.remove('hidden');
-      presentation.classList.add('visible');
-    }
 
-    // Función para ocultar la presentación con una transición
-    function hidePresentation() {
-      presentation.classList.remove('visible');
-      presentation.classList.add('hidden');
-    }
-
-    // Mostrar presentación cuando la página esté lista
-    setTimeout(showPresentation, 300);
-
-    // Puedes añadir eventos para ocultar o mostrar según tus necesidades
-    // Ejemplo: hidePresentation(); para ocultar
-  });
 </script>
 
 
