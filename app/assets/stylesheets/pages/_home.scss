@@ -21,7 +21,7 @@
   position: relative;
   opacity: 1; // Initial opacity
   transform: translateY(0); // Initial position
-  transition: opacity 0.5s ease, transform 0.5s ease; // Transition for opacity and transform
+  transition: opacity 0.5s ease, transform 1s ease; // Transition for opacity and transform
 }
 
 // Clase para ocultar la presentación
