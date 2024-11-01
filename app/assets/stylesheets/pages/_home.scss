@@ -19,11 +19,13 @@
   align-items: center;
   box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
   position: relative;
-  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 1; // Initial opacity
+  transform: translateY(0); // Initial position
+  transition: opacity 0.5s ease, transform 0.5s ease; // Transition for opacity and transform
 }
 
 // Clase para ocultar la presentación
 .hidden {
   opacity: 0;
-  visibility: hidden;
+  transform: translateY(-20px); // Move up slightly when hidden
 }
