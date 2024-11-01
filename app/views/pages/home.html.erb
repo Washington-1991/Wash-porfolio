@@ -14,9 +14,22 @@
 
   <%# javascript correspondiente a la transicion de la home-presentation %>
   <script>
+  let lastScrollTop = 0;
+  const homePresentation = document.querySelector('.home-presentation');
 
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  </script>
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      homePresentation.classList.add('hidden');
+    } else {
+      // Scrolling up
+      homePresentation.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  });
+</script>
 
 
   <%# carrousel de habilidades %>

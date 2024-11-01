@@ -1,15 +1,13 @@
 // SCSS correspondiente a home page
 
-// caracteristicas generales de la pagina
+// características generales de la página
 .home-container {
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-
-
-// carta de presentacion
+// carta de presentación
 .home-presentation {
   display: flex;
   flex-direction: column;
@@ -22,5 +20,10 @@
   box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
   position: relative;
   transition: opacity 1s ease, visibility 1s ease;
+}
 
+// Clase para ocultar la presentación
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
