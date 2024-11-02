@@ -1,7 +1,13 @@
 // SCSS for the carrousel component
 
 // disposicion generall carrousel
-
+.carrousel-container{
+  border: 2px solid yellow;
+  border-image-slice: 1;
+  border-image-width: 2px;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, red, yellow);
+}
 
 // disposicion de logos del carrousel
 * * {
@@ -15,11 +21,7 @@
   overflow: hidden;
   padding: 10px 0;
   background-color: transparent;
-  border: 2px solid yellow;
-  border-image-slice: 1;
-  border-image-width: 2px;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, red, yellow);
+
   white-space: nowrap;
   position: relative;
 }
