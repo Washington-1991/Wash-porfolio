@@ -16,7 +16,7 @@
   border-width: 2px;
   border-image-source: linear-gradient(to left, red, yellow);
 
-  .navbar-card-right {
+  .navbar-card-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +26,10 @@
 
   }
 
-  .navbar-card-left {
+  .navbar-card-right {
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     width: 50%;
     padding: 0 32px;
     border: 2px solid white;
