@@ -1,38 +1,58 @@
 // navbar-container
 
 .navbar-container {
-  // condiciones generales de la navbar
-  position: absolute, sticky;
+  position: sticky; // Changed from absolute to sticky for better behavior
   top: 0;
   height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  // condiciones y estilo de la navbar
-  background: linear-gradient(to left, black, #170818);;
+  background: linear-gradient(to left, black, #170818);
   border-bottom: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(to left, red, yellow);
 
-  .navbar-card-left {
+  .navbar-card-left,
+  .navbar-card-right {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 50%;
-    padding: 0 32px;
+    padding: 0 16px; // Reduced padding for smaller screens
+  }
+
+  .navbar-card-left {
+    justify-content: space-between;
+    width: 50%; // Keep this for larger screens
+  }
+
+  .navbar-card-right {
+    justify-content: flex-end;
+    width: 50%; // Keep this for larger screens
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    .navbar-card-left,
+    .navbar-card-right {
+      width: 100%; // Stack items on smaller screens
+      justify-content: center; // Center items
+      flex-direction: column; // Stack vertically
+    }
+
+    .navbar-card-left {
+      order: 1; // Ensure left items come first
+    }
+
+    .navbar-card-right {
+      order: 2; // Ensure right items come after
+    }
+
 
   }
 
-
-
-
-  .navbar-card-right {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 50%;
-    padding: 0 32px;
+  @media (max-width: 480px) {
+    button {
+      font-size: 0.9rem; // Smaller font size for very small screens
+    }
   }
 }
