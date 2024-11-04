@@ -4,6 +4,10 @@
 
 .about-me-container {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; // Prevent overflow if content exceeds the viewport
 }
 
 .about-me-presentation {
@@ -13,14 +17,53 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0; /* Inicialmente oculta la imagen */
-  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Animación para que aparezca suavemente después de 1s */
-  box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
+  position: relative; // Positioning for the overlay
+  opacity: 0; // Initially hidden
+  animation: fadeIn 1s ease-in-out 0.5s forwards; // Animation for smooth appearance
+  box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // Inner shadow
+
+  // Gradient overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+    transition: background 0.5s ease; // Transition for hover effect
+    opacity: 0.7; // Overlay opacity
+    z-index: 1; // Ensure it sits above the background image
+  }
+
+  // Text styling
+  h2, p {
+    position: relative; // For z-index stacking context
+    color: #fff; // White text color
+    z-index: 2; // Ensure text is above the overlay
+    margin: 0 20px; // Add horizontal margin
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); // Text shadow for better readability
+  }
+
+  h2 {
+    font-size: 2.5rem; // Increase font size for headings
+    margin-bottom: 20px; // Space below the heading
+  }
+
+  p {
+    font-size: 1.2rem; // Increase font size for paragraphs
+    line-height: 1.6; // Improve line height for readability
+  }
+
+  // Hover effect to brighten the overlay
+  &:hover::before {
+    background: rgba(0, 0, 0, 0.3); // Change overlay on hover
+  }
 }
 
 /* Definición de la animación */
 @keyframes fadeIn {
   to {
-    opacity: 1; /* La imagen aparecerá completamente */
+    opacity: 1; // The image will appear completely
   }
 }
