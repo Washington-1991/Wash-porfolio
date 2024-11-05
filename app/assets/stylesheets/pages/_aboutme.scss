@@ -97,7 +97,8 @@
       transform: translateX(-100%); /* Start off-screen */
       transition: transform 0.5s; /* Smooth transition for the shine */
       pointer-events: none; /* Prevent hover interference */
-    }
+      border-radius: 10px; /* Add border-radius */
+  }
 
     &:hover::before {
       transform: translateX(50%); /* Move the shine effect across the image */
