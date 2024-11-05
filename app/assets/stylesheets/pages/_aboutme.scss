@@ -100,7 +100,7 @@
     }
 
     &:hover::before {
-      transform: translateX(100%); /* Move the shine effect across the image */
+      transform: translateX(50%); /* Move the shine effect across the image */
     }
   }
 
