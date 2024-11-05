@@ -1,1 +1,16 @@
 // SCSS correspondiente al footer
+
+.footer-container {
+  position: sticky; // Changed from absolute to sticky for better behavior
+  z-index: 1000; // Ensure it sits above other elements
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to left, black, #170818);
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, red, yellow);
+}
