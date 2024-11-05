@@ -94,7 +94,7 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-      transform: translateX(-100%); /* Start off-screen */
+      transform: translateX(-50%); /* Start off-screen */
       transition: transform 0.5s; /* Smooth transition for the shine */
       pointer-events: none; /* Prevent hover interference */
     }
