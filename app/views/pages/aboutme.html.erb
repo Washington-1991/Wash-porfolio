@@ -84,31 +84,3 @@
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Initial check
 </script>
-
-<%# JavaScript correspondiente a about-me-wagon en ingles %>
-<script>
-  // Function to show about-me-presentation
-  function showAboutMePresentation() {
-    const presentation = document.querySelector('.about-me-presentation');
-    const wagon = document.querySelector('.about-me-wagon');
-
-    presentation.style.opacity = '1'; // Show presentation
-    wagon.style.opacity = '0'; // Hide wagon
-  }
-
-  // Function to show about-me-wagon
-  function showAboutMeWagon() {
-    const presentation = document.querySelector('.about-me-presentation');
-    const wagon = document.querySelector('.about-me-wagon');
-
-    presentation.style.opacity = '0'; // Hide presentation
-    wagon.style.opacity = '1'; // Show wagon
-  }
-
-  // Event listeners for navigation (assuming you have buttons or links to trigger these)
-  document.getElementById('show-presentation').addEventListener('click', showAboutMePresentation);
-  document.getElementById('show-wagon').addEventListener('click', showAboutMeWagon);
-
-  // Initial states
-  document.querySelector('.about-me-wagon').style.opacity = '0'; // Hide wagon initially
-</script>
