@@ -72,10 +72,15 @@
 
   &:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+
+    .about-me-wagon-logo {
+      transform: translateX(-10px); /* Slide in effect */
+    }
   }
 
   .about-me-wagon-logo {
     margin-right: 20px; /* Space between logo and text */
+    transition: transform 0.3s; /* Smooth transition for the logo */
 
     img {
       width: 150px; /* Adjust size if needed */
