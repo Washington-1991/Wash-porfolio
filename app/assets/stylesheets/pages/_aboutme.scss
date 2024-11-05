@@ -99,11 +99,12 @@
       transition: transform 0.5s; /* Smooth transition for the shine */
       pointer-events: none; /* Prevent hover interference */
       border-radius: 10px; /* Add border-radius */
+      transition: 1s; /* Smooth transition */
+
   }
 
     &:hover::before {
       display: block; /* Show the shine effect on hover */
-      transition: 1s; /* Smooth transition */
       transform: translateX(50%); /* Move the shine effect across the image */
     }
   }
