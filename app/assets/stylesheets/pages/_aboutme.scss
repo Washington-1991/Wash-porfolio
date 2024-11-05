@@ -62,21 +62,36 @@
 }
 
 .about-me-wagon {
-  height: auto;
-  width: 100%;
-  border: 2px solid white;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding around the content */
+  margin: 20px; /* Margin to separate from other elements */
+  transition: transform 0.3s; /* Smooth hover effect */
+
+  &:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
 
   .about-me-wagon-logo {
+    margin-right: 20px; /* Space between logo and text */
 
     img {
-      width: 200px;
-      height: 200px;
+      width: 150px; /* Adjust size if needed */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Rounded corners for the image */
     }
-
   }
 
   .about-me-wagon-text {
+    color: #fff; /* Darker text color for readability */
+    font-family: 'Arial', sans-serif; /* Font style */
 
+    p {
+      line-height: 1.6; /* Increase line height for better readability */
+      font-size: 16px; /* Font size */
+      margin: 0; /* Remove default margin */
+    }
   }
-
 }
