@@ -103,7 +103,7 @@
 
     &:hover::before {
       display: block; /* Show the shine effect on hover */
-      transition: 0.5s; /* Smooth transition */
+      transition: 1s; /* Smooth transition */
       transform: translateX(50%); /* Move the shine effect across the image */
     }
   }
