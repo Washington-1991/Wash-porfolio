@@ -2,6 +2,47 @@
 
 .projects-container {
 
+  .project-presentation {
+    // Gradient background
+    background: linear-gradient(135deg, #6e7f80, #cfd9df);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    // Glowing effect
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.2);
+      filter: blur(30px);
+      z-index: 0;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 1.2em;
+      line-height: 1.6;
+      opacity: 0; // Start hidden
+      transition: opacity 1s ease-in-out; // Transition for text appearance
+      position: relative;
+      z-index: 1;
+    }
+  }
 
 
 }
