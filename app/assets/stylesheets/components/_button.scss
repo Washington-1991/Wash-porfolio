@@ -133,6 +133,11 @@
         -webkit-text-fill-color: transparent; /* Make the text color transparent */
         color: transparent; /* Fallback for non-webkit browsers */
       }
+
+      &:hover {
+        transform: scale(1.1); /* Scale the button on hover */
+        background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+      }
     }
   }
 
