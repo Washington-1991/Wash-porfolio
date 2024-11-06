@@ -128,7 +128,10 @@
       transition: 0.5s;
 
       a {
-        color: yellow;
+        background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
+        -webkit-background-clip: text; /* Clip the background to the text */
+        -webkit-text-fill-color: transparent; /* Make the text color transparent */
+        color: transparent; /* Fallback for non-webkit browsers */
       }
     }
   }
