@@ -26,7 +26,6 @@
       line-height: 1.6;
       text-align: center;
       transform: translateY(-20px);
-      transition: opacity $transition-duration ease-in-out, transform $transition-duration ease-in-out;
     }
 
     &.visible {
