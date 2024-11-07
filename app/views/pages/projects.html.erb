@@ -69,20 +69,3 @@
   <%= render 'layouts/footer' %>
 
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const projectPresentation = document.querySelector('.project-presentation');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          projectPresentation.classList.add('visible');
-          observer.unobserve(projectPresentation); // Stop observing after it's visible
-        }
-      });
-    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
-
-    observer.observe(projectPresentation);
-  });
-</script>
