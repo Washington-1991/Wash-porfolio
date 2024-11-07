@@ -4,6 +4,23 @@
 .projects-container {
 
   .project-presentation {
+    background-color: white;
+
+    @keyframes square-in-hesitate {
+      0% {
+        clip-path: inset(100% 100% 100% 100%);
+      }
+      40% {
+        clip-path: inset(33% 33% 33% 33%);
+      }
+      100% {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+
+    [transition-style="in:square:hesitate"] {
+      animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
+    }
 
     display: flex;
     flex-direction: column;
@@ -12,7 +29,7 @@
     padding: 40px;
     margin: 20px;
     box-shadow: 0 4px 8px;
-    transition: 1s;
+
 
     h1 {
       font-size: 2.5em;
