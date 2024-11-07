@@ -3,12 +3,6 @@
 .projects-container {
 
   .project-presentation {
-    // Variables for colors and spacing
-    $primary-bg: transparent;
-    $card-bg: transparent;
-    $card-shadow: rgba(0, 0, 0, 0.1);
-    $card-border-radius: 10px;
-    $transition-duration: 0.5s;
 
     display: flex;
     flex-direction: column;
@@ -19,13 +13,12 @@
     border-radius: $card-border-radius;
     background-color: $card-bg;
     box-shadow: 0 4px 8px $card-shadow;
-    transition: transform $transition-duration ease-in-out;
+    transition: 1s;
 
     h1 {
       font-size: 2.5em;
       color: yellow;
       margin-bottom: 20px;
-      opacity: 0;
       transform: translateY(-20px);
       transition: opacity $transition-duration ease-in-out, transform $transition-duration ease-in-out;
     }
@@ -35,7 +28,6 @@
       color: yellow;
       line-height: 1.6;
       text-align: center;
-      opacity: 0;
       transform: translateY(-20px);
       transition: opacity $transition-duration ease-in-out, transform $transition-duration ease-in-out;
     }
