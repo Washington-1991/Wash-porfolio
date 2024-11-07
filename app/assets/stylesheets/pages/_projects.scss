@@ -38,53 +38,25 @@
 
   // projects-card-fullstack
   .projects-card-fullstack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 8px;
-    transition: 1s;
 
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 10px;
-      background-color: #282c34;
-      box-shadow: 0 4px 8px;
-      transition: 1s;
+    .projects-card-fullstack-title{
 
-      h2 {
-        font-size: 1.5em;
-        color: yellow;
-        margin-bottom: 20px;
-        transform: translateY(-20px);
-      }
-
-      p {
-        font-size: 1em;
-        color: yellow;
-        line-height: 1.6;
-        text-align: center;
-        transform: translateY(-20px);
-      }
-
-      &.visible {
-        h2, p {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
     }
-  }
 
+    .nft-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+
+
+  }
 }
+
+
+
 
 
 
