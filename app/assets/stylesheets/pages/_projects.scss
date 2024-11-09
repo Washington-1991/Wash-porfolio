@@ -32,6 +32,19 @@
       text-align: center;
       margin-bottom: 1rem;
     }
+
+    &:hover {
+
+      h1 {
+        display: flex;
+        transition: 0, 5s;
+      }
+
+      p {
+        display: flex;
+        transition: 1;
+      }
+    }
   }
 }
 
