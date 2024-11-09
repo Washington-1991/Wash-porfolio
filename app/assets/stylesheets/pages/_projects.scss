@@ -78,24 +78,29 @@
         height: 250px;
         object-fit: cover;
       }
+
       .description{
         margin: .5rem 0;
         color: #a89ec9;
       }
+
       .tokenInfo{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .price{
+
           display: flex;
           align-items: center;
           color: #ee83e5;
           font-weight: 700;
+
           ins{
             margin-left: -.3rem;
             margin-right: .5rem;
           }
+
         }
 
         .duration{
