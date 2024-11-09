@@ -89,6 +89,11 @@
         animation-delay: 1.5s; // Aparece 1.5 segundos después de la expansión
       }
     }
+
+    &:hover::after {
+      content: "";
+      transition: all 1s;
+    }
   }
 
 }
