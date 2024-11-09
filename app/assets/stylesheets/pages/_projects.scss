@@ -62,7 +62,9 @@
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform {
+      width: 90%;
+    }
 
     h1 {
       opacity: 1;
