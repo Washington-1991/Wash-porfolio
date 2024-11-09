@@ -5,53 +5,9 @@
 
   // presentacion de projectos
   .project-presentation {
-    // Define color variables for better maintainability
-    $card-background: #2c2a3a; // Card background color
-    $card-border-radius: 10px; // Border radius for rounded corners
-    $card-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Shadow effect
-
-    .project-presentation {
-      background-color: $card-background;
-      color: white; // Text color
-      padding: 20px; // Inner spacing
-      border-radius: $card-border-radius; // Rounded corners
-      box-shadow: $card-shadow; // Shadow for depth
-      margin: 20px; // Outer spacing
-      transition: transform 0.3s; // Smooth transition for hover effect
-
-      h1 {
-          font-size: 24px; // Heading size
-          margin-bottom: 15px; // Space below heading
-      }
-
-      p {
-          font-size: 16px; // Paragraph size
-          line-height: 1.5; // Line height for readability
-      }
-
-      // Optional: Add hover effect
-      &:hover {
-          transform: scale(1.05); // Slightly enlarge on hover
-      }
-    }
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // carta contenedora de los proyectos
 .nft{
