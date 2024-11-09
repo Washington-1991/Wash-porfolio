@@ -17,7 +17,6 @@
     margin: 8px;
 
     h1 {
-      display: none;
       align-items: center;
       justify-content: center;
       color: white;
@@ -35,16 +34,13 @@
 
     &:hover {
 
-      Transition: 0.5s;
+      transition: 0.5s;
 
-      h1 {
-        display: flex;
-        transition: 0, 5s;
-      }
+
 
       p {
         display: flex;
-        transition: 1;
+        transition: 1s;
       }
     }
   }
