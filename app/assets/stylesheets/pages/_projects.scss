@@ -5,6 +5,9 @@
 
   // presentacion de projectos
   .project-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 100%;
     height: auto;
@@ -37,9 +40,7 @@
 
       transition: 1s;
 
-
-
-      .p {
+      p {
         display: flex;
         transition: 1s;
       }
