@@ -42,43 +42,54 @@
   }
 }
 
-.project-presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: auto;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 8px;
-  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
-
-  h1, p {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease, visibility 1s ease;
-  }
-
-  &:hover {
-    width: 90%;
-    transition: 1s;
+// Estilos del componente
+  .project-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 8px;
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
 
     h1 {
-      opacity: 1;
-      visibility: visible;
-      transition-delay: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0; // Empieza oculto
     }
 
     p {
-      opacity: 1;
-      visibility: visible;
-      transition-delay: 1.5s;
+      display: none; // Empieza oculto
+      color: #ffffff;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      opacity: 0;
+    }
+
+    &:hover {
+      animation: expandContainer 1s forwards;
+
+      h1 {
+        animation: fadeInTitle 1s ease forwards;
+        animation-delay: 0.5s; // Aparece 0.5 segundos después de la expansión
+      }
+
+      p {
+        display: block; // Cambia display para mostrar el párrafo
+        animation: fadeInParagraph 1s ease forwards;
+        animation-delay: 1.5s; // Aparece 1.5 segundos después de la expansión
+      }
     }
   }
-}
-
 
 }
 
