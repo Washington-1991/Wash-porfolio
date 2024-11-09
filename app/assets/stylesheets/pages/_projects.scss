@@ -5,7 +5,43 @@
 
   // presentacion de projectos
   .project-presentation {
+    // Define your background color
+    $background-color: #170818;
+    $text-color: #ffffff; // White text for contrast
+    $card-padding: 20px;
+    $border-radius: 10px;
+    $box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    $animation-duration: 0.5s;
 
+    .project-presentation {
+      background-color: $background-color;
+      color: $text-color;
+      padding: $card-padding;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      max-width: 600px; // Limit the width of the card
+      margin: 20px auto; // Center the card
+      opacity: 0; // Start hidden
+      transform: translateY(20px); // Start slightly below
+      animation: fadeInUp $animation-duration forwards; // Trigger animation
+
+      h1 {
+        margin-bottom: 15px; // Space between heading and paragraph
+        font-size: 2em; // Increase font size for heading
+      }
+
+      p {
+        line-height: 1.5; // Improve readability
+      }
+    }
+
+    // Keyframes for the entrance animation
+      @keyframes fadeInUp {
+      to {
+        opacity: 1; // End state is fully visible
+        transform: translateY(0); // Move to original position
+      }
+    }
 
 
   }
@@ -33,8 +69,6 @@
       justify-content: center;
       gap: 20px;
     }
-
-
 
   }
 }
