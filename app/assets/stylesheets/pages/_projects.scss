@@ -24,7 +24,7 @@
 
       p {
         animation: myAnim 1s ease-in 0s 1 alternate forwards;
-
+        transition-delay: 1s;
 
         display: block;
         color: rgb(255, 255, 255);
