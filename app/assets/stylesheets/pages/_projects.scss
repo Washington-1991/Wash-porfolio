@@ -16,64 +16,13 @@
     margin: 8px;
     background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
     border-radius: 10px;
-    transition: transform 1s ease; // Add transition for smooth scaling
-
-    h1 {
-      color: white;
-      font-size: 2rem;
-      margin: 8px;
-    }
-
-    p {
-      color: white;
-      display: none; // Initially hidden
-      transition: display 0s 1s; // Delay display change
-    }
-
-    // Hover effect
-    &:hover {
-      animation: scaleUp 1s forwards; // Trigger scale-up animation
-    }
-
-    // Hover effect when mouse leaves
-    &:not(:hover) {
-      animation: scaleDown 1s forwards; // Trigger scale-down animation
-    }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
 
-// Keyframes for scaling up and down
-@keyframes scaleUp {
-  0% {
-    width: 20%;
-    height: 10vh;
-  }
-  100% {
-    width: 90%;
-    height: 30vh;
-  }
-}
 
-@keyframes scaleDown {
-  0% {
-    width: 90%;
-    height: 30vh;
-  }
-  100% {
-    width: 20%;
-    height: 10vh;
-  }
-}
 
-// Display <p> after scaling up
-.projects-container .project-presentation:hover p {
-  display: block; // Show the paragraph on hover
-  transition: display 0s 1s; // Add a delay to the display transition
-}
 
-.projects-container .project-presentation:not(:hover) p {
-  display: none; // Hide the paragraph when not hovering
-}
 // carta contenedora de los proyectos
 .nft-container {
   display: flex;
