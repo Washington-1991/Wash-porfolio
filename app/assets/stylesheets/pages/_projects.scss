@@ -27,11 +27,51 @@
       font-size: 2rem;
       margin: 8px;
     }
+    .project-presentation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    p {
-      display: none;
-    }
+      width: 20%;
+      height: 10vh;
+      margin: 8px;
+      border: 1px solid white;
+      transition: transform 0.3s ease; // Add transition for smooth scaling
 
+      h1 {
+          color: white;
+          font-size: 2rem;
+          margin: 8px;
+      }
+
+      p {
+          display: none;
+      }
+
+      // Hover effect
+      &:hover {
+          animation: scaleUp 0.3s forwards; // Trigger scale-up animation
+      }
+  }
+
+  // Keyframes for scaling up and down
+  @keyframes scaleUp {
+      0% {
+          transform: scale(1); // Initial state
+      }
+      100% {
+          transform: scale(1.1); // Scale up to 110%
+      }
+  }
+
+  // Keyframes for scaling down (optional)
+  @keyframes scaleDown {
+      0% {
+          transform: scale(1.1); // Start from scaled up
+      }
+      100% {
+          transform: scale(1); // Scale back to original
+      }
   }
 
 }
