@@ -50,10 +50,10 @@
 
   @keyframes scaleDown {
     0% {
-      transform: scale(1.1); // Start from scaled up
+      width: 30%;
     }
     100% {
-      transform: scale(1); // Scale back to original
+      width: 20%;
     }
   }
 }
