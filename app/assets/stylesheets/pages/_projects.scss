@@ -6,17 +6,17 @@
   align-items: center;
   justify-content: center;
 
-  // Estilos del componente
+ // Estilos del componente
   .project-presentation {
-    display: flex;
+      display: flex;
     flex-direction: column;
     align-items: center;
     width: 20%;
     height: 10vh;
     margin: 8px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
     border-radius: 10px;
-    transition: transform 1s ease; // Add transition for smooth scaling
+    transition: transform 1s ease;
 
     h1 {
       color: white;
@@ -25,7 +25,17 @@
     }
 
     p {
-      display: none;
+      color: white;
+      font-size: 1rem;
+      opacity: 0; // Initially hidden
+      transform: translateZ(-20px); // Move backward for depth effect
+      transition: opacity 0.5s ease, transform 0.5s ease; // Add transition for smooth fade-in and depth
+
+      // Show and animate when the parent is hovered
+      .project-presentation:hover & {
+        opacity: 1; // Fade in
+        transform: translateZ(0); // Bring forward
+      }
     }
 
     // Hover effect
@@ -43,14 +53,9 @@
   @keyframes scaleUp {
     0% {
       width: 20%;
-
-
     }
     100% {
-
       width: 30%;
-
-
     }
   }
 
@@ -62,6 +67,7 @@
       width: 20%;
     }
   }
+
 }
 
 // carta contenedora de los proyectos
