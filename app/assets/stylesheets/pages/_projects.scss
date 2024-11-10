@@ -49,9 +49,10 @@
     100% {
 
       width: 90%;
-      height: 90vh;
+      height: 30vh;
 
-      .p {
+      p {
+        color: white;
         display: block;
         transition-delay: 1s;
       }
