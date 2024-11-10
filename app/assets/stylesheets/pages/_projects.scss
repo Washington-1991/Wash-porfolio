@@ -32,15 +32,17 @@
       display: none;
     }
 
-  }
-
-  &:hover {
-    .project-presentation {
-      p {
-        display: block;
+    &:hover {
+      .project-presentation {
+        p {
+          display: block;
+        }
       }
     }
+
   }
+
+
 
 }
 
