@@ -21,6 +21,21 @@
     margin: 8px;
     border: 1px solid white;
 
+    @keyframes ProjectPresentacionContainer {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    &hover {
+      animation: ProjectPresentacionContainer 1s;
+    }
+
     h1 {
 
       color: white;
