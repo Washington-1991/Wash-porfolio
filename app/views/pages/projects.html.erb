@@ -68,3 +68,10 @@
   <%= render 'layouts/footer' %>
 
 </div>
+
+<script>
+// JavaScript to add the class after animation completes
+document.querySelector(".animated-element").addEventListener("animationend", () => {
+  document.querySelector(".animated-element").classList.add("scale-up-complete");
+});
+</script>
