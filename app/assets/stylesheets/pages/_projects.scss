@@ -15,13 +15,17 @@
     flex-direction: column;
     align-items: center;
 
+
     width: 20%;
     height: 20vh;
+    margin: 8px;
     border: 1px solid white;
 
     h1 {
 
-      display: none;
+      color: white;
+      font-size: 2rem;
+      margin: 8px;
     }
 
     p {
