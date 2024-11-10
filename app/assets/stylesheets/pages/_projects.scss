@@ -1,4 +1,4 @@
-// contenedor general
+// Contenedor general
 .projects-container {
   width: 100%;
   display: flex;
@@ -14,7 +14,7 @@
     width: 20%;
     height: 10vh;
     margin: 8px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
     border-radius: 10px;
     transition: transform 1s ease; // Add transition for smooth scaling
 
@@ -25,7 +25,9 @@
     }
 
     p {
-      display: none;
+      color: white;
+      display: none; // Initially hidden
+      transition: display 0s 1s; // Delay display change
     }
 
     // Hover effect
@@ -38,39 +40,40 @@
       animation: scaleDown 1s forwards; // Trigger scale-down animation
     }
   }
+}
 
-  // Keyframes for scaling up and down
-  @keyframes scaleUp {
-    0% {
-      width: 20%;
-
-
-    }
-    100% {
-
-      width: 90%;
-      height: 30vh;
-
-      p {
-        color: white;
-        display: block;
-        transition-delay: 1s;
-      }
-
-
-    }
+// Keyframes for scaling up and down
+@keyframes scaleUp {
+  0% {
+    width: 20%;
+    height: 10vh;
   }
-
-  @keyframes scaleDown {
-    0% {
-      width: 30%;
-    }
-    100% {
-      width: 20%;
-    }
+  100% {
+    width: 90%;
+    height: 30vh;
   }
 }
 
+@keyframes scaleDown {
+  0% {
+    width: 90%;
+    height: 30vh;
+  }
+  100% {
+    width: 20%;
+    height: 10vh;
+  }
+}
+
+// Display <p> after scaling up
+.projects-container .project-presentation:hover p {
+  display: block; // Show the paragraph on hover
+  transition: display 0s 1s; // Add a delay to the display transition
+}
+
+.projects-container .project-presentation:not(:hover) p {
+  display: none; // Hide the paragraph when not hovering
+}
 // carta contenedora de los proyectos
 .nft-container {
   display: flex;
