@@ -23,11 +23,13 @@
       border: 2px solid yellow;
 
       p {
+        animation: myAnim 1s ease-in 0s 1 alternate forwards;
+
+
         display: block;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 10px;
-        transition-delay: 1s;
       }
     }
 
