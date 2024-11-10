@@ -9,6 +9,18 @@
   justify-content: center;
 
   // Estilos del componente
+
+  @keyframes ProjectPresentacionContainer {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   .project-presentation {
 
     display: flex;
@@ -21,21 +33,11 @@
     margin: 8px;
     border: 1px solid white;
 
-    transition: 2s;
+    transition: transform 0.5s;
 
-    @keyframes ProjectPresentacionContainer {
-      0% {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    &hover {
+      transform: scale(1.1);
     }
-
-
-      animation: ProjectPresentacionContainer 1s;
 
 
     h1 {
