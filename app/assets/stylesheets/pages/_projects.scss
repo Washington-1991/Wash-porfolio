@@ -30,6 +30,18 @@
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 10px;
+
+        @keyframes myAnim {
+          0% {
+            opacity: 0;
+            transform: scale(1.4);
+          }
+
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
       }
     }
 
