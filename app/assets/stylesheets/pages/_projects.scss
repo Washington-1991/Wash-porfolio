@@ -1,5 +1,3 @@
-// SCSS correspondiente a la página de proyectos
-
 // contenedor general
 .projects-container {
   width: 100%;
@@ -9,178 +7,151 @@
   justify-content: center;
 
   // Estilos del componente
-
   .project-presentation {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 20%;
     height: 10vh;
     margin: 8px;
     border: 1px solid white;
+    transition: transform 0.3s ease; // Add transition for smooth scaling
 
     h1 {
-
       color: white;
       font-size: 2rem;
       margin: 8px;
     }
-    .project-presentation {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
-      width: 20%;
-      height: 10vh;
-      margin: 8px;
-      border: 1px solid white;
-      transition: transform 0.3s ease; // Add transition for smooth scaling
+    p {
+      display: none;
+    }
 
-      h1 {
-          color: white;
-          font-size: 2rem;
-          margin: 8px;
-      }
-
-      p {
-          display: none;
-      }
-
-      // Hover effect
-      &:hover {
-          animation: scaleUp 0.3s forwards; // Trigger scale-up animation
-      }
+    // Hover effect
+    &:hover {
+      animation: scaleUp 0.3s forwards; // Trigger scale-up animation
+    }
   }
 
   // Keyframes for scaling up and down
   @keyframes scaleUp {
-      0% {
-          transform: scale(1); // Initial state
-      }
-      100% {
-          transform: scale(1.1); // Scale up to 110%
-      }
+    0% {
+      transform: scale(1); // Initial state
+    }
+    100% {
+      transform: scale(1.1); // Scale up to 110%
+    }
   }
 
-  // Keyframes for scaling down (optional)
   @keyframes scaleDown {
-      0% {
-          transform: scale(1.1); // Start from scaled up
-      }
-      100% {
-          transform: scale(1); // Scale back to original
-      }
+    0% {
+      transform: scale(1.1); // Start from scaled up
+    }
+    100% {
+      transform: scale(1); // Scale back to original
+    }
   }
-
 }
 
 // carta contenedora de los proyectos
-
 .nft-container {
- display: flex;
+  display: flex;
 
-    .nft{
-    user-select:none;
+  .nft {
+    user-select: none;
     max-width: 300px;
     margin: 5rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
-    background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, 0.5) 100%);
     box-shadow: 0 7px 20px 5px #00000088;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     overflow: hidden;
-    transition: .5s all;
+    transition: 0.5s all;
 
-    hr{
+    hr {
       width: 100%;
       border: none;
       border-bottom: 1px solid #88888855;
       margin-top: 0;
     }
 
-    ins{
+    ins {
       text-decoration: none;
     }
 
-    .main{
+    .main {
       display: flex;
       flex-direction: column;
       width: 100%;
       padding: 1rem;
 
-      .tokenImage{
-        border-radius: .5rem;
+      .tokenImage {
+        border-radius: 0.5rem;
         max-width: 100%;
         height: 250px;
         object-fit: cover;
       }
 
-      .description{
-        margin: .5rem 0;
+      .description {
+        margin: 0.5rem 0;
         color: #a89ec9;
       }
 
-      .tokenInfo{
+      .tokenInfo {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .price{
-
+        .price {
           display: flex;
           align-items: center;
           color: #ee83e5;
           font-weight: 700;
 
-          ins{
-            margin-left: -.3rem;
-            margin-right: .5rem;
+          ins {
+            margin-left: -0.3rem;
+            margin-right: 0.5rem;
           }
-
         }
 
-        .duration{
-
+        .duration {
           display: flex;
           align-items: center;
           color: #a89ec9;
-          margin-right: .2rem;
+          margin-right: 0.2rem;
 
-          ins{
-            margin: .5rem;
-            margin-bottom: .4rem;
+          ins {
+            margin: 0.5rem;
+            margin-bottom: 0.4rem;
           }
-
         }
       }
 
-      .creator{
-
+      .creator {
         display: flex;
         align-items: center;
-        margin-top: .2rem;
-        margin-bottom: -.3rem;
+        margin-top: 0.2rem;
+        margin-bottom: -0.3rem;
 
-        ins{
+        ins {
           color: #a89ec9;
           text-decoration: none;
         }
 
-        .wrapper{
+        .wrapper {
           display: flex;
           align-items: center;
           border: 1px solid #ffffff22;
-          padding: .3rem;
+          padding: 0.3rem;
           margin: 0;
-          margin-right: .5rem;
+          margin-right: 0.5rem;
           border-radius: 100%;
           box-shadow: inset 0 0 0 4px #000000aa;
 
-          img{
+          img {
             border-radius: 100%;
             border: 1px solid #ffffff22;
             width: 2rem;
@@ -188,15 +159,11 @@
             object-fit: cover;
             margin: 0;
           }
-
         }
-
       }
-
     }
 
-    ::before{
-
+    &::before {
       position: fixed;
       content: "";
       box-shadow: 0 0 100px 40px #ffffff08;
@@ -204,75 +171,60 @@
       left: -100%;
       transform: rotate(-45deg);
       height: 60rem;
-      transition: .7s all;
-
+      transition: 0.7s all;
     }
 
-    &:hover{
-
+    &:hover {
       border: 1px solid #ffffff44;
       box-shadow: 0 7px 50px 10px #000000aa;
       transform: scale(1.015);
       filter: brightness(1.3);
-      ::before{
-        filter: brightness(.5);
+
+      &::before {
+        filter: brightness(0.5);
         top: -100%;
         left: 200%;
-
       }
-
     }
-
   }
 
-  .bg{
-
+  .bg {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    h1{
+    h1 {
       font-size: 20rem;
       filter: opacity(0.5);
     }
-
   }
 
-  .main-image{
-
+  .main-image {
     display: flex;
     justify-content: center;
     width: 100%;
-
   }
 
-  .main img{
-
+  .main img {
     width: 200px;
     height: 200px;
-
   }
 
-  .volleyball-pro{
-
+  .volleyball-pro {
     display: flex;
     justify-content: center;
     width: 100%;
     border: 1px solid white;
-
   }
 
-  // volleyball-pro
-  .volleyball-pro img{
+  .volleyball-pro img {
     width: 200px;
     height: 100px;
   }
 
-
-  // projects-social-media
-  .projects-social-media{
+  .projects-social-media {
     color: white;
-  border: 1px solid white;
+    border: 1px solid white;
   }
 }
