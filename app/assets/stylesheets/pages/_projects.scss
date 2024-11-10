@@ -34,7 +34,7 @@
     }
 
     // Hover effect when mouse leaves
-    &:not(:hover) {
+    &:after(:hover) {
       animation: scaleDown 1s forwards; // Trigger scale-down animation
     }
   }
