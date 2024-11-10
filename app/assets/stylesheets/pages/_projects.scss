@@ -36,10 +36,16 @@
   // Keyframes for scaling up and down
   @keyframes scaleUp {
     0% {
-      transform: scale(1); // Initial state
+      transform: {
+        width: 20%;
+      }
+
     }
     100% {
-      transform: scale(1.1); // Scale up to 110%
+      transform: {
+        width: 30%;
+      }
+
     }
   }
 
