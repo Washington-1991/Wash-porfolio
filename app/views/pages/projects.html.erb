@@ -8,42 +8,7 @@
   <%= render 'layouts/navbar' %>
 
   <%# division correspondiente a la presentacion de los proyectos en ingles %>
-  <div class=.project-presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20%;
-  height: 10vh;
-  margin: 8px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
-  border-radius: 10px;
-  transition: width 0.3s ease, height 0.3s ease;
-
-  &.visible {
-    width: 80%;
-    height: 30vh;
-
-    p {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-  }
-
-  h1 {
-    color: white;
-    font-size: 24px;
-    margin: auto;
-  }
-
-  p {
-    display: none;
-    font-size: 16px;
-    padding: 0 8px;
-  }
-}
->
+  <div class="project-presentation">
     <h1>Projects</h1>
     <p>"Here are all the projects that we've created or contributed to.
     Spanning a diverse range of fields and interests, our portfolio
@@ -107,3 +72,26 @@
   <%= render 'layouts/footer' %>
 
 </div>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectPresentation = document.querySelector(".project-presentation");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            projectPresentation.classList.add("visible");
+          } else {
+            projectPresentation.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjusts how much of the element should be visible to trigger
+    );
+
+    observer.observe(projectPresentation);
+  });
+
+</script>
