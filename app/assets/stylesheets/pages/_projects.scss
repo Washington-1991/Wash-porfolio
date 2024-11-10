@@ -14,7 +14,8 @@
     width: 20%;
     height: 10vh;
     margin: 8px;
-    border: 1px solid white;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 10px;
     transition: transform 1s ease; // Add transition for smooth scaling
 
     h1 {
