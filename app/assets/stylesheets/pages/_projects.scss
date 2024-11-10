@@ -21,6 +21,8 @@
     margin: 8px;
     border: 1px solid white;
 
+    transition: 2s;
+
     @keyframes ProjectPresentacionContainer {
       0% {
         transform: translateY(-100%);
