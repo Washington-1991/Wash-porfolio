@@ -16,7 +16,7 @@
     position: relative; // Positioning for the overlay
     opacity: 0; // Initially hidden
     animation: fadeIn 1s ease-in-out 0.5s forwards; // Animation for smooth appearance
-    box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.5); // Inner shadow
+    box-shadow: inset 4px 4px 4px 4px blue; // Inner shadow
     background: linear-gradient(-45deg, yellow 0%, #ff0f7b 100%);
     margin: 8px;
     border-radius: 10px;
