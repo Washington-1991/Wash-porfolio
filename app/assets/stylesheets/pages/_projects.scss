@@ -23,7 +23,9 @@
     }
 
     p {
-      color: white ;
+      background: linear-gradient(pink, white, green);
+      -webkit-background-clip: text;
+      color: transparent;
       font-size: 24px;
     }
   }
