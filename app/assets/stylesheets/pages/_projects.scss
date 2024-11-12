@@ -61,15 +61,6 @@
 
   .projects-card-fullstack {
 
-  }
-
-
-
-
-    // carta contenedora de los proyectos
-  .nft-container {
-    display: flex;
-
     .projects-card-fullstack-title {
 
       h2 {
@@ -82,6 +73,17 @@
       }
 
     }
+
+  }
+
+
+
+
+    // carta contenedora de los proyectos
+  .nft-container {
+    display: flex;
+
+
 
     .nft {
       user-select: none;
