@@ -20,8 +20,10 @@
     h1 {
       animation: myAnim 1s ease-in 0s 1 alternate forwards;
 
-      color: white;
-      font-size: 48px;
+      background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
+      -webkit-background-clip: text; /* Clip the background to the text */
+      -webkit-text-fill-color: transparent; /* Make the text color transparent */
+      color: transparent; /* Fallback for non-webkit browsers */
 
       @keyframes myAnim {
         0% {
