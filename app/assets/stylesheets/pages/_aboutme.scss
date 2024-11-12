@@ -87,25 +87,27 @@
     }
 
     &::before {
-      content: '';
-      position: absolute;
-      display: none;
-      top: 0;
-      left: -50%; /* Start from the left */
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-      transform: translateX(-100%); /* Start off-screen */
-      transition: transform 0.5s; /* Smooth transition for the shine */
-      pointer-events: none; /* Prevent hover interference */
-      border-radius: 10px; /* Add border-radius */
-      transition: 1s; /* Smooth transition */
+      content: "";
+      position: fixed;
+      box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.08);
+      top: -10%;
+      left: -100%;
+      transform: rotate(-45deg);
+      height: 60rem;
+      transition: 0.7s all;
+    }
 
-  }
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.27);
+      box-shadow: 0 7px 50px 10px rgba(0, 0, 0, 0.67);
+      transform: scale(1.015);
+      filter: brightness(1.3);
 
-    &:hover::before {
-      display: block; /* Show the shine effect on hover */
-      transform: translateX(50%); /* Move the shine effect across the image */
+      &::before {
+        filter: brightness(0.5);
+        top: -100%;
+        left: 200%;
+      }
     }
   }
 
