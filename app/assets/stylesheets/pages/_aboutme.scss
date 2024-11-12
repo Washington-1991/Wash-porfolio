@@ -89,7 +89,7 @@
     &::before {
       content: "";
       position: fixed;
-      box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 24px 24px rgba(255, 255, 255, 0.08);
       top: 0;
       left: 0;
       transform: rotate(-45deg);
@@ -98,14 +98,14 @@
     }
 
     &:hover {
-      box-shadow: 0 7px 50px 10px rgba(0, 0, 0, 0.67);
+      box-shadow: 0 24px 24px 24px rgba(0, 0, 0, 0.67);
       transform: scale(1.015);
       filter: brightness(1.3);
 
       &::before {
         filter: brightness(0.5);
-        top: -100%;
-        left: 200%;
+        top: 0;
+        left: 0;
       }
     }
   }
