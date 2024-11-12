@@ -59,7 +59,7 @@
     }
   }
 
-  .projects-card-fullstack {
+    .projects-card-fullstack {
 
     .projects-card-fullstack-title {
 
@@ -74,13 +74,8 @@
 
     }
 
-  }
-
-
-
-
-    // carta contenedora de los proyectos
-  .nft-container {
+      // carta contenedora de los proyectos
+      .nft-container {
     display: flex;
 
 
@@ -190,6 +185,13 @@
           }
         }
       }
+
+    }
+
+
+
+
+
 
       &::before {
         position: fixed;
