@@ -17,8 +17,7 @@
 
     h1 {
       background: linear-gradient(pink, white, green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
       font-size: 48px;
     }
 
