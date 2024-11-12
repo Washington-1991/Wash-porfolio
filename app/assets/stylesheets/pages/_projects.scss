@@ -64,10 +64,22 @@
     .projects-card-fullstack-title {
 
       h2 {
-        background: linear-gradient(to right, rgb(0, 255, 115), rgb(255, 0, 217)); // Gradient from red to yellow
-        -webkit-background-clip: text; // Clip the background to the text
-        -webkit-text-fill-color: transparent; // Make the text color transparent
-        // color: transparent; // Fallback for non-webkit browsers
+
+        animation: myAnim 2s ease 2s 1 normal forwards;
+
+        @keyframes myAnim {
+          0% {
+            opacity: 0;
+            transform: scale(0.6);
+          }
+
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        color: white;
         font-size: 24px;
         text-align: center;
       }
