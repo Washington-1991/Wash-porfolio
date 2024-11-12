@@ -64,12 +64,16 @@
     display: flex;
 
     .projects-card-fullstack-title {
-      background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
-      -webkit-background-clip: text; /* Clip the background to the text */
-      -webkit-text-fill-color: transparent; /* Make the text color transparent */
-      color: transparent; /* Fallback for non-webkit browsers */
-      font-size: 24px;
-      text-align: center;
+
+      h1 {
+        background: linear-gradient(to right, red, yellow); // Gradient from red to yellow
+        -webkit-background-clip: text; // Clip the background to the text
+        -webkit-text-fill-color: transparent; // Make the text color transparent
+        color: transparent; // Fallback for non-webkit browsers
+        font-size: 24px;
+        text-align: center;
+      }
+
     }
 
     .nft {
