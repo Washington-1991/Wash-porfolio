@@ -86,17 +86,6 @@
       transition: opacity 0.3s; /* Smooth transition for the image */
     }
 
-    &::before {
-      content: "";
-      position: fixed;
-      box-shadow: 0 0 24px 24px rgba(255, 255, 255, 0.08);
-      top: 0;
-      left: 0;
-      transform: rotate(-45deg);
-      height: 60rem;
-      transition: 0.7s all;
-    }
-
   }
 
   .about-me-wagon-text {
