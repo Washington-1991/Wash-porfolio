@@ -1,73 +1,28 @@
-<%# HTML correspondiente a la pagina de about-us %>
+ <%# division correspondiente al wagon en ingles %>
+  <div class="about-me-wagon">
 
-
-<div class="about-me-container">
-
-  <%# division correspondiente a la barra de navegacion %>
-  <div class="navbar-container">
-    <%# carta contenedora de botones de izquierda %>
-    <div class="navbar-card-button">
-
-      <div class="navbar-card-home">
-        <button class="navbar-Home"><%= link_to "Home", home_path, class: "navbar-Home" %>
-        </button>
-      </div>
-
-      <div class="navbar-card-about-me">
-        <button class="navbar-about-me"><%= link_to "About", aboutme_path, class: "navbar-about-me" %>
-        </button>
-      </div>
-
-      <div class="navbar-card-project">
-        <button class="navbar-projects"><%= link_to "Projects", projects_path, class: "navbar-projects" %>
-        </button>
-      </div>
-
-      <div class="navbar-card-contact">
-        <button class="navbar-button-contact"><%= link_to "Contact", contact_path, class: "navbar-contact" %>
-        </button>
-      </div>
-
+    <%# division correspondiente al logo %>
+    <div class="about-me-wagon-logo">
+      <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1727866199/Wash%20portfolio/lewagon_t79waj.jpg" alt="The Wagon">
     </div>
 
-    <%# carta contenedora de botones de idiomas %>
-    <div class="navbar-right-card">
-      <div class="dropdown">
-        <button class="dropdown-toggle"><%= image_tag "united-kingdom.png" %> Language</button>
-        <div class="dropdown-menu">
-          <a href="/home" class="dropdown-item"><%= image_tag "united-kingdom.png" %> English</a>
-          <a href="/home_esp" class="dropdown-item"><%= image_tag "spain.png" %> Spanish</a>
-          <a href="/home_por" class="dropdown-item"><%= image_tag "brazil.png" %> Portuguese</a>
-          <a href="/home_fra" class="dropdown-item"><%= image_tag "france.png" %> French</a>
-        </div>
-      </div>
-
+    <%# division correspondiente al texto %>
+    <div class="about-me-wagon-text">
+      <p>Le Wagon is a world-renowned coding bootcamp
+        that offers intensive and immersive training
+        programs in web development and data science.
+        Founded in 2013, Le Wagon has grown to become
+        a global leader in tech education, with campuses
+        in over 40 cities worldwide. The bootcamp's
+        curriculum is designed to equip students with
+        the practical skills and knowledge needed to
+        build robust web applications and launch
+        successful careers in the tech industry.
+        Through hands-on projects, collaborative
+        learning, and expert mentorship, Le Wagon
+        empowers individuals to transform their careers
+        and achieve their full potential in the digital
+        world.</p>
     </div>
 
   </div>
-
-  <%# division correspondiente a la presentacion ENG %>
-  <div class="about-me-presentation">
-    <h2>As Web-Developpers</h2>
-    <p>As full-stack web developers specialized in front-end development and backend, we possess a comprehensive
-    skill set tailored towards crafting engaging and interactive user interfaces. With a solid foundation
-    in HTML, CSS, and JavaScript, we've honed my abilities to create visually stunning and responsive web
-    experiences that captivate users.</p>
-    <p>Having a bootcamp intensive training at Le Wagon in Lille, France, we've been equipped with cutting-edge
-    techniques and best practices in web development. Our expertise extends to leveraging various
-    libraries and frameworks to streamline development processes
-    and enhance the functionality of web applications.</p>
-    <p>In addition to our technical proficiency, we bring a creative mindset and a keen eye for design
-    aesthetics to every project we undertake. Whether it's implementing complex UI components, optimizing
-    performance, or ensuring cross-browser compatibility, we thrive on overcoming challenges and delivering
-    solutions that exceed client expectations.</p>
-    <p>Our dedication to staying abreast of industry trends and continuously expanding our skills set ensures
-    that we remain at the forefront, front-end development and back-end. With a passion for innovation and a commitment to
-    excellence, we are poised to contribute effectively to projects that demand top-tier front-end development
-    expertise.</p>
-  </div>
-
-
-
-
-</div>
