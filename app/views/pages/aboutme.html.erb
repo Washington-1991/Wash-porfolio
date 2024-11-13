@@ -1,13 +1,14 @@
-<%# HTML correspondiente a aboutme  ENG %>
-<title>About us</title>
+<%# HTML correspondiente a proyectos en ingles %>
+<title>Projects</title>
 
-<%# Division correspondiente al contenedor ingles %>
+<%# division general del cu %>
+<div class="projects-container">
 
-<div class="aboutme-container">
-
-  <%# barra de navegacion eng%>
+  <%# division correspondiente a la barra de navegacion en ingles %>
   <%= render 'layouts/navbar' %>
- <div class="presentation-card">
+
+  <%# division correspondiente a la presentacion de los proyectos en ingles %>
+  <div class="presentation-card">
   <h1>Projects</h1>
   <p>"Here are all the projects that we've created or contributed to.
     Spanning a diverse range of fields and interests, our portfolio
@@ -18,64 +19,58 @@
     of endeavors, each one a testament to our commitment to excellence
     and our enthusiasm for pushing boundaries.".</p>
   </div>
-  <%# presentacion sobre en ingles %>
-  <div class="presentation-card">
-  <h2>Front-End Web Developer</h2>
-  <p>As front-end web developers with
-    advanced training from Le Wagon in
-    Lille, France, we specialize in crafting
-    visually appealing and highly interactive
-    user interfaces. We prioritize responsiveness
-    and smooth user experiences across all devices.</p>
-  <p>With expertise in HTML, CSS, and JavaScript,
-    we use modern libraries and frameworks to
-    develop efficient, modular code that enhances
-    website functionality and aesthetics.</p>
-  <p>Our approach combines technical proficiency
-    with a keen eye for design, allowing us to
-    create optimized, cross-browser compatible
-    solutions that captivate and engage users.</p>
+
+  <%# Division correspondiente a proyectos fullstack %>
+  <div class="projects-card-fullstack">
+
+    <div class="projects-card-fullstack-title">
+      <h2>Fullstack Projects</h2>
+    </div>
+
+    <%# Cartas de proyectos %>
+    <div class="nft-container">
+
+      <%# Carta correspondiente a HIVE %>
+      <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+            <%= image_tag "hive-logo-png.png"%>
+            </div>
+            <h2>Hive</h2>
+            <p class='description'>A sport App dedicated for people in situation of overweight.</p>
+          </div>
+        </div>
+
+        <%# Carta correspondiente a Lithosophie
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+            <%= image_tag "logo-lithosophie.png"%>
+            <%# </div>
+            <h2>Lithosophie</h2>
+            <p class='description'>Page dedicated to sell products</p>
+          </div>
+        </div> %>
+
+        <%# Carta correspondiente a EventBnB %>
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+            <%= image_tag "eventbnb-logo.png"%>
+            </div>
+            <h2>EventBnB</h2>
+            <p class='description'>An App dedicated to rent places for filming.</p>
+          </div>
+        </div>
+
+      </div>
+
   </div>
 
-
-</div>
-
-<%# division correspondiente al footer en ingles%>
+  <%# division correspondiente al footer en ingles%>
   <%= render 'layouts/footer' %>
 
-<%# JavaScript correspondiente a about-me-presentation en ingles %>
-<script>
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-
-  // Reveal elements on scroll
-  const revealElements = document.querySelectorAll('.reveal');
-
-  const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-
-    revealElements.forEach(element => {
-      const elementTop = element.getBoundingClientRect().top;
-
-      if (elementTop < windowHeight - 100) {
-        element.classList.add('active');
-      } else {
-        element.classList.remove('active');
-      }
-    });
-  };
-
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // Initial check
-</script>
+</div>
 
 <script>
 
