@@ -106,3 +106,26 @@
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Initial check
 </script>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectPresentation = document.querySelector(".project-presentation");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            projectPresentation.classList.add("visible");
+          } else {
+            projectPresentation.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjusts how much of the element should be visible to trigger
+    );
+
+    observer.observe(projectPresentation);
+  });
+
+</script>
