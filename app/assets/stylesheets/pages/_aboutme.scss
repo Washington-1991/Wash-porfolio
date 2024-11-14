@@ -13,25 +13,25 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); // Text shadow for better readability
 
   // titulo con animacion
-  // h1 {
-  //   animation: myAnim 1s ease-in 0s 1 alternate forwards;
+  h1 {
+    animation: myAnim 1s ease-in 0s 1 alternate forwards;
 
-  //   color: white;
-  //   font-size: 48px;
+    color: white;
+    font-size: 48px;
 
-  //   @keyframes myAnim {
-  //     0% {
-  //       opacity: 0;
-  //       transform: scale(1.4);
-  //     }
+    @keyframes myAnim {
+      0% {
+        opacity: 0;
+        transform: scale(1.4);
+      }
 
-  //     100% {
-  //       opacity: 1;
-  //       transform: scale(1);
-  //     }
-  //   }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
-  // }
+  }
 
   // texto con animacion
   p {
@@ -81,19 +81,7 @@
     z-index: 1; // Ensure it sits above the background image
   }
 
-  // Text styling
-  h2, p {
-    position: relative; // For z-index stacking context
-    color: #fff; // White text color
-    z-index: 2; // Ensure text is above the overlay
-    margin: 0 20px; // Add horizontal margin
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); // Text shadow for better readability
-  }
 
-  h2 {
-    font-size: 2.5rem; // Increase font size for headings
-    margin-bottom: 20px; // Space below the heading
-  }
 
   p {
     font-size: 1.2rem; // Increase font size for paragraphs
