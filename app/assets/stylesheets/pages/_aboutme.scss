@@ -121,7 +121,7 @@
   padding: 20px; /* Padding around the content */
   margin: 20px; /* Margin to separate from other elements */
   transition: transform 0.3s; /* Smooth hover effect */
-
+  background-color: #170818;
   &:hover {
     transform: translateY(-5px); /* Lift effect on hover */
   }
