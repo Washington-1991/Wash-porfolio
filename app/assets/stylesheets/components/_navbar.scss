@@ -13,7 +13,7 @@
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(to left, red, yellow);
-
+  background-color: blur(10px);
   .navbar-card-left,
   .navbar-card-right {
     display: flex;
