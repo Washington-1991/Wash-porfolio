@@ -28,43 +28,4 @@
     </button>
   </div>
 
-  <%# <script>
-    const target = {x: 0.5 y: 0.5 };
-    const cursor = {x: 0.5 y; 0.5 };
-    const lerp = (start, target, speed) => (1 - speed) * start + speed * target;
-    let raf: number | undefined;
-
-    const update = () => {
-      cursor.x = lerp(cursor.x, target.x, 0.1);
-      cursor.y = lerp(cursor.y, target.y, 0.1);
-      cursorEl.style.setProperty('--x', '${cursor.x}');
-      cursorEl.style.setProperty('--y', '${cursor.y}');
-
-      const delta = Math.sqrt (
-        Math.pow(cursor.x - target.x, 2) + Math.pow(cursor.y - target.y, 2)
-      )
-
-      if (delta < 0.01) {
-        cancelAnimationFrame(raf);
-        raf = undefined;
-        return
-      }
-
-      raf = requestAnimationFrame(update);
-
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      target.x = e.clientX / window.innerWidth;
-      target.y = e.clientY / window.innerHeight;
-
-      if (!raf) {
-        raf = requestAnimationFrame(update);
-      }
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-  </script> %>
-
 </div>
