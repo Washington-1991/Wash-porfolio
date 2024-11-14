@@ -1,60 +1,38 @@
-// SCSS from pages/aboutme.html.erb
-
-// SCSS correspondiente a about me
-
 .about-me-container {
   width: 100%;
   height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; // Positioning for the overlay
-  opacity: 0; // Initially hidden
-  animation: fadeIn 1s ease-in-out 0.5s forwards; // Animation for smooth appearance
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); // Text shadow for better readability
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 
-  // titulo con animacion
-  h1 {
-    animation: myAnim 1s ease-in 0s 1 alternate forwards;
-
+  h1, p {
     color: white;
-    font-size: 48px;
-
-    @keyframes myAnim {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
+    animation: fadeInText 1s ease-in forwards;
   }
 
-  // texto con animacion
+  h1 {
+    font-size: 48px;
+  }
+
   p {
-    animation: myAnim 1s ease-in 0s 1 alternate forwards;
-    color: white;
     font-size: 24px;
+  }
 
-    @keyframes myAnim {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }
-
-
-
 
 .about-me-presentation {
   height: 100vh;
@@ -62,12 +40,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; // Positioning for the overlay
-  opacity: 0; // Initially hidden
-  animation: fadeIn 1s ease-in-out 0.5s forwards; // Animation for smooth appearance
-  box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // Inner shadow
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+  box-shadow: inset 60px 60px 60px rgba(0, 0, 0, 0.5);
 
-  // Gradient overlay
   &::before {
     content: '';
     position: absolute;
@@ -75,61 +52,45 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
-    transition: background 0.5s ease; // Transition for hover effect
-    opacity: 0.7; // Overlay opacity
-    z-index: 1; // Ensure it sits above the background image
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    z-index: 1;
+    transition: background 0.5s ease;
   }
 
-
+  &:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+  }
 
   p {
-    font-size: 1.2rem; // Increase font size for paragraphs
-    line-height: 1.6; // Improve line height for readability
-  }
-
-  // Hover effect to brighten the overlay
-  &:hover::before {
-    background: rgba(0, 0, 0, 0.3); // Change overlay on hover
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
 }
 
 .about-me-wagon {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  // border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
-  padding: 20px; /* Padding around the content */
-  // margin: 20px; /* Margin to separate from other elements */
-  transition: transform 0.3s; /* Smooth hover effect */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  padding: 20px;
   background-color: #170818;
-
-  &:hover {
-    // transform: translateY(-5px); /* Lift effect on hover */
-  }
+  transition: transform 0.3s;
 
   .about-me-wagon-logo {
-    position: relative; /* Required for the pseudo-element */
-    margin-right: 20px; /* Space between logo and text */
-    transition: transform 0.3s; /* Smooth transition for the logo */
-
+    margin-right: 20px;
     img {
-      width: 150px; /* Adjust size if needed */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 10px; /* Rounded corners for the image */
-      transition: opacity 0.3s; /* Smooth transition for the image */
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
     }
-
   }
 
   .about-me-wagon-text {
-    color: #fff; /* Darker text color for readability */
-    font-family: 'Arial', sans-serif; /* Font style */
-
+    color: #fff;
+    font-family: 'Arial', sans-serif;
     p {
-      line-height: 1.6; /* Increase line height for better readability */
-      font-size: 16px; /* Font size */
-      margin: 0; /* Remove default margin */
+      line-height: 1.6;
+      font-size: 16px;
     }
   }
 }
