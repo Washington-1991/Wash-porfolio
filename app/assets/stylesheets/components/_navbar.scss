@@ -13,7 +13,11 @@
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(to left, red, yellow);
-  filter: blur(5px);
+   // Apply blur effect
+   backdrop-filter: blur(10px); // Adjust the blur value as needed
+   -webkit-backdrop-filter: blur(10px); // For Safari support
+
+
 
   .navbar-card-left,
   .navbar-card-right {
