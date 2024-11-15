@@ -1,101 +1,69 @@
-// SCSS for the contact page
+// SCSS correspondiente a about me
 
-// contact-container
-.contact-container{
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-// contact-info-container
-.contact-info-container{
-  height: 100%;
+.about-me-container {
   width: 100%;
-  background-image: url("network.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-image: fill 0 linear-gradient(#0003, #000)
+  height: auto;
 
-}
-
-.contact-container h1{
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  margin: 16px;
-}
-
-// contact-info
-.contact-info{
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4px;
-  margin: auto;
-}
-
-.contact-item{
-  flex-grow: 1;
-  flex-basis: 200;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 180px;
-}
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 
-// whatsapp
-.whatsapp{
+  .presentation-card {
+    margin: 16px;
 
-  padding: 8px;
-  border-radius: 20px;
-  color: white;
-  margin-bottom: 0px;
-}
+    h1, p {
+      color: white;
+      animation: fadeInText 1s ease-in forwards;
+    }
 
-.whatsapp:hover{
-  background-color: green;
-  transition: 0.5s;
-}
+    h1 {
+      font-size: 48px;
+    }
 
-// Github
-.Github{
+    p {
+      font-size: 24px;
+    }
 
-  padding: 8px;
-  border-radius: 20px;
-  color: white;
-}
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+        transform: scale(1.4);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
 
-.Github:hover{
-  background-color: rgb(17, 17, 17);
-  transition: 0.5s;
-}
+  .about-me-wagon {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    background-color: #170818;
+    transition: transform 0.3s;
 
-// Linkedin
-.Linkedin{
-  padding: 8px;
-  border-radius: 20px;
-  color: white;
-}
+    .about-me-wagon-logo {
+      margin-right: 20px;
+      img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
 
-.Linkedin:hover{
-  background-color: rgb(0, 119, 181);
-  transition: 0.5s;
-}
+    .about-me-wagon-text {
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+    }
+  }
 
-// Instagram
-.Instagram{
-  padding: 8px;
-  border-radius: 20px;
-  color: white;
-}
-
-.Instagram:hover{
-  background-color: rgb(193, 53, 132);
-  transition: 0.5s;
 }
