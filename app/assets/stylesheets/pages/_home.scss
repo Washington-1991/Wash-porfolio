@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
 
-  // carta de presentación
+  // carta de presentación home
   .home-presentation {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     transition: opacity 0.5s ease, transform 1s ease; // Transition for opacity and transform
   }
 
-
+  // carta de presentación about
   .presentation-card {
     margin: 16px;
 
