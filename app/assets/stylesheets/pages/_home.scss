@@ -5,24 +5,55 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  // carta de presentación
+  .home-presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608998/Wash%20portfolio/owl_vccokp.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
+    position: relative;
+    opacity: 1; // Initial opacity
+    transform: translateY(0); // Initial position
+    transition: opacity 0.5s ease, transform 1s ease; // Transition for opacity and transform
+  }
+
+
+  .presentation-card {
+    margin: 16px;
+
+    h1, p {
+      color: white;
+      animation: fadeInText 1s ease-in forwards;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+        transform: scale(1.4);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
 }
 
-// carta de presentación
-.home-presentation {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608998/Wash%20portfolio/owl_vccokp.png");
-  background-size: cover;
-  background-position: center;
-  align-items: center;
-  box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
-  position: relative;
-  opacity: 1; // Initial opacity
-  transform: translateY(0); // Initial position
-  transition: opacity 0.5s ease, transform 1s ease; // Transition for opacity and transform
-}
+
 
 // Clase para ocultar la presentación
 .hidden {
