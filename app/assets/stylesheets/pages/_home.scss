@@ -34,6 +34,37 @@
       animation: fadeInText 1s ease-in forwards;
     }
 
+    h1 {
+      font-size: 48px;
+      font-family: Georgia, serif;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      animation: fadeInText 1s ease-in forwards;
+      background: linear-gradient(to right, red, yellow, green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, serif;
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+        transform: scale(1.4);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
     .presentation-card-title {
       border: 1px solid white;
 
@@ -52,38 +83,7 @@
     }
 
 
-    h1 {
-      font-size: 48px;
-      font-family: Georgia, serif;
-      height: auto;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
 
-      animation: fadeInText 1s ease-in forwards;
-      background: linear-gradient(to right, red, yellow, green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-
-    }
-
-    p {
-      color: white;
-      font-size: 24px;
-      font-family: Georgia, serif;
-    }
-
-    @keyframes fadeInText {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
   }
 }
 
