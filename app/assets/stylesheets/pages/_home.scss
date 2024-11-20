@@ -74,6 +74,10 @@
     .presentation-card-text-container {
       display: flex;
       justify-content: space-between;
+      border-radius: 50px;
+      background: linear-gradient(145deg, #150716, #19091a);
+      box-shadow:  8px 8px 8px #0e050e,
+      -8px -8px 8px #200b22;
 
       .presentation-card-text-container-a {
         width: 40%;
