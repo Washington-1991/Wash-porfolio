@@ -30,13 +30,20 @@
     margin: 16px;
 
     h1, p {
-      color: white;
+
       animation: fadeInText 1s ease-in forwards;
     }
 
     h1 {
       font-size: 48px;
       font-family: Georgia, serif;
+
+      animation: fadeInText 1s ease-in forwards;
+      background: linear-gradient(to right, red, green, yellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+
     }
 
     p {
