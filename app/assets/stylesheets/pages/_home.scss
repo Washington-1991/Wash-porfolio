@@ -57,8 +57,7 @@
       color: white;
       font-size: 16px;
       font-family: Georgia, serif;
-      width: 100%; // Ensures the text container spans the full width of its parent
-      display: block; // Ensures the paragraph behaves as a block-level element
+      text-align: justify; // Aligns text evenly along both the left and right edges
     }
 
 
