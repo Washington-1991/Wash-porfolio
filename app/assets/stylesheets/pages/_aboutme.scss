@@ -1,34 +1,32 @@
 // SCSS correspondiente a about me
 
-.about-me-container {
-
-  .presentation-card {
+.presentation-card {
     margin: 16px;
 
-    h1, p {
-      color: white;
-      animation: fadeInText 1s ease-in forwards;
-    }
+  h1, p {
+    color: white;
+    animation: fadeInText 1s ease-in forwards;
+  }
 
-    h1 {
-      font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 
-    p {
-      font-size: 24px;
-    }
+  p {
+    font-size: 24px;
+  }
 
-    @keyframes fadeInText {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
+}
 
   .about-me-wagon {
     display: flex;
@@ -57,7 +55,7 @@
     }
   }
 
-}
+
 
   // about
   .presentation-card {
