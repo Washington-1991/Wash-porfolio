@@ -1,15 +1,39 @@
 // SCSS correspondiente a about me
 
-.presentation-card {
+// about
+ .presentation-card {
+  width: auto;
+  margin: 16px;
+  padding: 16px 24px;
+  border-radius: 50px;
 
+
+  h1, p {
+    animation: fadeInText 1s ease-in forwards;
+  }
 
   h1 {
     font-size: 48px;
+    font-family: Georgia, serif;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeInText 1s ease-in forwards;
+    background: linear-gradient(to right, violet, pink, skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
-    font-size: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    text-align: justify; // Aligns text evenly along both the left and right edges
   }
+
+
 
   @keyframes fadeInText {
     0% {
@@ -21,7 +45,31 @@
       transform: scale(1);
     }
   }
+
+  .presentation-card-title {
+
+  }
+
+  .presentation-card-text-container {
+    display: flex;
+    justify-content: space-between;
+
+
+    .presentation-card-text-container-a {
+      width: 50%;
+      padding: 8px;
+    }
+
+    .presentation-card-text-container-b {
+      width: 50%;
+      padding: 8px;
+    }
+
+  }
+
 }
+
+
 
   .about-me-wagon {
     display: flex;
@@ -48,75 +96,4 @@
         font-size: 16px;
       }
     }
-  }
-
-
-
-  // about
-  .presentation-card {
-    width: auto;
-    margin: 16px;
-    padding: 16px 24px;
-    border-radius: 50px;
-
-
-    h1, p {
-      animation: fadeInText 1s ease-in forwards;
-    }
-
-    h1 {
-      font-size: 48px;
-      font-family: Georgia, serif;
-      height: auto;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-
-      animation: fadeInText 1s ease-in forwards;
-      background: linear-gradient(to right, violet, pink, skyblue);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      color: white;
-      font-size: 16px;
-      font-family: Georgia, serif;
-      text-align: justify; // Aligns text evenly along both the left and right edges
-    }
-
-
-
-    @keyframes fadeInText {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .presentation-card-title {
-
-    }
-
-    .presentation-card-text-container {
-      display: flex;
-      justify-content: space-between;
-
-
-      .presentation-card-text-container-a {
-        width: 50%;
-        padding: 8px;
-      }
-
-      .presentation-card-text-container-b {
-        width: 50%;
-        padding: 8px;
-      }
-
-    }
-
   }
