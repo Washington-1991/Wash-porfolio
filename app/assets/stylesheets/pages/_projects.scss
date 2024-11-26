@@ -1,27 +1,43 @@
 // Contenedor general
 .projects-container {
+  // disposicion general de la div container
   width: 100%;
   align-items: center;
   justify-content: center;
 
-  // carta de presentacion en ingles
+  h1, p {
+    animation: fadeInText 1s ease-in forwards;
+  }
 
-  // titulo con animacion
-  h1 {
-    animation: myAnim 1s ease-in 0s 1 alternate forwards;
-    color: white;
-    font-size: 48px;
-    @keyframes myAnim {
-      0% {
-        opacity: 0;
-        transform: scale(1.4);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
+
+  // titulo con animacion - project-card-title
+  .project-card-title {
+    h1 {
+      font-size: 48px;
+      font-family: Georgia, serif;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      animation: fadeInText 1s ease-in forwards;
+      background: linear-gradient(to right, violet, pink, skyblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+
 
     // texto con animacion
     p {
