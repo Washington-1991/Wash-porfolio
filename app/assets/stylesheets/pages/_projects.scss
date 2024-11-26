@@ -39,7 +39,15 @@
 
   // texto de proyectos - project-card-text-container
   .project-card-text-container {
+    display: flex;
+    justify-content: space-between;
 
+    p {
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, serif;
+      text-align: justify; // Aligns text evenly along both the left and right edges
+    }
   }
 
   .projects-card-fullstack {
