@@ -39,26 +39,7 @@
 
 
 
-    // texto con animacion
-    p {
-      animation: myAnim 1s ease-in 0s 1 alternate forwards;
 
-
-      color: white;
-      font-size: 24px;
-
-      @keyframes myAnim {
-        0% {
-          opacity: 0;
-          transform: scale(1.4);
-        }
-
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-    }
 
 
   .projects-card-fullstack {
