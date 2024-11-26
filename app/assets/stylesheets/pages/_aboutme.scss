@@ -46,29 +46,25 @@
     display: flex;
     justify-content: space-between;
 
+    p {
+      color: white;
+      font-size: 16px;
+      font-family: Georgia, serif;
+      text-align: justify; // Aligns text evenly along both the left and right edges
+    }
+
 
     .presentation-card-text-container-a {
       width: 50%;
       padding: 8px;
 
-      p {
-        color: white;
-        font-size: 16px;
-        font-family: Georgia, serif;
-        text-align: justify; // Aligns text evenly along both the left and right edges
-      }
     }
 
     .presentation-card-text-container-b {
       width: 50%;
       padding: 8px;
 
-      p {
-        color: white;
-        font-size: 16px;
-        font-family: Georgia, serif;
-        text-align: justify; // Aligns text evenly along both the left and right edges
-      }
+
     }
 
   }
