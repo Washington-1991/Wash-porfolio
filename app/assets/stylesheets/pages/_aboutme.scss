@@ -13,17 +13,6 @@
     animation: fadeInText 1s ease-in forwards;
   }
 
-
-
-  p {
-    color: white;
-    font-size: 16px;
-    font-family: Georgia, serif;
-    text-align: justify; // Aligns text evenly along both the left and right edges
-  }
-
-
-
   @keyframes fadeInText {
     0% {
       opacity: 0;
