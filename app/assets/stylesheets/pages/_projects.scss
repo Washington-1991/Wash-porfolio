@@ -88,12 +88,6 @@
     animation-duration: 45s;
   }
 
-  .name {
-    font-size: 14px;
-    font-weight: 100;
-    text-transform: lowercase;
-  }
-
   @keyframes wave {
     0% {
       transform: rotate(0deg);
