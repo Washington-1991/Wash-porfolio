@@ -2,10 +2,6 @@
 
 // disposicion generall carrousel
 .carrousel-container{
-  border: 2px solid yellow;
-  border-image-slice: 1;
-  border-image-width: 2px;
-  border-width: 2px;
 
   $bgWidth: 10000px;
   background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%);
