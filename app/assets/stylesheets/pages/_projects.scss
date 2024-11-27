@@ -53,7 +53,76 @@
   }
 
   // estilo carta de projects fullstack start
+  /* From Uiverse.io by MikeAndrewDesigner */
+  .card {
+    margin: 100px auto;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 100%;
+    min-height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
 
+  .wave {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    opacity: 0.6;
+    left: -50%;
+    top: -50%;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  .icon {
+    width: 3em;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: lowercase;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   // estilo de carta de projectos fullstack end
 
   .projects-card-fullstack {
