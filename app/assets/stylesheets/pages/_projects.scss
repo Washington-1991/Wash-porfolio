@@ -133,7 +133,7 @@
     .nft-container {
       display: flex;
 
-        .nft {
+      .nft {
           user-select: none;
           max-width: 300px;
           margin: 5rem auto;
@@ -261,19 +261,19 @@
               left: 200%;
             }
           }
-        }
+      }
 
-        .bg {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+      .bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-          h1 {
-            font-size: 20rem;
-            filter: opacity(0.5);
-          }
+        h1 {
+          font-size: 20rem;
+          filter: opacity(0.5);
         }
+      }
 
         .main-image {
           display: flex;
@@ -302,9 +302,9 @@
           color: white;
           border: 1px solid white;
         }
-      }
-
     }
 
+  }
 
-    }
+
+}
