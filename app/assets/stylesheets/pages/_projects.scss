@@ -79,6 +79,10 @@
       top: 210px;
     }
 
+    .wave:nth-child(2) {
+      animation-duration: 50s;
+    }
+
 
   }
 
@@ -86,9 +90,7 @@
 
 
 
-  .wave:nth-child(2) {
-    animation-duration: 50s;
-  }
+
 
   .wave:nth-child(3) {
     animation-duration: 45s;
