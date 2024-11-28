@@ -74,15 +74,17 @@
       animation: wave 55s infinite linear;
     }
 
+    .wave:nth-child(2),
+    .wave:nth-child(3) {
+      top: 210px;
+    }
+
 
   }
 
 
 
-  .wave:nth-child(2),
-  .wave:nth-child(3) {
-    top: 210px;
-  }
+
 
   .wave:nth-child(2) {
     animation-duration: 50s;
