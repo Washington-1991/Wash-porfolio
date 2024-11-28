@@ -83,27 +83,29 @@
       animation-duration: 50s;
     }
 
-
-  }
-
-
-
-
-
-
-
-  .wave:nth-child(3) {
-    animation-duration: 45s;
-  }
-
-  @keyframes wave {
-    0% {
-      transform: rotate(0deg);
+    .wave:nth-child(3) {
+      animation-duration: 45s;
     }
-    100% {
-      transform: rotate(360deg);
+
+    @keyframes wave {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
+
+
   }
+
+
+
+
+
+
+
+
 
   .projects-card-fullstack-title {
 
@@ -131,8 +133,9 @@
     }
 
   }
-  // estilo de carta de projectos fullstack end
 
+
+  // estilo de carta de projectos fullstack end
   .projects-card-fullstack {
 
 
