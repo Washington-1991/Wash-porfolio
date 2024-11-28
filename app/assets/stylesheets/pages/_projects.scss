@@ -263,47 +263,48 @@
           }
         }
 
-    }
+        .bg {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
 
-    .bg {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+          h1 {
+            font-size: 20rem;
+            filter: opacity(0.5);
+          }
+        }
 
-      h1 {
-        font-size: 20rem;
-        filter: opacity(0.5);
+        .main-image {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .main img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .volleyball-pro {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          border: 1px solid white;
+        }
+
+        .volleyball-pro img {
+          width: 200px;
+          height: 100px;
+        }
+
+        .projects-social-media {
+          color: white;
+          border: 1px solid white;
+        }
       }
+
     }
 
-    .main-image {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
 
-    .main img {
-      width: 200px;
-      height: 200px;
     }
-
-    .volleyball-pro {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      border: 1px solid white;
-    }
-
-    .volleyball-pro img {
-      width: 200px;
-      height: 100px;
-    }
-
-    .projects-social-media {
-      color: white;
-      border: 1px solid white;
-    }
-  }
-
-}
