@@ -1,6 +1,6 @@
 // SCSS correspondiente a about me
 
-.about-me-container {
+.contact-container {
   width: 100%;
 
   align-items: center;
@@ -9,32 +9,5 @@
   opacity: 0;
   animation: fadeIn 1s ease-in-out 0.5s forwards;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-
-  .about-me-wagon {
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    background-color: #170818;
-    transition: transform 0.3s;
-
-    .about-me-wagon-logo {
-      margin-right: 20px;
-      img {
-        width: 150px;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-
-    .about-me-wagon-text {
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      p {
-        line-height: 1.6;
-        font-size: 16px;
-      }
-    }
-  }
 
 }
