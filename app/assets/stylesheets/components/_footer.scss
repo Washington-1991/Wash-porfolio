@@ -5,6 +5,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+
   background: linear-gradient(to left, black, #170818);
   border-top: 10px solid;
   border-image-slice: 1;
