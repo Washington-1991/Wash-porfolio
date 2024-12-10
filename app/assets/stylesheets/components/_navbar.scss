@@ -8,6 +8,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+
   background: linear-gradient(to left, black, transparent);
   border-bottom: 10px solid;
   border-image-slice: 1;
