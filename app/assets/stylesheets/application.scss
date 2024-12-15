@@ -28,22 +28,7 @@ body {
 
 
 
-  @keyframes keyframes-floating-light {
-    0% {
-      transform: rotate(-5deg) translateY(-5%);
-      opacity: 0.5;
-    }
 
-    50% {
-      transform: rotate(5deg) translateY(5%);
-      opacity: 1;
-    }
-
-    100% {
-      transform: rotate(-5deg) translateY(-5%);
-      opacity: 0.5;
-    }
-  }
 
   .home-container::after {
     content: "";
