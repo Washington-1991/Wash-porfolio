@@ -105,26 +105,11 @@ body {
     }
   }
 
-  .home-container .icons {
-    display: flex;
-    gap: var(--unit);
-  }
 
-  .home-container .icons a {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark);
-    color: var(--lightgray);
-    padding: calc(var(--unit) / 2);
-    border-radius: calc(var(--unit) / 2);
-  }
 
-  .home-container .icons a:hover {
-    transition: 0.2s;
-    background-color: var(--semidark);
-  }
+
+
+
 
 
 }
