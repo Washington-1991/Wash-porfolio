@@ -26,16 +26,7 @@ body {
 
 
 
-  .home-container::before {
-    content: "";
-    position: absolute;
 
-    top: 40%;
-    left: -10%;
-    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-    animation: keyframes-floating-light 2.5s infinite ease-in-out;
-    filter: blur(20px);
-  }
 
   @keyframes keyframes-floating-light {
     0% {
