@@ -24,22 +24,7 @@ body {
   height: 100vh;
   background-color: #0e050e;
 
-  // background
-  .home-container {
-    --dark: #212121;
-    --darker: #111111;
-    --semidark: #2c2c2c;
-    --lightgray: #e8e8e8;
-    --unit: 10px;
 
-    background-color: var(--darker);
-    box-shadow: 0 0 var(--unit) var(--darker);
-    border: calc(var(--unit) / 2) solid var(--darker);
-    border-radius: var(--unit);
-    position: relative;
-    padding: var(--unit);
-    overflow: hidden;
-  }
 
   .home-container::before {
     content: "";
