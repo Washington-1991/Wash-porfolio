@@ -24,22 +24,6 @@ body {
   height: 100vh;
   background-color: #0e050e;
 
-  .home-container .heading {
-    font-weight: 600;
-    font-size: small;
-    text-align: center;
-    margin-top: calc(var(--unit) * -2);
-    padding-block: var(--unit);
-    color: var(--lightgray);
-    animation: keyframes-flash-text 0.5s infinite;
-  }
-
-  @keyframes keyframes-flash-text {
-    50% {
-      opacity: 0.5;
-    }
-  }
-
 }
 
 a {
