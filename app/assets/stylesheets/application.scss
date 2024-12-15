@@ -89,25 +89,6 @@ body {
     }
   }
 
-  .home-container .image {
-    width: 200px;
-    animation: keyframes-floating-img 10s ease-in-out infinite;
-  }
-
-  @keyframes keyframes-floating-img {
-    0% {
-      transform: translate(-2%, 2%) scaleY(0.95) rotate(-5deg);
-    }
-
-    50% {
-      transform: translate(2%, -2%) scaleY(1) rotate(5deg);
-    }
-
-    100% {
-      transform: translate(-2%, 2%) scaleY(0.95) rotate(-5deg);
-    }
-  }
-
   .home-container .heading {
     font-weight: 600;
     font-size: small;
