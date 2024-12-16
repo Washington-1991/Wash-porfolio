@@ -5,7 +5,8 @@
 
 
   .carrousel-title {
-    font-size: 48px;
+    .h2 {
+      font-size: 48px;
       font-family: Georgia, serif;
       height: auto;
       width: 100%;
@@ -16,6 +17,8 @@
       background: linear-gradient(to right, violet, pink, skyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
   }
 
 }
