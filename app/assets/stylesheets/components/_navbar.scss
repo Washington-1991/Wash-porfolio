@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1000; // Ensure navbar is on top of other elements
 
   background: linear-gradient(to left, black, transparent);
   border-bottom: 10px solid;
