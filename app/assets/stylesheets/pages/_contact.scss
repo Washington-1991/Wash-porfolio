@@ -43,8 +43,12 @@
 
   // disposicion del texto
   .contact-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
 
     /* From Uiverse.io by gharsh11032000 */
     .card-container {
