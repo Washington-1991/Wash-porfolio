@@ -131,8 +131,8 @@
     .social-media-card {
       grid-area: 1 / 2 / 2 / 4;
       border-radius: 8px 40px 8px 40px;
-      background: linear-gradient(145deg, #cacaca, #f0f0f0, );
-
+      background: rgb(6,51,237);
+      background: linear-gradient(145deg, rgba(6,51,237,0.9922093837535014) 0%, rgba(100,140,215,1) 58%, rgba(0,212,255,1) 100%);
 
       .social-media-card-title {
 
