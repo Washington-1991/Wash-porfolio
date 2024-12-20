@@ -173,6 +173,15 @@
         a {
 
           button {
+            border: none;
+            background: transparent;
+            font-size: 24px;
+
+            p {
+              background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+              background-clip: text;
+            }
+
 
           }
 
