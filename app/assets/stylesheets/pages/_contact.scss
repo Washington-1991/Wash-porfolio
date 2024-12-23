@@ -109,21 +109,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-      h2 {
-        display: none;
-        background: linear-gradient(to right, violet, pink, skyblue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+      opacity: 0; /* Initially hidden */
+      transform: scale(0.95); /* Slightly scaled down for animation */
+      transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 
     }
-
-
-
-
-
-
 
   }
 }
