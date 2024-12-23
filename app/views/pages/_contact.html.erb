@@ -95,3 +95,13 @@
 </script>
 
 <%# javascript de la aparicion del email %>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const emailButton = document.getElementById("emailButton");
+  const emailCard = document.getElementById("emailCard");
+
+  emailButton.addEventListener("click", () => {
+    emailCard.classList.toggle("visible");
+  });
+});
+</script>
