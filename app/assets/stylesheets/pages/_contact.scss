@@ -113,7 +113,10 @@
       transform: scale(0.95); /* Slightly scaled down for animation */
       transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 
+      &.visible {
+        opacity: 1; /* Fully visible */
+        transform: scale(1); /* Normal size */
+      }
     }
-
   }
 }
