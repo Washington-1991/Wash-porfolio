@@ -42,76 +42,67 @@
   }
 
   // disposicion del texto
-  .contact-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+  .social-media-card {
+    width: 100%;
 
-    // carta contenedora a redes sociales
-    .social-media-card {
-      grid-area: 1 / 2 / 2 / 4;
-      border-radius: 8px 40px 8px 40px;
-      background-color: #4158D0;
-      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
-      // disposicion del tiutlo
-      .social-media-card-title {
+
+    // disposicion del tiutlo
+    .social-media-card-title {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        height: auto;
         width: 100%;
-        height: 20%;
+        font-size: 32px;
+        margin: 16px;
+        font-family: Georgia, serif;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        h2 {
-          height: auto;
-          width: 100%;
-          font-size: 32px;
-          margin: 16px;
-          font-family: Georgia, serif;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          // animacion
-          animation: fadeInText 1s ease-in forwards;
-          background: linear-gradient(to right, violet, pink, skyblue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
+        // animacion
+        animation: fadeInText 1s ease-in forwards;
+        background: linear-gradient(to right, violet, pink, skyblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
-      .social-media-card-buttons {
+    }
 
-        width: 100%;
-        height: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .social-media-card-buttons {
+
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
         a {
 
-          button {
-            font-size: 32px;
+        button {
+          font-size: 32px;
 
-            p {
-              background: linear-gradient(to right, violet, pink, skyblue);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-
-
+          p {
+            background: linear-gradient(to right, violet, pink, skyblue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
+
 
         }
 
       }
 
-
     }
+
+
+
 
 
 
