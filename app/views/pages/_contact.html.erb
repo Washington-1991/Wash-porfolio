@@ -16,6 +16,7 @@
         Get in contact with us
       </h2>
     </div>
+
     <div class="social-media-card-buttons">
 
       <%# linkedin %>
@@ -67,9 +68,6 @@
 
 </div>
 
-
-
-
 <%# javascript correspondiente a la aparicion de la presentation-card %>
 <script>
 
@@ -96,12 +94,12 @@
 
 <%# javascript de la aparicion del email %>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const emailButton = document.getElementById("emailButton");
-  const emailCard = document.getElementById("emailCard");
+    document.addEventListener("DOMContentLoaded", () => {
+    const emailButton = document.getElementById("emailButton");
+    const emailCard = document.getElementById("emailCard");
 
-  emailButton.addEventListener("click", () => {
-    emailCard.classList.toggle("visible");
+    emailButton.addEventListener("click", () => {
+      emailCard.classList.toggle("visible");
+    });
   });
-});
 </script>
