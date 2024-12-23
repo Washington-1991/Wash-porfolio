@@ -104,12 +104,13 @@
     }
 
     .email-card {
-      display: none;
       width: 100%;
+      display: flex;
       justify-content: center;
       align-items: center;
 
       h2 {
+        display: none;
         background: linear-gradient(to right, violet, pink, skyblue);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
