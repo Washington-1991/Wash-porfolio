@@ -111,7 +111,7 @@
 .social-media-card-buttons {
 
   // linkedin
-  .linkedin {
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,17 +123,7 @@
 
   }
 
-  // instagram
-  .instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 32px;
-    background: transparent;
-    border: 2px solid white;
 
-
-  }
 
   // github
   .github {
