@@ -104,6 +104,14 @@
     }
 
     .email-card {
+      width: 100%;
+
+
+      h2 {
+        background: linear-gradient(to right, violet, pink, skyblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
     }
 
