@@ -1,65 +1,55 @@
-<%# HTML correspondiente al Home ENG %>
-<title>Paszkowicz-Group</title>
-
-<%# division correspondiente a home ENG %>
 <div class="home-container">
 
-  <%# barra de navegacion eng%>
+  <!-- Navigation bar -->
   <%= render 'layouts/navbar' %>
 
-  <%# division de la presentacion %>
+  <!-- Home presentation -->
   <div class="home-presentation">
     <div class="profile-card">
       <div class="profile-image">
-        <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1727608993/Wash%20portfolio/paszkowicz_gzw43e.png" alt="">
-
+        <img src="<%= asset_path('paszkowicz_gzw43e.png') %>" alt="Profile picture of Washington">
       </div>
       <div class="profile-text">
-
+        <!-- Add content here -->
       </div>
-
     </div>
-
   </div>
 
-
+  <!-- About section -->
   <div class="about">
-    <%# division correspondiente a proyectos en ingles %>
     <%= render 'pages/aboutme' %>
   </div>
 
+  <!-- Projects section -->
   <div class="projects">
-    <%# division correspondiente a about en ingles %>
     <%= render 'pages/projects' %>
   </div>
 
+  <!-- Contact section -->
   <div class="contact">
-    <%# division correspondiente a contacto %>
     <%= render 'pages/contact' %>
   </div>
 
+  <!-- Footer -->
   <%= render 'layouts/footer' %>
 
-  <%# javascript correspondiente a la transicion de la home-presentation %>
- <script>
-
+  <!-- JavaScript for presentation transition -->
+  <script>
     let lastScrollTop = 0;
     const homePresentation = document.querySelector('.home-presentation');
 
-    window.addEventListener('scroll', function() {
+    const onScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
       if (scrollTop > lastScrollTop) {
-        // Scrolling down
         homePresentation.classList.add('hidden');
       } else {
-        // Scrolling up
         homePresentation.classList.remove('hidden');
       }
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-    });
+      lastScrollTop = Math.max(0, scrollTop);
+    };
 
+    window.addEventListener('scroll', debounce(onScroll, 100));
   </script>
-
 
 </div>
