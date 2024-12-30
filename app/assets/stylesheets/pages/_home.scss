@@ -3,11 +3,6 @@
 // características generales de la página
 .home-container {
 
-  .hidden {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
 
   justify-content: center;
   align-items: center;
