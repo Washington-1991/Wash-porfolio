@@ -103,10 +103,13 @@
 
       h2 {
 
-        color: white;
+
         font-size: 24px;
         text-align: center;
-        animation: myAnim 1s ease-in 0s 1 alternate forwards;
+        animation: fadeInText 1s ease-in forwards;
+        background: linear-gradient(to right, violet, pink, skyblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         @keyframes myAnim {
           0% {
