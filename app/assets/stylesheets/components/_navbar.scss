@@ -92,6 +92,10 @@
       a {
         color: white;
         margin: 0 8px;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
       }
 
     }
