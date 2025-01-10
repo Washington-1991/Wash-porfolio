@@ -13,10 +13,13 @@
     width: calc(100% - 8px);
     height: 100vh;
     margin: 8px;
-    border: 1px solid white;
     display: flex;
 
     .carta-logo {
+      height: 100%;
+      width: 50%;
+      border: 1px solid white;
+
 
     }
   }
