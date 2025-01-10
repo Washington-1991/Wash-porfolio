@@ -10,7 +10,7 @@
   bottom: 0;
 
   .presentation {
-    width: 100%;
+    width: calc(100% - 8px);
     height: 100vh;
     margin: 8px;
     border: 1px solid white;
