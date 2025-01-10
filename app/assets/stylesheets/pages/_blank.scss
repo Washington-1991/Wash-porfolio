@@ -11,6 +11,7 @@
 
 }
 
+// inicio de la animacion de fondo
 @keyframes hero-gradient-animation {
   0% {
       --c-0: hsla(217.59493670886076, 100%, 30%, 1);
@@ -499,5 +500,4 @@
   animation: hero-gradient-animation 15s linear infinite alternate-reverse;
   background-blend-mode: normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
 }
-
 // fin de la animacion del fondo
