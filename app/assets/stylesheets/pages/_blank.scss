@@ -15,7 +15,7 @@
     margin: 8px;
     display: flex;
 
-    .carta-logo {
+    .card-logo {
       height: 100%;
       width: 50%;
       border: 1px solid white;
@@ -24,8 +24,12 @@
         height: 320px;
         width: auto;
       }
+    }
 
-
+    .card-text {
+      height: 100%;
+      width: 50%;
+      border: 1px solid white;
     }
   }
 
