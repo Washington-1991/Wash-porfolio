@@ -106,21 +106,21 @@
         border: 2px solid white;
         border-radius: 16px;
 
+        &:hover {
+          transition: 0.3s;
+
+          backdrop-filter: blur(4px) saturate(180%);
+          -webkit-backdrop-filter: blur(16px) saturate(180%);
+          background-color: rgba(17, 25, 40, 0.75);
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+
         a {
           color: white;
 
 
-          &:hover {
-            height: 8vh;
-            width: 27vh;
-            transition: 0.3s;
 
-            backdrop-filter: blur(4px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(17, 25, 40, 0.75);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.125);
-          }
 
         }
 
