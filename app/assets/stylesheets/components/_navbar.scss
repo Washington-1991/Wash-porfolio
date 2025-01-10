@@ -111,6 +111,8 @@
 
 
           &:hover {
+            height: 8vh;
+            width: 27vh;
             transition: 0.3s;
 
             backdrop-filter: blur(4px) saturate(180%);
