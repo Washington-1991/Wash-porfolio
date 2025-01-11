@@ -8,6 +8,7 @@
   background-attachment: fixed; // Hace que el fondo sea fijo
   background-position: center;
   position: fixed;
+  flex-wrap: wrap;
 
   .presentation {
     width: calc(100% - 8px);
