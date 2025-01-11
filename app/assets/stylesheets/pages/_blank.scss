@@ -77,8 +77,10 @@
  // Media queries para dispositivos pequeños
 @media (max-width: 768px) {
 
-  flex-direction: column;
-  height: auto;
+  .presentation {
+    flex-direction: column;
+    height: auto;
+  }
 
   .card-logo, .card-text {
     width: 100%; // Ocupa el ancho completo en pantallas pequeñas
