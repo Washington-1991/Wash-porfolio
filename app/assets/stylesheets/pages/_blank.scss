@@ -16,6 +16,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: 748px) {
+      flex-direction: column;
+    }
+
 
     .card-logo {
       height: 100%;
