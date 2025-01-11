@@ -8,13 +8,14 @@
   background-attachment: fixed; // Hace que el fondo sea fijo
   background-position: center;
   position: fixed;
-  flex-wrap: wrap;
 
   .presentation {
     width: calc(100% - 8px);
     height: 100vh;
     margin: 8px;
     display: flex;
+    flex-wrap: wrap;
+
 
     .card-logo {
       height: 100%;
@@ -23,7 +24,9 @@
       align-items: center;
 
       img{
-        height: 320px;
+        max-height: 320px;
+        max-width: 100%;
+        height: auto;
         width: auto;
       }
     }
