@@ -8,6 +8,8 @@
   background-attachment: fixed;
   background-position: center;
   position: fixed;
+  display: flex;
+  flex-direction: column;
 
   .presentation {
     width: calc(100% - 8px);
