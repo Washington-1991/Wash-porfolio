@@ -73,6 +73,50 @@
   }
 }
 
+// Responsive design
+ // Media queries para dispositivos pequeños
+@media (max-width: 768px) {
+
+  flex-direction: column;
+  height: auto;
+
+  .card-logo, .card-text {
+    width: 100%; // Ocupa el ancho completo en pantallas pequeñas
+    height: auto;
+  }
+
+  .card-text {
+    padding: 8px;
+
+    .card-title h1 {
+      font-size: 36px; // Reduce el tamaño de la fuente
+    }
+
+    .card-paragraph p {
+      font-size: 14px; // Reduce el tamaño del texto
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card-text {
+    padding: 4px;
+
+    .card-title h1 {
+      font-size: 28px; // Aún más pequeño para pantallas muy pequeñas
+    }
+
+    .card-paragraph p {
+      font-size: 12px;
+    }
+  }
+
+  .card-logo img {
+    max-height: 200px; // Reduce el tamaño de la imagen
+  }
+}
+
+
 
 
 // inicio de la animacion de fondo
