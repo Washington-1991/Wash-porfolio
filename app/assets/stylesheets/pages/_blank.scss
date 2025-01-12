@@ -6,8 +6,7 @@
   margin: 0;
   position: fixed;
   display: flex;
-  flex-direction: column;
-
+  overflow: hidden;
   .presentation {
     width: calc(100% - 8px);
     height: 90vh;
