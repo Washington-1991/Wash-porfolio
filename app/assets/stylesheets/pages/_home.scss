@@ -110,6 +110,9 @@
 
 }
 
+.home-container::-webkit-scrollbar {
+  display: none; // Hides scrollbar in WebKit browsers
+}
 
 
 // Clase para ocultar la presentación
