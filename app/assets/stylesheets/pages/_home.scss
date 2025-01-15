@@ -11,6 +11,10 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
+  ::-webkit-scrollbar {
+    display: none; // Hides scrollbar in WebKit browsers
+  }
+
 
   .presentation {
     height: 100vh;
