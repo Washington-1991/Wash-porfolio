@@ -116,9 +116,9 @@
         width: 27vh;
         background: none;
         border: none;
-
         padding: 8px;
         border-radius: 16px;
+        z-index: 1;
 
         &:hover {
           transition: 0.5s;
