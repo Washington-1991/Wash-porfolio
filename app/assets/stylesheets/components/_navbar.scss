@@ -106,7 +106,6 @@
         width: 27vh;
         background: none;
         border: none;
-        font-family: Georgia, serif;
 
         padding: 8px;
         border-radius: 16px;
@@ -122,7 +121,12 @@
         }
 
         a {
-          color: white;
+          font-family: Georgia, serif;
+
+          animation: fadeInText 1s ease-in forwards;
+          background: linear-gradient(to right, violet, pink, skyblue);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
 
         }
 
