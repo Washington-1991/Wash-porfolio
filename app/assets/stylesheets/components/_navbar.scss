@@ -102,6 +102,7 @@
       align-items: center;
 
       a {
+        z-index: 100;
         font-family: Georgia, serif;
 
         animation: fadeInText 1s ease-in forwards;
