@@ -148,10 +148,11 @@
       transition: 0.5s;
 
       a {
-        background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
-        -webkit-background-clip: text; /* Clip the background to the text */
-        -webkit-text-fill-color: transparent; /* Make the text color transparent */
-        color: transparent; /* Fallback for non-webkit browsers */
+        font-family: Georgia, serif;
+      animation: fadeInText 1s ease-in forwards;
+      background: linear-gradient(to right, violet, pink, skyblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       }
 
       &:hover {
