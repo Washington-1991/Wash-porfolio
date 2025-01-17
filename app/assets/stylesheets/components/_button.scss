@@ -37,10 +37,12 @@
       font-weight: 600;
       transition: 0.5s;
 
-      // Trigger hover effect on the parent `a`
-      &:hover + &::after {
-        width: 100%; // Expand the border width to full
-      }
+
+    }
+
+    // Trigger hover effect on the parent `a`
+    &:hover + &::after {
+      width: 100%; // Expand the border width to full
     }
   }
 
