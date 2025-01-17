@@ -24,7 +24,7 @@
       justify-content: center;
       align-items: center;
 
-      img{
+      img {
         max-height: 320px;
         max-width: 100%;
         height: auto;
@@ -39,7 +39,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
 
       .card-title {
         justify-content: center;
@@ -58,7 +57,6 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
-
       }
 
       .card-parapgraph {
@@ -66,18 +64,13 @@
           color: white;
           font-size: 16px;
           font-family: Georgia, serif;
-          text-align: justify; // Aligns text evenly along both the left and right edges
+          text-align: justify;
           animation: fadeInText 1s ease-in forwards;
         }
-
       }
-
     }
-
-
   }
 
-  // carta de presentación de la homepage
   .home-presentation {
     display: flex;
     flex-direction: column;
@@ -85,7 +78,6 @@
     height: 100%;
 
     .profile-card {
-
       height: 100%;
       width: 50%;
       display: flex;
@@ -104,23 +96,93 @@
     background-position: center;
     align-items: center;
 
-    box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5); // sombra interna
+    box-shadow: inset 60px 60px 60px 60px rgba(0, 0, 0, 0.5);
     position: relative;
-    opacity: 1; // Initial opacity
-    transform: translateY(0); // Initial position
-    transition: opacity 0.5s ease, transform 1s ease; // Transition for opacity and transform
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 1s ease;
   }
-
-
 }
 
+// Scrollbar oculto
 .home-container::-webkit-scrollbar {
-  display: none; // Hides scrollbar in WebKit browsers
+  display: none;
 }
-
 
 // Clase para ocultar la presentación
 .hidden {
   opacity: 0;
-  transform: translateY(px); // Move up slightly when hidden
+  transform: translateY(-10px);
+}
+
+// Media queries para diseño responsive
+@media screen and (max-width: 1024px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+
+    .card-logo, .card-text {
+      width: 100vh;
+      height: auto;
+    }
+
+    .card-text {
+      padding: 16px;
+
+      .card-title h1 {
+        font-size: 36px;
+      }
+
+      .card-parapgraph p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .home-presentation .profile-card {
+    width: 80%;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    margin: 5vh 0 0 0;
+
+    .card-logo, .card-text {
+      height: auto;
+    }
+
+    .card-text {
+      .card-title h1 {
+        font-size: 28px;
+      }
+
+      .card-parapgraph p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .home-presentation .profile-card {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .presentation {
+    .card-text {
+      .card-title h1 {
+        font-size: 24px;
+      }
+
+      .card-parapgraph p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .home-presentation .profile-card {
+    width: 90%;
+  }
 }
