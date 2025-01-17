@@ -133,11 +133,11 @@
       transition: width 0.5s ease;
     }
 
-    // Hover effect on button to trigger the border animation
-    &:hover a::after {
-      width: 100%; // Expand the border width to full
-    }
+  }
 
+  // Hover effect on button to trigger the border animation
+  &:hover a::after {
+    width: 100%; // Expand the border width to full
   }
 
 }
