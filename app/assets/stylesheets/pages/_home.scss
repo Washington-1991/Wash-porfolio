@@ -108,7 +108,6 @@
   }
 }
 
-
 // Media queries para diseño responsive
 @media screen and (max-width: 1024px) {
   .presentation {
@@ -116,7 +115,7 @@
     flex-direction: column;
 
     .card-logo, .card-text {
-      width: 100vh;
+      width: 100%;
       height: auto;
     }
 
