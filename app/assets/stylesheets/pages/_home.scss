@@ -114,7 +114,12 @@
     display: flex;
     flex-direction: column;
 
-    .card-logo, .card-text {
+    .card-logo {
+      border: 2 px solid white
+
+    }
+
+    .card-text {
       width: 100%;
       height: auto;
     }
