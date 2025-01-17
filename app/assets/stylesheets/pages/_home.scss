@@ -113,9 +113,10 @@
   .presentation {
     display: flex;
     flex-direction: column;
+    border: 2 px solid white;
+
 
     .card-logo {
-      border: 2 px solid white;
 
     }
 
