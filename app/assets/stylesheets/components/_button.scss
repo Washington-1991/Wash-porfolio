@@ -24,26 +24,28 @@
       transition: width 0.5s ease;
     }
 
-    button {
-      cursor: pointer;
-      position: relative;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: transparent;
-      outline: none;
-      overflow: hidden;
-      border: none;
-      font-weight: 600;
-      transition: 0.5s;
+
+  }
+
+  button {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    font-weight: 600;
+    transition: 0.5s;
 
 
-    }
+  }
 
-    // Trigger hover effect on the parent `a`
-    &:hover + &::after {
-      width: 100%; // Expand the border width to full
-    }
+  // Trigger hover effect on the parent `a`
+  &:hover + &::after {
+    width: 100%; // Expand the border width to full
   }
 
 }
