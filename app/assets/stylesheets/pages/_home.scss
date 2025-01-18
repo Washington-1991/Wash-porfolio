@@ -109,17 +109,20 @@
 
 // Media queries para diseño responsive
 @media screen and (max-width: 1024px) {
- .home-container {
+  .home-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
    .presentation {
-     width: 100%;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     overflow: hidden;
-     overflow-y: scroll;
-     overflow-x: hidden;
-
+      height: 100vh;
+      margin: 10vh 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
 
      .card-logo {
        width: 100%;
@@ -129,16 +132,16 @@
        align-items: center;
        border: 2px solid white;
 
-     }
+      }
 
-     .card-text {
+      .card-text {
        width: 100%;
        height: auto;
-     }
+      }
 
-   }
+    }
 
- }
+  }
 
 
 
