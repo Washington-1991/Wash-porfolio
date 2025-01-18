@@ -109,37 +109,39 @@
 
 // Media queries para diseño responsive
 @media screen and (max-width: 1024px) {
-  .presentation {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-y: scroll;
-    overflow-x: hidden;
+ .home-container {
+
+   .presentation {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     overflow-y: scroll;
+     overflow-x: hidden;
 
 
-    .card-logo {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid white;
+     .card-logo {
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: 2px solid white;
 
-    }
+     }
 
-    .card-text {
-      width: 100%;
-      height: auto;
-    }
+     .card-text {
+       width: 100%;
+       height: auto;
+     }
 
-  }
+   }
 
-  .home-presentation .profile-card {
-    width: 80%;
-    margin: 40px;
-  }
+ }
+
+
+
 }
 
 @media screen and (max-width: 768px) {
