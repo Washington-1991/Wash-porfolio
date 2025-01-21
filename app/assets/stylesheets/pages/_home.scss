@@ -104,14 +104,6 @@
         height: auto;
         width: auto;
 
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease, transform 1s ease;
-      }
-
-      &.visible img {
-        opacity: 1;
-        transform: translateY(0);
       }
 
     }
