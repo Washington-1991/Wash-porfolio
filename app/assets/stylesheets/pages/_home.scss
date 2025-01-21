@@ -103,18 +103,8 @@
         max-width: 100%;
         height: auto;
         width: auto;
-        opacity: 1; // Ensure the initial state
         animation: fadeOut 2s forwards;
-      }
-    }
-
-    // animacion de la imagen logo
-    @keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
+        animation-timeline: scroll;
       }
     }
 
