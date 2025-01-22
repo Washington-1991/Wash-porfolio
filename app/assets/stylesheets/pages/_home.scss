@@ -98,12 +98,13 @@
       justify-content: center;
       align-items: center;
 
+      // imagen PG con animacion
       img {
         max-height: 320px;
         max-width: 100%;
         height: auto;
         width: auto;
-        animation: myAnim 2s ease-in 0s 1 normal forwards;
+        animation: myAnim 1s ease-in 0s 1 normal forwards;
 
         @keyframes myAnim {
           0% {
@@ -116,6 +117,8 @@
             transform: scale(1);
           }
         }
+
+
 
       }
 
