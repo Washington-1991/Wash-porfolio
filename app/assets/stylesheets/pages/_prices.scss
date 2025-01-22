@@ -6,6 +6,24 @@
   height: 100%;
 
   .price-title {
+    width: 100%;
+
+    h2 {
+      height: auto;
+      width: 100%;
+      font-size: 32px;
+      margin: 16px;
+      font-family: Georgia, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // animacion
+      animation: fadeInText 1s ease-in forwards;
+      background: linear-gradient(to right, violet, pink, skyblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
   }
 
