@@ -57,7 +57,11 @@
   <!-- Footer -->
   <%= render 'layouts/footer' %>
 
-  <!-- JavaScript for presentation transition -->
+
+
+</div>
+
+<!-- JavaScript for presentation transition -->
   <script>
     let lastScrollTop = 0;
     const homePresentation = document.querySelector('.home-presentation');
@@ -75,6 +79,7 @@
 
     window.addEventListener('scroll', debounce(onScroll, 100));
   </script>
+
   <script>
         function debounce(func, wait) {
       let timeout;
@@ -85,5 +90,3 @@
       };
     }
   </script>
-
-</div>
