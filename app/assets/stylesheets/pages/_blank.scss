@@ -10,10 +10,12 @@
   align-items: center;
 
   .card-container {
-    width: 100%;
+    width: 400px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     padding: 16px;
+    border: 2px solid white;
 
     // efecto de glass
     backdrop-filter: blur(4px) saturate(180%);
