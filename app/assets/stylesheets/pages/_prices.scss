@@ -210,6 +210,10 @@
     width: 100%;
     display: flex;
     padding: 16px;
+
+    .community-plan {
+
+    }
   }
 
 }
@@ -526,6 +530,7 @@
       .standar-plan {
 
         padding: 16px;
+        margin:  16px 0;
 
         // efecto de glass
         backdrop-filter: blur(4px) saturate(180%);
