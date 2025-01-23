@@ -196,6 +196,17 @@
         -webkit-text-fill-color: transparent;
       }
 
+      h3 {
+        width: 100%;
+        font-size: 24px;
+        font-family: Georgia, serif;
+        color: white;
+        text-align: center;
+        background: linear-gradient(to right, violet, pink, skyblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       p {
         color: white;
         font-size: 16px;
