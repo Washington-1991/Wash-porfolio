@@ -50,7 +50,12 @@
     height: 100%;
     right: 0;
 
-    .card-buttons {
+    .dropdown-menu-left {
+  top: 0; /* Mantener alineado en el eje Y */
+  right: 100%; /* Expandir hacia la izquierda */
+  left: auto; /* Evitar que el menú se alinee hacia la derecha */
+}
+.card-buttons {
       display: flex;
       justify-content: space-between;
       align-items: center;
