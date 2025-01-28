@@ -1,1 +1,97 @@
 <%# home page en frances %>
+
+<title>Paszkowicz-Group</title>
+
+<div class="home-container">
+
+  <%# nueva navbar %>
+  <%= render 'layouts/navbar02' %>
+
+  <%# presentacion de la homepage %>
+  <div class="presentation">
+    <div class="card-logo">
+      <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1736335480/Wash%20portfolio/paszkowicz_f2hmp5.png" alt="Paszkowicz-Group">
+    </div>
+    <div class="card-text">
+
+      <div class="card-title">
+        <h1>Développeurs Web Front-End</h1>
+      </div>
+      <div class="card-parapgraph">
+        <p>En tant que développeurs web front-end ayant suivi
+          une formation avancée à Le Wagon à Lille, France,
+          nous nous spécialisons dans la création d'interfaces
+          utilisateur visuellement attrayantes et hautement
+          interactives. Nous privilégions la réactivité et
+          des expériences utilisateur fluides sur tous les
+          appareils. Avec une expertise en HTML, CSS et
+          JavaScript, nous utilisons des bibliothèques et des
+          frameworks modernes pour développer un code efficace
+          et modulaire qui améliore la fonctionnalité et
+          l'esthétique des sites web.
+        </p>
+          <br>
+        <p>
+          Notre approche combine une maîtrise technique
+          avec un sens aigu du design, ce qui nous permet
+          de créer des solutions optimisées et compatibles
+          avec plusieurs navigateurs qui captivent et
+          engagent les utilisateurs.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Projects section -->
+  <div id="projects">
+    <%# carrousel de habilidades %>
+    <%= render 'layouts/carrousel' %>
+    <%= render 'pages/projects' %>
+  </div>
+
+  <!-- Contact section -->
+  <div id="contact">
+    <%= render 'pages/contact' %>
+  </div>
+
+  <%# Prices section %>
+  <div id="prices">
+    <%= render "pages/prices" %>
+  </div>
+
+  <!-- Footer -->
+  <%= render 'layouts/footer' %>
+
+</div>
+
+<!-- JavaScript for presentation transition -->
+  <script>
+    let lastScrollTop = 0;
+    const homePresentation = document.querySelector('.home-presentation');
+
+    const onScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        homePresentation.classList.add('hidden');
+      } else {
+        homePresentation.classList.remove('hidden');
+      }
+      lastScrollTop = Math.max(0, scrollTop);
+    };
+
+    window.addEventListener('scroll', debounce(onScroll, 100));
+  </script>
+
+  <script>
+        function debounce(func, wait) {
+      let timeout;
+      return function (...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+      };
+    }
+  </script>
