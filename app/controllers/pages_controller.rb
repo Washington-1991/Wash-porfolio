@@ -8,4 +8,7 @@ class PagesController < ApplicationController
 
   def home_fra
   end
+
+  def home_por
+  end
 end
