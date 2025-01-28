@@ -1,0 +1,97 @@
+<%# HTML correspondiente a proyectos en frances %>
+
+<%# division general del cu %>
+<div class="projects-container">
+
+  <%# Titulo  %>
+  <div class="project-card-title">
+    <h1>Projets</h1>
+  </div>
+
+  <%# texto %>
+  <div class="project-card-text-container">
+    <p>
+      "Voici tous les projets que nous avons créés ou auxquels nous avons contribué.
+      Englobant une gamme diversifiée de domaines et d'intérêts, notre portfolio
+      reflète un engagement envers l'innovation et la collaboration. Qu'il s'agisse
+      de créer des applications mobiles intuitives, de concevoir des campagnes marketing
+      percutantes ou de contribuer au code dans des initiatives open-source, nous sommes fiers
+      de fournir des résultats qui font la différence. Explorez cette collection
+      d'initiatives, chacune témoignant de notre engagement envers l'excellence
+      et notre enthousiasme à repousser les limites.".
+    </p>
+  </div>
+
+  <%# wave card start %>
+  <div class="e-card playing">
+    <div class="image"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <div class="projects-card-fullstack-title">
+      <h2>Projets Fullstack</h2>
+    </div>
+    <div class="nft-container">
+
+      <%# Carta correspondiente a HIVE %>
+       <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+              <%= image_tag "hive-logo-png.png"%>
+            </div>
+            <h2>Hive</h2>
+            <p class='description'>Une application sportive dédiée aux personnes en situation de surpoids.</p>
+          </div>
+        </div>
+
+      <%# Carta correspondiente a Lithosophie
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+            <%= image_tag "logo-lithosophie.png"%>
+            <%# </div>
+            <h2>Lithosophie</h2>
+            <p class='description'>Page dédiée à la vente de produits.</p>
+          </div>
+        </div> %>
+
+      <%# Carta correspondiente a EventBnB %>
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+              <%= image_tag "eventbnb-logo.png"%>
+            </div>
+            <h2>EventBnB</h2>
+            <p class='description'>Une application dédiée à la location d'espaces pour des tournages.</p>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectPresentation = document.querySelector(".project-presentation");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            projectPresentation.classList.add("visible");
+          } else {
+            projectPresentation.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjusts how much of the element should be visible to trigger
+    );
+
+    observer.observe(projectPresentation);
+  });
+
+</script>
