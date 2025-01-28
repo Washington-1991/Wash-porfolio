@@ -1,1 +1,96 @@
 <%# home page en espanol %>
+
+<title>Paszkowicz-Group</title>
+
+<div class="home-container">
+
+  <%# nueva navbar %>
+  <%= render 'layouts/navbar02' %>
+
+  <%# presentacion de la homepage %>
+  <div class="presentation">
+    <div class="card-logo">
+      <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1736335480/Wash%20portfolio/paszkowicz_f2hmp5.png" alt="Paszkowicz-Group">
+    </div>
+    <div class="card-text">
+
+      <div class="card-title">
+        <h1>Desarrolladores Web Front-End</h1>
+      </div>
+      <div class="card-parapgraph">
+        <p>Como desarrolladores web front-end con formación
+          avanzada en Le Wagon en Lille, Francia, nos
+          especializamos en la creación de interfaces de
+          usuario visualmente atractivas y altamente
+          interactivas. Priorizamos la capacidad de respuesta
+          y experiencias de usuario fluidas en todos los
+          dispositivos. Con experiencia en HTML, CSS y
+          JavaScript, utilizamos bibliotecas y frameworks
+          modernos para desarrollar código eficiente y modular
+          que mejora la funcionalidad y estética de los sitios web.
+        </p>
+          <br>
+        <p>
+          Nuestro enfoque combina competencia técnica
+          con un ojo agudo para el diseño, lo que nos
+          permite crear soluciones optimizadas y
+          compatibles con múltiples navegadores que
+          cautivan y comprometen a los usuarios.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Projects section -->
+  <div id="projects">
+    <%# carrousel de habilidades %>
+    <%= render 'layouts/carrousel' %>
+    <%= render 'pages/projects' %>
+  </div>
+
+  <!-- Contact section -->
+  <div id="contact">
+    <%= render 'pages/contact' %>
+  </div>
+
+  <%# Prices section %>
+  <div id="prices">
+    <%= render "pages/prices" %>
+  </div>
+
+  <!-- Footer -->
+  <%= render 'layouts/footer' %>
+
+</div>
+
+<!-- JavaScript for presentation transition -->
+  <script>
+    let lastScrollTop = 0;
+    const homePresentation = document.querySelector('.home-presentation');
+
+    const onScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        homePresentation.classList.add('hidden');
+      } else {
+        homePresentation.classList.remove('hidden');
+      }
+      lastScrollTop = Math.max(0, scrollTop);
+    };
+
+    window.addEventListener('scroll', debounce(onScroll, 100));
+  </script>
+
+  <script>
+        function debounce(func, wait) {
+      let timeout;
+      return function (...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+      };
+    }
+  </script>
