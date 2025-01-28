@@ -1,1 +1,97 @@
-<%# HTML correspondiente a proyectos en espanol %>
+<%# HTML correspondiente a proyectos en español %>
+
+<%# división general del contenedor de proyectos %>
+<div class="projects-container">
+
+  <%# Título %>
+  <div class="project-card-title">
+    <h1>Proyectos</h1>
+  </div>
+
+  <%# texto %>
+  <div class="project-card-text-container">
+    <p>
+      "Aquí están todos los proyectos que hemos creado o en los que hemos contribuido.
+      Abarcando una diversa gama de campos e intereses, nuestro portafolio refleja
+      una dedicación a la innovación y la colaboración. Ya sea construyendo aplicaciones
+      móviles intuitivas, diseñando campañas de marketing impactantes, o contribuyendo
+      con código a iniciativas de código abierto, nos enorgullece entregar resultados que
+      marcan la diferencia. Explora esta colección de proyectos, cada uno de ellos es un
+      testimonio de nuestro compromiso con la excelencia y nuestra pasión por superar límites.".
+    </p>
+  </div>
+
+  <%# inicio de la tarjeta wave %>
+  <div class="e-card playing">
+    <div class="image"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <div class="projects-card-fullstack-title">
+      <h2>Proyectos Fullstack</h2>
+    </div>
+    <div class="nft-container">
+
+      <%# Carta correspondiente a HIVE %>
+       <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+              <%= image_tag "hive-logo-png.png"%>
+            </div>
+            <h2>Hive</h2>
+            <p class='description'>Una aplicación deportiva dedicada a personas con sobrepeso.</p>
+          </div>
+        </div>
+
+      <%# Carta correspondiente a Lithosophie
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+            <%= image_tag "logo-lithosophie.png"%>
+            <%# </div>
+            <h2>Lithosophie</h2>
+            <p class='description'>Página dedicada a la venta de productos</p>
+          </div>
+        </div> %>
+
+      <%# Carta correspondiente a EventBnB %>
+        <div class="nft">
+          <div class='main'>
+            <div class="main-image">
+              <%= image_tag "eventbnb-logo.png"%>
+            </div>
+            <h2>EventBnB</h2>
+            <p class='description'>Una aplicación dedicada al alquiler de lugares para filmaciones.</p>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectPresentation = document.querySelector(".project-presentation");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            projectPresentation.classList.add("visible");
+          } else {
+            projectPresentation.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.5 } // Ajusta cuánto del elemento debe ser visible para activarse
+    );
+
+    observer.observe(projectPresentation);
+  });
+
+</script>
