@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def home-esp
+  def home_esp
   end
 end
