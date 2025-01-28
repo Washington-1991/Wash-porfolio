@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "contact" => "pages#contact"
   get "blank" => "pages#blank"
   get "home_esp" => "pages#home_esp"
+  get "home_fra" => "pages#home_fra"
 
   # Defines the root path route ("/")
   # root "posts#index"
