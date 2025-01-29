@@ -74,7 +74,10 @@
       z-index: 1;
       transition: 0.5s;
       padding: 0 16px;
-      color: white;
+      font-family: Georgia, serif;
+      background: linear-gradient(to right, violet, pink, skyblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
 
     }
