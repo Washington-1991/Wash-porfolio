@@ -62,11 +62,39 @@
       display: inline-block;
     }
     .dropdown-btn {
-      background-color: #008cba;
-      color: white;
-      border: none;
-      padding: 10px;
       cursor: pointer;
+      position: relative;
+
+      border-radius: 50%;
+      background: transparent;
+      outline: none;
+      overflow: hidden;
+      border: none;
+      font-weight: 600;
+      z-index: 1;
+      transition: 0.5s;
+      padding: 0 16px;
+
+      a {
+        font-family: Georgia, serif;
+        animation: fadeInText 1s ease-in forwards;
+        background: linear-gradient(to right, violet, pink, skyblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        // Pseudo-element for the border
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px; // Slightly below the text
+          width: 0; // Initial width of the border
+          height: 2px; // Height of the border
+          background: linear-gradient(to right, violet, pink, skyblue); // Same gradient as the text
+          transition: width 0.5s ease;
+        }
+      }
     }
     .dropdown-content {
       display: none;
