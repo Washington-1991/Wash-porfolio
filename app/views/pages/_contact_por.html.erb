@@ -1,1 +1,67 @@
 <%# HTML correspondiente a contact en portugues %>
+
+<%# sección de contacto %>
+<div class="contact-container">
+  <div class="contact-title">
+      <h1>Vamos construir algo incrível juntos!</h1>
+  </div>
+
+  <div class="social-media-card">
+    <div class="social-media-card-title">
+      <h2>
+        Entre em contato conosco
+      </h2>
+    </div>
+
+    <div class="social-media-card-buttons">
+      <a href="https://www.linkedin.com/in/washington-arambillete-garcia-4b8b70169/" target="_blank">
+        <button class="linkedin">
+          <p>
+            <i class="fa-brands fa-linkedin"></i>
+          </p>
+        </button>
+      </a>
+
+      <a href="https://www.instagram.com/paszkowicz_group/">
+        <button class="instagram">
+          <p>
+            <i class="fa-brands fa-instagram"></i>
+          </p>
+        </button>
+      </a>
+
+      <a href="https://github.com/Washington-1991" target="_blank">
+        <button class="github">
+          <p>
+            <i class="fa-brands fa-github"></i>
+          </p>
+        </button>
+      </a>
+
+      <a href="javascript:void(0);" id="emailButton">
+        <button class="email">
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+          </p>
+        </button>
+      </a>
+    </div>
+
+    <div class="email-card" id="emailCard">
+      <h2>
+        washington-91@outlook.com
+      </h2>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const emailButton = document.getElementById("emailButton");
+    const emailCard = document.getElementById("emailCard");
+
+    emailButton.addEventListener("click", () => {
+      emailCard.classList.toggle("visible");
+    });
+  });
+</script>
