@@ -75,7 +75,7 @@
       transition: 0.5s;
       padding: 0 16px;
 
-      a {
+
         font-family: Georgia, serif;
         animation: fadeInText 1s ease-in forwards;
         background: linear-gradient(to right, violet, pink, skyblue);
@@ -93,8 +93,8 @@
           height: 2px; // Height of the border
           background: linear-gradient(to right, violet, pink, skyblue); // Same gradient as the text
           transition: width 0.5s ease;
-        }
       }
+
     }
     .dropdown-content {
       display: none;
