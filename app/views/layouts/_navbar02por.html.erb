@@ -1,15 +1,15 @@
-<%# navbar 2.0 en portugues %>
+<%# navbar 2.0 en ingles%>
 
 <%# contenedor general %>
 <div class="navbar02-container">
 
   <%# carta izquierda %>
-  <div class="navbar02-container-left-card">
+  <div class="left-card">
 
     <%# logo %>
     <div class="card-logo">
       <a href="/home">
-        <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1736335480/Wash%20portfolio/logo_fxcjk2.png" alt="Paszkowicz-group">
+        <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1736335480/Wash%20portfolio/logo_fxcjk2.png" alt="Grupo Paszkowicz">
       </a>
     </div>
 
@@ -32,4 +32,34 @@
 
   </div>
 
+  <%# carta derecha %>
+  <div class="right-card">
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">Idioma</button>
+      <div class="dropdown-content" id="dropdown-menu">
+        <a href="/home"><img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1738151078/Wash%20portfolio/united-kingdom_xq3pzn.png" alt="Inglês"> Inglês</a>
+        <a href="/home_esp"><img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1738151077/Wash%20portfolio/spain_yw9yvi.png" alt="Espanhol"> Espanhol</a>
+        <a href="/home_fra"><img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1738151077/Wash%20portfolio/france_jidye5.png" alt="Francês"> Francês</a>
+        <a href="/home_por"><img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1738151077/Wash%20portfolio/brazil_asqsvx.png" alt="Português"> Português</a>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+<%# javascript correspondiente al toggle %>
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown-menu");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+
+  document.addEventListener("click", function(event) {
+    var dropdown = document.getElementById("dropdown-menu");
+    var button = document.querySelector(".dropdown-btn");
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
