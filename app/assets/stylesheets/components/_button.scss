@@ -94,13 +94,11 @@
       align-items: center;
       padding: 10px;
       text-decoration: none;
-
-
-        font-family: Georgia, serif;
-        background: linear-gradient(to right, violet, pink, skyblue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
+      font-family: Georgia, serif;
+      background: linear-gradient(to right, violet, pink, skyblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
 
       // Pseudo-element for the border
       &::after {
