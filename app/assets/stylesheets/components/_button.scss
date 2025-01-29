@@ -58,6 +58,10 @@
     padding: 10px;
 
     .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-btn {
       cursor: pointer;
       position: relative;
 
@@ -71,13 +75,6 @@
       transition: 0.5s;
       padding: 0 16px;
 
-    }
-    .dropdown-btn {
-      background-color: #008cba;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
     }
     .dropdown-content {
       display: none;
