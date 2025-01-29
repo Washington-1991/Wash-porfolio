@@ -51,7 +51,7 @@
 
   .right-card {
     display: flex;
-    // position: fixed;
+    position: fixed;
     height: 100%;
     right: 0;
     align-items: center;
@@ -93,6 +93,7 @@
       z-index: 1;
       min-width: 120px;
       top: 10vh;
+      right: 8px;
     }
     .dropdown-content a {
       display: flex;
