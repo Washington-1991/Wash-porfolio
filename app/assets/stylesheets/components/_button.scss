@@ -60,7 +60,6 @@
     .dropdown {
       position: relative;
       display: inline-block;
-      color: white;
 
     }
     .dropdown-btn {
@@ -75,6 +74,8 @@
       z-index: 1;
       transition: 0.5s;
       padding: 0 16px;
+      color: white;
+
 
     }
     .dropdown-content {
