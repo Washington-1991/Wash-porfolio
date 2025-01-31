@@ -24,6 +24,10 @@
 
   // disposicion del titulo
   .contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; // Alinea el texto al centro
 
     h1 {
       font-size: 48px;
