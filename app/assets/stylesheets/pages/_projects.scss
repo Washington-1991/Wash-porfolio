@@ -28,6 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; // Ocupa toda la altura de la ventana
+    text-align: center; // Alinea el texto al centro
 
     h1 {
       font-size: 48px;
