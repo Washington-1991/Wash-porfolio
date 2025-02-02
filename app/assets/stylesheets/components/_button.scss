@@ -60,7 +60,6 @@
     .dropdown {
       position: relative;
       display: inline-block;
-      animation: fadeInText 1s ease-in forwards;
 
 
     }
@@ -80,7 +79,7 @@
       background: linear-gradient(to right, violet, pink, skyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
+      animation: fadeInText 1s ease-in forwards;
 
     }
     .dropdown-content {
