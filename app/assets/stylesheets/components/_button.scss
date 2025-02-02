@@ -78,8 +78,15 @@
       background: linear-gradient(to right, violet, pink, skyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: fadeInText 1s ease-in forwards;
 
     }
+
+    .dropdown-content a {
+      animation: fadeInText 1s ease-in forwards;
+    }
+
+
     .dropdown-content {
       display: none;
       position: absolute;
@@ -122,6 +129,18 @@
       width: 16px;
       margin-right: 8px;
     }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
 
 
   }
