@@ -113,6 +113,7 @@
 
       .nft-card {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         height: 350px;
         width: 300px;
