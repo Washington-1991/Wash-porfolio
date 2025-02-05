@@ -386,6 +386,7 @@
     // estilo carta de projects fullstack start
     .project-card-container {
       display: flex;
+      justify-content: space-around;
       backdrop-filter: blur(4px) saturate(180%);
       -webkit-backdrop-filter: blur(4px) saturate(180%);
       background-color: rgba(17, 25, 40, 0);
