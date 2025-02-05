@@ -386,6 +386,7 @@
     // estilo carta de projects fullstack start
     .project-card-container {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
       backdrop-filter: blur(4px) saturate(180%);
       -webkit-backdrop-filter: blur(4px) saturate(180%);
@@ -435,6 +436,7 @@
       }
 
       .ntf-card-container {
+        display: flex;
 
         // carta de NFT
         .nft-card {
