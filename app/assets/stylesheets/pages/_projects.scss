@@ -434,37 +434,39 @@
 
       }
 
-      // carta de NFT
-      .nft-card {
-        display: flex;
-        flex-direction: column;
-        height: 350px;
-        width: 300px;
+      .ntf-card-container {
 
-        background-color: hsla(172.99999999999994, 0%, 100%, 1);
-        background-image: radial-gradient(circle at 1% 2%, hsla(249.99999999999994, 76%, 61%, 0.59) 7%, transparent 84%), radial-gradient(circle at 95% 96%, hsla(166.53061224489795, 71%, 60%, 0.24) 7%, transparent 84%), radial-gradient(circle at 2% 98%, hsla(296.47058823529414, 100%, 51%, 0.25) 7%, transparent 84%);
-        background-blend-mode: normal, normal, normal;
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.125);
-
-        // imagen de la carta NFT
-        .ntf-card-img {
-          height: 50%;
-          width: 100%;
+         // carta de NFT
+        .nft-card {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column;
+          height: 350px;
+          width: 300px;
 
-          img {
+          background-color: hsla(172.99999999999994, 0%, 100%, 1);
+          background-image: radial-gradient(circle at 1% 2%, hsla(249.99999999999994, 76%, 61%, 0.59) 7%, transparent 84%), radial-gradient(circle at 95% 96%, hsla(166.53061224489795, 71%, 60%, 0.24) 7%, transparent 84%), radial-gradient(circle at 2% 98%, hsla(296.47058823529414, 100%, 51%, 0.25) 7%, transparent 84%);
+          background-blend-mode: normal, normal, normal;
+          border-radius: 15px;
+          border: 2px solid rgba(255, 255, 255, 0.125);
 
-            height: 224px;
-            width: 224px;
+          // imagen de la carta NFT
+          .ntf-card-img {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+
+              height: 224px;
+              width: 224px;
+            }
+
           }
 
-        }
-
-        // titulo de la carta NFT
-        .ntf-card-title {
+          // titulo de la carta NFT
+          .ntf-card-title {
 
           h2 {
             font-size: 32px;
@@ -482,10 +484,10 @@
             -webkit-text-fill-color: transparent;
           }
 
-        }
+          }
 
-        // descripcion de la carta NFT
-        .ntf-card-description {
+          // descripcion de la carta NFT
+          .ntf-card-description {
           height: 50%;
           width: 100%;
           display: flex;
@@ -500,10 +502,14 @@
             text-align: justify;
           }
 
+          }
+
+
         }
 
-
       }
+
+
 
     }
 
