@@ -81,7 +81,6 @@
 
       h2 {
 
-
         font-size: 48px;
         font-family: Georgia, serif;
         height: auto;
@@ -314,15 +313,9 @@
       }
 
       .ntf-card-container {
-        display: flex;
-        justify-content: space-around;
 
         // carta de NFT Hive
         .nft-card-hive{
-          display: flex;
-          flex-direction: column;
-          height: 350px;
-          width: 300px;
           margin: 8px 0;
 
           background-color: hsla(172.99999999999994, 0%, 100%, 1);
