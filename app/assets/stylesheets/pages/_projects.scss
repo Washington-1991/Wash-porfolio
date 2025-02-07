@@ -420,18 +420,6 @@
 
     // estilo carta de projects fullstack start
     .project-card-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      backdrop-filter: blur(4px) saturate(180%);
-      -webkit-backdrop-filter: blur(4px) saturate(180%);
-      background-color: rgba(17, 25, 40, 0);
-      border-radius: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.125);
-      position: relative;
-      margin: 16px;
-      padding: 16px;
-      border-radius: 15px;
 
       .projects-card-fullstack-title {
 
