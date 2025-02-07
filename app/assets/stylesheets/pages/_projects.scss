@@ -424,36 +424,7 @@
 
         h2 {
 
-
-          font-size: 48px;
-          font-family: Georgia, serif;
-          height: auto;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          padding: 16px 24px;
-          text-align: center;
-          animation: fadeInText 1s ease-in forwards;
-          background: linear-gradient(to right, violet, pink, skyblue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-
-          @keyframes myAnim {
-            0% {
-              opacity: 0;
-              transform: scale(1.4);
-              transition-delay: 1s;
-            }
-
-            100% {
-              opacity: 1;
-              transform: scale(1);
-            }
-          }
-
-
         }
-
 
       }
 
