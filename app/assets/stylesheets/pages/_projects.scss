@@ -526,67 +526,20 @@
 
     // texto de proyectos - project-card-text-container
     .project-card-text-container {
-      display: flex;
-      justify-content: space-between;
-      padding: 24px;
 
       p {
-        color: white;
-        font-size: 16px;
-        font-family: Georgia, serif;
-        text-align: justify; // Aligns text evenly along both the left and right edges
+
       }
     }
 
     // estilo carta de projects fullstack start
     .project-card-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      backdrop-filter: blur(4px) saturate(180%);
-      -webkit-backdrop-filter: blur(4px) saturate(180%);
-      background-color: rgba(17, 25, 40, 0);
-      border-radius: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.125);
-      position: relative;
-      margin: 16px;
-      padding: 16px;
-      border-radius: 15px;
 
       .projects-card-fullstack-title {
 
         h2 {
 
-
-          font-size: 48px;
-          font-family: Georgia, serif;
-          height: auto;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          padding: 16px 24px;
-          text-align: center;
-          animation: fadeInText 1s ease-in forwards;
-          background: linear-gradient(to right, violet, pink, skyblue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-
-          @keyframes myAnim {
-            0% {
-              opacity: 0;
-              transform: scale(1.4);
-              transition-delay: 1s;
-            }
-
-            100% {
-              opacity: 1;
-              transform: scale(1);
-            }
-          }
-
-
         }
-
 
       }
 
