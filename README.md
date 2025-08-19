@@ -5,6 +5,10 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 <!-- SCSS -->
 
+<!-- General -->
+
 <!-- JavaScript -->
 
 <!-- Back-End -->
+
+<!-- Bases de datos -->
