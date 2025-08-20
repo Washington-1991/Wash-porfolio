@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'pages_light/index'
   get 'home_light/index'
   root to: "pages#home"
