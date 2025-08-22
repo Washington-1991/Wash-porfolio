@@ -10,9 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_08_20_192659) do
+ActiveRecord::Schema[7.1].define(version: 2025_08_22_103201) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "client_accounts", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "billing_email", null: false
+    t.string "country_code"
+    t.string "preferred_locale"
+    t.string "time_zone"
+    t.string "slug"
+    t.bigint "owner_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["owner_id"], name: "index_client_accounts_on_owner_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -31,4 +44,5 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_20_192659) do
     t.index ["role"], name: "index_users_on_role"
   end
 
+  add_foreign_key "client_accounts", "users", column: "owner_id"
 end
