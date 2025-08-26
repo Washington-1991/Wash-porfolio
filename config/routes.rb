@@ -1,22 +1,33 @@
 Rails.application.routes.draw do
+  # Autenticación (Devise)
   devise_for :users
-  get 'pages_light/index'
-  get 'home_light/index'
+
+  # Páginas públicas
   root to: "pages#home"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "up",       to: "rails/health#show", as: :rails_health_check
+  get "home",     to: "pages#home"
+  get "aboutme",  to: "pages#aboutme"
+  get "projects", to: "pages#projects"
+  get "contact",  to: "pages#contact"
+  get "blank",    to: "pages#blank"
+  get "home_esp", to: "pages#home_esp"
+  get "home_fra", to: "pages#home_fra"
+  get "home_por", to: "pages#home_por"
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
-  get "home" => "pages#home"
-  get "aboutme" => "pages#aboutme"
-  get "projects" => "pages#projects"
-  get "contact" => "pages#contact"
-  get "blank" => "pages#blank"
-  get "home_esp" => "pages#home_esp"
-  get "home_fra" => "pages#home_fra"
-  get "home_por" => "pages#home_por"
+  # (Si las usas) páginas light públicas
+  get "pages_light/index"
+  get "home_light/index"
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # Área Admin (protegida por Admin::BaseController)
+  namespace :admin do
+    root to: "dashboard#show"
+    resources :client_accounts
+    # aquí añadiremos más recursos (projects, etc.)
+  end
+
+  # Área Cliente (protegida por Client::BaseController)
+  namespace :client do
+    root to: "dashboard#show"
+    # aquí añadiremos recursos visibles para el cliente (projects#index/show, etc.)
+  end
 end
