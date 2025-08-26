@@ -1,8 +1,8 @@
+# config/routes.rb
 Rails.application.routes.draw do
-  # Autenticación (Devise)
   devise_for :users
 
-  # Páginas públicas
+  # Públicas
   root to: "pages#home"
   get "up",       to: "rails/health#show", as: :rails_health_check
   get "home",     to: "pages#home"
@@ -14,20 +14,17 @@ Rails.application.routes.draw do
   get "home_fra", to: "pages#home_fra"
   get "home_por", to: "pages#home_por"
 
-  # (Si las usas) páginas light públicas
-  get "pages_light/index"
-  get "home_light/index"
-
-  # Área Admin (protegida por Admin::BaseController)
+  # Admin
   namespace :admin do
     root to: "dashboard#show"
     resources :client_accounts
-    # aquí añadiremos más recursos (projects, etc.)
+    resources :projects
   end
 
-  # Área Cliente (protegida por Client::BaseController)
+  # Cliente (área privada)
   namespace :client do
     root to: "dashboard#show"
-    # aquí añadiremos recursos visibles para el cliente (projects#index/show, etc.)
+    resource  :account,  only: :show   # /client/account   (ficha del cliente)
+    resources :projects, only: [:index, :show]  # /client/projects
   end
 end
