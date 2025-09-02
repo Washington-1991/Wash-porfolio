@@ -16,6 +16,10 @@ Rails.application.routes.draw do
 
   # Admin
   namespace :admin do
+    get 'projects/index'
+    get 'projects/show'
+    get 'projects/new'
+    get 'projects/edit'
     root to: "dashboard#show"
     resources :client_accounts
     resources :projects
