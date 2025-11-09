@@ -1,0 +1,18 @@
+current directory: /home/adduser/code/Washington-1991/Wash-porfolio/vendor/bundle/ruby/3.4.0/gems/racc-1.7.3/ext/racc/cparse
+/home/adduser/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/adduser/code/Washington-1991/Wash-porfolio/vendor/bundle/ruby/3.4.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251109-157758-an8h4l sitelibdir\=./.gem.20251109-157758-an8h4l clean
+
+current directory: /home/adduser/code/Washington-1991/Wash-porfolio/vendor/bundle/ruby/3.4.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251109-157758-an8h4l sitelibdir\=./.gem.20251109-157758-an8h4l
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/adduser/code/Washington-1991/Wash-porfolio/vendor/bundle/ruby/3.4.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251109-157758-an8h4l sitelibdir\=./.gem.20251109-157758-an8h4l install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20251109-157758-an8h4l/racc
+
+current directory: /home/adduser/code/Washington-1991/Wash-porfolio/vendor/bundle/ruby/3.4.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251109-157758-an8h4l sitelibdir\=./.gem.20251109-157758-an8h4l clean
