@@ -1,6 +1,15 @@
 <!-- Front-End -->
 
-<!-- Paginas -->
+<!-- home -->
+<!-- home_esp -->
+<!-- home_fra -->
+<!-- home_por -->
+
+<!-- projects -->
+<!-- projects_esp -->
+<!-- projects_fra -->
+<!-- projects_por -->
+
 
 <!-- SCSS -->
 
