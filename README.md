@@ -1,15 +1,25 @@
 <!-- Front-End -->
 
-<!-- home -->
-<!-- home_esp -->
-<!-- home_fra -->
-<!-- home_por -->
+<!-- Home -->
+<!-- Home_esp -->
+<!-- Home_fra -->
+<!-- Home_por -->
 
-<!-- projects -->
-<!-- projects_esp -->
-<!-- projects_fra -->
-<!-- projects_por -->
+<!-- Projects -->
+<!-- Projects_esp -->
+<!-- Projects_fra -->
+<!-- Projects_por -->
 
+<!-- Contact -->
+<!-- Contact_esp -->
+<!-- Contact_fra -->
+<!-- Contact_por -->
+
+
+<!-- Prices -->
+<!-- Prices_esp -->
+<!-- Prices_fra -->
+<!-- Prices_por -->
 
 <!-- SCSS -->
 
