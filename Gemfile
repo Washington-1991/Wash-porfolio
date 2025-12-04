@@ -50,6 +50,15 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
 
+# Para eliminar los warnings de Ruby 3.4 (librerías que dejarán de ser default gems en Ruby 3.5)
+gem "logger"
+gem "benchmark"
+gem "ostruct"
+gem "fiddle"
+
+# Authentication
+gem "devise", "~> 4.9"
+
 group :development, :test do
   gem "dotenv-rails"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -74,5 +83,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "devise", "~> 4.9"
