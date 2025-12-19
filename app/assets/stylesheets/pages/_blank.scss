@@ -1,253 +1,48 @@
-// SCSS correspondiente a home page
+/* ======================================================
+   HOME – DEVICE VIEW CONTROLLER (BÁSICO)
+   ====================================================== */
 
-// características generales de la página
-.home-container {
+/* Base: todas ocultas */
+.home-desktop,
+.home-laptop,
+.home-tablet,
+.home-mobile {
+  display: none;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  .presentation {
-    height: 100vh;
-    width: 100%;
-    margin: 10vh 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    .card-logo {
-      height: 100vh;
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        max-height: 320px;
-        max-width: 100%;
-        height: auto;
-        width: auto;
-      }
-    }
-
-    .card-text {
-      height: 100vh;
-      width: 50%;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .card-title {
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-          font-size: 48px;
-          font-family: Georgia, serif;
-          height: auto;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-
-          animation: fadeInText 1s ease-in forwards;
-          background: linear-gradient(to right, violet, pink, skyblue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-
-      .card-parapgraph {
-        p {
-          color: white;
-          font-size: 16px;
-          font-family: Georgia, serif;
-          text-align: justify;
-          animation: fadeInText 1s ease-in forwards;
-        }
-      }
-    }
-  }
-
 }
 
-@media screen and (min-width: 1025px) {
-  // características generales de la página
-.home-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  .presentation {
-    height: 100vh;
-    width: 100%;
-    margin: 10vh 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    .card-logo {
-      height: 100vh;
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      // imagen PG con animacion
-      img {
-        max-height: 320px;
-        max-width: 100%;
-        height: auto;
-        width: auto;
-        animation: myAnim 1s ease-in 0s 1 normal forwards;
-
-        @keyframes myAnim {
-          0% {
-            opacity: 0;
-            transform: scale(0.6);
-          }
-
-          100% {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-
-
-      }
-
-    }
-
-    .card-text {
-      height: 100vh;
-      width: 50%;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .card-title {
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-          font-size: 48px;
-          font-family: Georgia, serif;
-          height: auto;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-
-          animation: fadeInText 1s ease-in forwards;
-          background: linear-gradient(to right, violet, pink, skyblue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-
-      .card-parapgraph {
-        p {
-          color: white;
-          font-size: 16px;
-          font-family: Georgia, serif;
-          text-align: justify;
-          animation: fadeInText 1s ease-in forwards;
-        }
-      }
-    }
-  }
-
-}
-
-}
-
-// Media queries para diseño responsive
-@media screen and (max-width: 1024px) {
-  .home-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-    .presentation {
-      min-height: 100vh; // Cambia height a min-height si el contenido puede variar
-      margin: 10vh 0 0 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .card-logo {
-        width: 100%;
-        height: auto; // Asegúrate de que no ocupe un espacio innecesario
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card-text {
-        width: 80%; // Ajusta el ancho según sea necesario
-        max-width: 800px; // Limita el ancho máximo
-        margin: 2rem auto; // Agrega un margen para separar de otras secciones
-        text-align: center;
-      }
-
-
-    }
-
-  }
-
-
-
-}
-
-@media screen and (max-width: 768px) {
-  .presentation {
-    margin: 5vh 0 0 0;
-
-    .card-logo, .card-text {
-      height: auto;
-    }
-
-    .card-text {
-      .card-title h1 {
-        font-size: 28px;
-      }
-
-      .card-parapgraph p {
-        font-size: 12px;
-      }
-    }
-  }
-
-  .home-presentation .profile-card {
-    margin: 20px;
+/* =========================
+   MOBILE (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+  .home-mobile {
+    display: block;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .presentation {
-    .card-text {
-      .card-title h1 {
-        font-size: 24px;
-      }
-
-      .card-parapgraph p {
-        font-size: 10px;
-      }
-    }
+/* =========================
+   TABLET (481px – 768px)
+   ========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-tablet {
+    display: block;
   }
+}
 
-  .home-presentation .profile-card {
-    width: 90%;
+/* =========================
+   LAPTOP (769px – 1024px)
+   ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-laptop {
+    display: block;
+  }
+}
+
+/* =========================
+   DESKTOP (≥ 1025px)
+   ========================= */
+@media (min-width: 1025px) {
+  .home-desktop {
+    display: block;
   }
 }
