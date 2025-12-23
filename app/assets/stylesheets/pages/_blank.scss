@@ -55,3 +55,30 @@
     height: 100vh;
     width: 100%;
  }
+
+ .home-laptop {
+  /* Estilos específicos para laptop */
+    border: 1px solid #999;
+    margin: 0;
+    padding: 6px;
+    height: 100vh;
+    width: 100%;
+ }
+
+  .home-tablet {
+    /* Estilos específicos para tablet */
+      border: 1px solid #666;
+      margin: 0;
+      padding: 4px;
+      height: 100vh;
+      width: 100%;
+  }
+
+  .home-mobile {
+    /* Estilos específicos para mobile */
+      border: 1px solid #333;
+      margin: 0;
+      padding: 2px;
+      height: 100vh;
+      width: 100%;
+  }
