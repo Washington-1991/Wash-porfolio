@@ -285,28 +285,154 @@
   }
 }
 
-// nueva navbar 3.0 en desarrollo
-
-// navbar general
+/* =========================
+   navbar general
+========================= */
 .navbar {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  /* transparente */
+  background: transparent;
 }
-// navbar desktop
+
+/* =========================
+   navbar desktop
+========================= */
 .navbar-desktop {
+  max-width: 1200px;
+  margin: 0 auto;
 
+  /* la "franja" sutil que se ve en tu mockup */
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  /* un toque de sombra/halo ultra sutil */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
 }
 
-// navbar laptop
+/* layout interno */
+.navbar-desktop .navbar-left,
+.navbar-desktop .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-desktop .navbar-left {
+  gap: 22px;
+}
+
+.navbar-desktop .navbar-logo img {
+  height: 34px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.10));
+}
+
+.navbar-desktop .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+/* botones estilo "moderno limpio" */
+.navbar-desktop .nav-btn {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  transition: background 180ms ease, color 180ms ease, border 180ms ease;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-desktop .nav-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-desktop .dropdown {
+  position: relative;
+}
+
+.navbar-desktop .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar-desktop .chevron {
+  font-size: 14px;
+  opacity: 0.85;
+  transform: translateY(1px);
+}
+
+/* dropdown: aparece al hover (simple, limpio) */
+.navbar-desktop .dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+
+  width: 210px;
+  padding: 10px;
+  border-radius: 12px;
+
+  background: rgba(18, 18, 22, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+
+  display: none;
+}
+
+.navbar-desktop .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-desktop .dropdown-item {
+  display: block;
+  padding: 12px 12px;
+  border-radius: 10px;
+
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.navbar-desktop .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* =========================
+   navbar laptop
+========================= */
 .navbar-laptop {
 
 }
 
-// navbar tablet
+/* =========================
+   navbar tablet
+========================= */
 .navbar-tablet {
 
 }
 
-// navbar mobile
+/* =========================
+   navbar mobile
+========================= */
 .navbar-mobile {
 
 }
