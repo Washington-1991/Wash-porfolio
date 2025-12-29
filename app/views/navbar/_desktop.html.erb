@@ -28,13 +28,19 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    console.log("Navbar script loaded ✅");
+
     const navbar = document.querySelector(".navbar");
+    console.log("navbar element:", navbar);
+
     if (!navbar) return;
 
     const threshold = 24;
 
     const onScroll = () => {
+      console.log("scrollY:", window.scrollY);
       navbar.classList.toggle("is-scrolled", window.scrollY > threshold);
+      console.log("has is-scrolled:", navbar.classList.contains("is-scrolled"));
     };
 
     onScroll();
