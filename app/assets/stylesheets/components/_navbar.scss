@@ -21,6 +21,13 @@
   /* estado inicial */
   background: transparent;
 
+  /* ✅ para que border-bottom-color funcione al hacer scroll */
+  border-bottom: 1px solid transparent;
+
+  /* ✅ mejoras anti-flicker / performance */
+  will-change: background, backdrop-filter;
+  transform: translateZ(0);
+
   /* animaciones suaves */
   transition:
     background 260ms ease,
@@ -38,6 +45,7 @@
   margin: 0;
 
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+  /* el bottom ya existe en .navbar, aquí lo dejamos si quieres doble control */
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
@@ -165,6 +173,9 @@
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 
   display: none;
+
+  /* ✅ asegura que siempre quede por encima */
+  z-index: 60;
 }
 
 .navbar-desktop .dropdown:hover .dropdown-menu {
