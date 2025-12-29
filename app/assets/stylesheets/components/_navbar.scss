@@ -1,292 +1,7 @@
-// Navbar 3.0 – Paszkowicz Group
-// Comentarios en español
-
-// desktop - 1200px en adelante
-// laptop - 992px a 1199px
-// tablet - 768px a 991px
-// mobile - hasta 767px
-
-.navbar02-container {
-  // layout base
-  width: 100%;
-  // padding: 0.75rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  background: #050816; // fondo oscuro tipo portfolio
-  color: #f5f5f5;
-  box-sizing: border-box;
-
-  margin: 0;
-
-  // carta izquierda (logo + botones)
-  .left-card {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-
-    .card-logo {
-      a {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      img {
-        height: 48px;
-        max-width: 160px;
-        object-fit: contain;
-        display: block;
-      }
-    }
-
-    .card-buttons {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-
-      button {
-        // reset básico
-        border: none;
-        background: transparent;
-        padding: 0;
-        cursor: pointer;
-
-        // estilo del “botón” real
-        a {
-          display: block;
-          padding: 0.45rem 1rem;
-          border-radius: 999px;
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          text-decoration: none;
-          font-size: 0.9rem;
-          font-weight: 500;
-          color: #f5f5f5;
-          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
-
-          &:hover {
-            background: #f5f5f5;
-            color: #050816;
-            border-color: #f5f5f5;
-            transform: translateY(-1px);
-          }
-
-          &:active {
-            transform: translateY(0);
-          }
-        }
-      }
-    }
-  }
-
-  // carta derecha (selector de idioma)
-  .right-card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    .dropdown {
-      position: relative;
-
-      .dropdown-btn {
-        padding: 0.45rem 1rem;
-        border-radius: 999px;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        background: transparent;
-        color: #f5f5f5;
-        font-size: 0.9rem;
-        font-weight: 500;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
-
-        &:hover {
-          background: #f5f5f5;
-          color: #050816;
-          border-color: #f5f5f5;
-          transform: translateY(-1px);
-        }
-
-        &:active {
-          transform: translateY(0);
-        }
-      }
-
-      .dropdown-content {
-        position: absolute;
-        top: calc(100% + 0.5rem);
-        right: 0;
-        min-width: 190px;
-        padding: 0.4rem 0;
-        background: #ffffff;
-        color: #111827;
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-        display: none; // el JS alterna a "block"
-        z-index: 50;
-        box-sizing: border-box;
-
-        a {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.45rem 0.9rem;
-          font-size: 0.9rem;
-          text-decoration: none;
-          color: inherit;
-          white-space: nowrap;
-          transition: background 0.15s ease;
-
-          img {
-            width: 18px;
-            height: 18px;
-            object-fit: cover;
-            border-radius: 2px;
-          }
-
-          &:hover {
-            background: #e5e7eb;
-          }
-        }
-      }
-    }
-  }
-
-  /* --------- RESPONSIVE --------- */
-
-  // Tablets y pantallas medianas
-  @media (max-width: 992px) {
-    padding: 0.75rem 1rem;
-
-    .left-card {
-      gap: 1rem;
-
-      .card-logo img {
-        height: 44px;
-      }
-
-      .card-buttons {
-        gap: 0.5rem;
-
-        button a {
-          padding: 0.4rem 0.8rem;
-          font-size: 0.85rem;
-        }
-      }
-    }
-
-    .right-card .dropdown .dropdown-btn {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.85rem;
-    }
-  }
-
-  // Móviles en general
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-
-    .left-card {
-      width: 100%;
-      justify-content: space-between;
-      gap: 0.75rem;
-
-      .card-logo {
-        flex: 1;
-
-        img {
-          height: 42px;
-        }
-      }
-
-      .card-buttons {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        max-width: 60%;
-        row-gap: 0.4rem;
-
-        button {
-          flex: 1 1 auto;
-
-          a {
-            text-align: center;
-            padding-inline: 0.6rem;
-          }
-        }
-      }
-    }
-
-    .right-card {
-      width: 100%;
-      justify-content: flex-end;
-
-      .dropdown {
-        // el botón se alinea al borde derecho
-        .dropdown-btn {
-          width: auto;
-        }
-
-        // el menú en móvil puede ser un poco más ancho
-        .dropdown-content {
-          right: 0;
-          left: auto;
-          min-width: 200px;
-        }
-      }
-    }
-  }
-
-  // Móviles pequeños (pantallas muy estrechas)
-  @media (max-width: 480px) {
-    padding: 0.6rem 0.75rem;
-
-    .left-card {
-      flex-direction: column;
-      align-items: flex-start;
-
-      .card-logo {
-        width: 100%;
-
-        img {
-          height: 40px;
-        }
-      }
-
-      .card-buttons {
-        width: 100%;
-        max-width: 100%;
-        justify-content: space-between;
-
-        button {
-          flex: 1 1 48%; // dos botones por fila
-        }
-      }
-    }
-
-    .right-card {
-      .dropdown {
-        width: 100%;
-
-        .dropdown-btn {
-          width: 100%;
-          justify-content: center;
-        }
-
-        .dropdown-content {
-          // menú ocupando el ancho completo bajo el botón
-          position: absolute;
-          top: calc(100% + 0.4rem);
-          left: 0;
-          right: 0;
-          min-width: 0;
-        }
-      }
-    }
-  }
-}
+/* =========================
+   Navbar – Paszkowicz Group
+   Nueva versión (clean)
+========================= */
 
 /* =========================
    navbar general
@@ -294,14 +9,26 @@
 .navbar {
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 50;
+
   padding: 18px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  /* transparente */
+  /* estado inicial */
   background: transparent;
+
+  /* animaciones suaves */
+  transition:
+    background 260ms ease,
+    backdrop-filter 260ms ease,
+    -webkit-backdrop-filter 260ms ease,
+    box-shadow 260ms ease,
+    border-color 260ms ease,
+    padding 260ms ease;
 }
 
 /* =========================
@@ -310,15 +37,37 @@
 .navbar-desktop {
   margin: 0;
 
-  /* la "franja" sutil que se ve en tu mockup */
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
-  /* un toque de sombra/halo ultra sutil */
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
 }
 
-/* layout interno */
+/* =========================
+   estado SCROLLED (glass)
+========================= */
+.navbar.is-scrolled,
+.navbar-desktop.is-scrolled {
+  background: rgba(5, 8, 22, 0.55); /* glass oscuro */
+  border-bottom-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  /* ligera compactación */
+  padding: 12px 24px;
+}
+
+/* Blur real solo si está soportado */
+@supports ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+  .navbar.is-scrolled,
+  .navbar-desktop.is-scrolled {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* =========================
+   layout interno
+========================= */
 .navbar-desktop .navbar-left,
 .navbar-desktop .navbar-right {
   display: flex;
@@ -329,20 +78,32 @@
   gap: 22px;
 }
 
+/* =========================
+   logo
+========================= */
 .navbar-desktop .navbar-logo img {
   height: 34px;
   width: auto;
   display: block;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.10));
+  transition: height 260ms ease;
 }
 
+.navbar.is-scrolled .navbar-logo img,
+.navbar-desktop.is-scrolled .navbar-logo img {
+  height: 30px;
+}
+
+/* =========================
+   links
+========================= */
 .navbar-desktop .navbar-links {
   display: flex;
   align-items: center;
   gap: 26px;
 }
 
-/* botones estilo "moderno limpio" */
+/* botones */
 .navbar-desktop .nav-btn {
   color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
@@ -352,17 +113,26 @@
   padding: 10px 14px;
   border-radius: 10px;
 
-  transition: background 180ms ease, color 180ms ease, border 180ms ease;
   background: transparent;
   border: 1px solid transparent;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border 180ms ease,
+    transform 120ms ease;
 }
 
 .navbar-desktop .nav-btn:hover {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
+/* =========================
+   dropdown language
+========================= */
 .navbar-desktop .dropdown {
   position: relative;
 }
@@ -380,7 +150,7 @@
   transform: translateY(1px);
 }
 
-/* dropdown: aparece al hover (simple, limpio) */
+/* menú */
 .navbar-desktop .dropdown-menu {
   position: absolute;
   right: 0;
@@ -403,19 +173,19 @@
 
 .navbar-desktop .dropdown-item {
   display: block;
-  padding: 12px 12px;
+  padding: 12px;
   border-radius: 10px;
 
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
-  font-size: 18px;
 
   transition: background 160ms ease, color 160ms ease;
 }
 
 .navbar-desktop .dropdown-item:hover {
   background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 /* =========================
