@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-desktop">
   <div class="navbar-left">
     <a href="/" class="navbar-logo" aria-label="Home">
@@ -26,3 +28,17 @@
     </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    const threshold = 24;
+
+    const onScroll = () => {
+      navbar.classList.toggle("is-scrolled", window.scrollY > threshold);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  });
+</script>
