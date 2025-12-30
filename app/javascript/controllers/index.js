@@ -10,7 +10,14 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init();
+/* =========================
+   AOS (cargado por CDN)
+   - Compatible con Turbo
+   - Evita errores si AOS no está disponible
+========================= */
+document.addEventListener("turbo:load", () => {
+  if (window.AOS) {
+    AOS.init();
+    AOS.refresh();
+  }
+});
