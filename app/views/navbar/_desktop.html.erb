@@ -27,23 +27,28 @@
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  const initNavbarScroll = () => {
     console.log("Navbar script loaded ✅");
 
     const navbar = document.querySelector(".navbar");
     console.log("navbar element:", navbar);
-
     if (!navbar) return;
 
     const threshold = 24;
+    const getScrollY = () =>
+      document.scrollingElement ? document.scrollingElement.scrollTop : window.scrollY;
 
     const onScroll = () => {
-      console.log("scrollY:", window.scrollY);
-      navbar.classList.toggle("is-scrolled", window.scrollY > threshold);
-      console.log("has is-scrolled:", navbar.classList.contains("is-scrolled"));
+      const y = getScrollY();
+      navbar.classList.toggle("is-scrolled", y > threshold);
+      console.log("scrollY:", y, "has is-scrolled:", navbar.classList.contains("is-scrolled"));
     };
 
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-  });
+    document.scrollingElement?.addEventListener("scroll", onScroll, { passive: true });
+  };
+
+  document.addEventListener("DOMContentLoaded", initNavbarScroll);
+  document.addEventListener("turbo:load", initNavbarScroll);
 </script>
