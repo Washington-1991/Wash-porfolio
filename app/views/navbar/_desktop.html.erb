@@ -27,31 +27,52 @@
 </nav>
 
 <script>
-  const initNavbarScroll = () => {
-    console.log("Navbar script loaded ✅");
-    console.log("scrollHeight:", document.documentElement.scrollHeight);
-    console.log("innerHeight:", window.innerHeight);
+  (() => {
+    let initialized = false;
 
+    const findScrollContainer = () => {
+      // Preferimos el elemento nativo si existe y se mueve
+      const se = document.scrollingElement;
+      if (se && se.scrollHeight > se.clientHeight) return se;
 
-    const navbar = document.querySelector(".navbar");
-    console.log("navbar element:", navbar);
-    if (!navbar) return;
-
-    const threshold = 24;
-    const getScrollY = () =>
-      document.scrollingElement ? document.scrollingElement.scrollTop : window.scrollY;
-
-    const onScroll = () => {
-      const y = getScrollY();
-      navbar.classList.toggle("is-scrolled", y > threshold);
-      console.log("scrollY:", y, "has is-scrolled:", navbar.classList.contains("is-scrolled"));
+      // Si no, buscamos un contenedor con overflow auto/scroll y overflow real
+      const all = Array.from(document.querySelectorAll("*"));
+      for (const el of all) {
+        const s = getComputedStyle(el);
+        const oy = s.overflowY;
+        if ((oy === "auto" || oy === "scroll") && el.scrollHeight > el.clientHeight) {
+          return el;
+        }
+      }
+      return null;
     };
 
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    document.scrollingElement?.addEventListener("scroll", onScroll, { passive: true });
-  };
+    const initNavbarScroll = () => {
+      if (initialized) return;
+      initialized = true;
 
-  document.addEventListener("DOMContentLoaded", initNavbarScroll);
-  document.addEventListener("turbo:load", initNavbarScroll);
+      const navbar = document.querySelector(".navbar");
+      if (!navbar) return;
+
+      const threshold = 24;
+      const scroller = findScrollContainer();
+
+      // Si no hay scroller real, no hacemos nada (tu página es corta)
+      if (!scroller) return;
+
+      const getY = () => (scroller === document.scrollingElement ? window.scrollY : scroller.scrollTop);
+
+      const onScroll = () => {
+        const y = getY();
+        navbar.classList.toggle("is-scrolled", y > threshold);
+      };
+
+      onScroll();
+      scroller.addEventListener("scroll", onScroll, { passive: true });
+      // Por si el scroller nativo es document:
+      window.addEventListener("scroll", onScroll, { passive: true });
+    };
+
+    document.addEventListener("turbo:load", initNavbarScroll);
+  })();
 </script>
