@@ -34,3 +34,107 @@
   }
 
 }
+
+/* =========================
+   footer desktop
+========================= */
+.footer-desktop {
+  margin: 0;
+  padding: 18px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
+  background: rgba(5, 8, 22, 0.35);
+
+  /* Blur real solo si está soportado */
+  @supports ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* =========================
+     layout interno
+  ========================= */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+
+  /* =========================
+     social media
+  ========================= */
+  .footer-desktop-social-media {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .footer-desktop-social-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+
+    transition:
+      background 180ms ease,
+      border 180ms ease,
+      transform 120ms ease,
+      box-shadow 180ms ease;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    i {
+      font-size: 22px;
+      line-height: 1;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.10));
+      transition: transform 160ms ease, opacity 160ms ease;
+      opacity: 0.92;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.10);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+      transform: translateY(-1px);
+
+      i {
+        opacity: 1;
+        transform: translateY(-1px);
+      }
+    }
+
+    &:active {
+      transform: translateY(0px);
+    }
+  }
+
+  /* =========================
+     text / brand
+  ========================= */
+  .footer-desktop-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .footer-desktop-text h2 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 600;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 0.06);
+    transition: color 180ms ease;
+  }
+
+  .footer-desktop-text h2:hover {
+    color: #ffffff;
+  }
+}
