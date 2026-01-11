@@ -67,7 +67,7 @@
 
   /* =========================
      layout interno
-  ========================= */
+========================= */
   .navbar-left,
   .navbar-right {
     display: flex;
@@ -107,7 +107,7 @@
     gap: 26px;
   }
 
-  /* botones */
+  /* botones - Aplica tanto a enlaces como al botón del dropdown */
   .nav-btn {
     color: rgba(255, 255, 255, 0.92);
     text-decoration: none;
@@ -122,6 +122,14 @@
       color 180ms ease,
       border 180ms ease,
       transform 120ms ease;
+    font-family: Georgia, serif; /* Asegura misma fuente */
+    cursor: pointer; /* Importante para botones */
+    border: none; /* Reset para botón */
+
+    /* Asegura que el botón se comporte como un inline-block */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
     &:hover {
       background: rgba(255, 255, 255, 0.05);
@@ -131,23 +139,32 @@
     }
   }
 
+  /* Asegura consistencia para los enlaces normales */
+  .navbar-links .nav-btn {
+    font-family: Georgia, serif;
+  }
+
   /* =========================
      dropdown language
   ========================= */
   .dropdown {
     position: relative;
 
+    /* Asegura que el botón toggle tenga el mismo estilo */
     .dropdown-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer;
+      /* Hereda estilos de .nav-btn */
     }
 
     .chevron {
       font-size: 14px;
       opacity: 0.85;
       transform: translateY(1px);
+      transition: transform 180ms ease;
+    }
+
+    /* Efecto hover en el chevron */
+    &:hover .chevron {
+      transform: translateY(1px) rotate(180deg);
     }
 
     /* menú */
@@ -163,11 +180,15 @@
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
       display: none;
       z-index: 60;
-
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 200ms ease, transform 200ms ease;
     }
 
     &:hover .dropdown-menu {
       display: block;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
