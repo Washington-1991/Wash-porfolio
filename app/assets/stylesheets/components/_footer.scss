@@ -88,6 +88,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 22px;
+
+    a {
+      font-family: Georgia, serif;
+      height: auto;
+    }
   }
 
   .footer-desktop-text h2 {
@@ -98,12 +104,15 @@
     font-weight: 600;
     text-shadow: 0 0 18px rgba(255, 255, 255, 0.06);
     transition: color 180ms ease;
+    font-family: Georgia, serif;
+    height: auto;
   }
 
   .footer-desktop-text h2:hover {
     color: #ffffff;
   }
 }
+
 
 /* =========================
    footer laptop
