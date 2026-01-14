@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "home_esp", to: "pages#home_esp"
   get "home_fra", to: "pages#home_fra"
   get "home_por", to: "pages#home_por"
+  get "/home/layout/:kind", to: "pages#home_layout", as: :home_layout
 
   # Área Admin (protegida por Admin::BaseController)
   namespace :admin do
