@@ -1,0 +1,66 @@
+/* _home.mobile.scss
+   Overrides SOLO para Mobile (≤ 480px)
+*/
+
+@media screen and (max-width: 480px) {
+  .home-mobile {
+    .home-container {
+      min-height: 100vh;
+      /* si quieres un poco de aire general en mobile */
+      padding: 2px;
+    }
+
+    .presentation {
+      min-height: 100vh;
+      margin: 5vh 0 0 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      flex-wrap: nowrap;
+    }
+
+    .card-logo {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        /* Más compacto para pantallas pequeñas */
+        max-height: 200px;
+      }
+    }
+
+    .card-text {
+      width: 92%;
+      max-width: 520px;
+      margin: 1.25rem auto;
+      text-align: center;
+
+      .card-title {
+        h1 {
+          font-size: 24px;
+        }
+      }
+
+      .card-parapgraph {
+        p {
+          font-size: 10px;
+          text-align: justify; /* si prefieres center en mobile, cámbialo */
+        }
+      }
+    }
+
+    /* Solo si existe en tu HTML mobile (venía en tu SCSS original) */
+    .home-presentation {
+      .profile-card {
+        width: 90%;
+      }
+    }
+  }
+}
