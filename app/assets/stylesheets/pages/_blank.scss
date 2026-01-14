@@ -12,6 +12,26 @@
 }
 
 /* =========================
+   DESKTOP (≥ 1025px)
+   ========================= */
+@media (min-width: 1025px) {
+  .home-desktop {
+    display: block;
+  }
+}
+
+/* =========================
+   LAPTOP (769px – 1024px)
+   ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-laptop {
+    display: block;
+  }
+}
+
+
+
+/* =========================
    MOBILE (≤ 480px)
    ========================= */
 @media (max-width: 480px) {
@@ -29,23 +49,9 @@
   }
 }
 
-/* =========================
-   LAPTOP (769px – 1024px)
-   ========================= */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .home-laptop {
-    display: block;
-  }
-}
 
-/* =========================
-   DESKTOP (≥ 1025px)
-   ========================= */
-@media (min-width: 1025px) {
-  .home-desktop {
-    display: block;
-  }
-}
+
+
 
 .home-desktop {
   /* Estilos específicos para desktop */
