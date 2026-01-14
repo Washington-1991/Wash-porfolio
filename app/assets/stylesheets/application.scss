@@ -18,8 +18,13 @@
 @import "pages/prices";
 
 // Home styes
-@import "home/home.shared";
 @import "home/home";
+@import "home/home.shared";
+@import "home/home.desktop";
+@import "home/home.laptop";
+@import "home/home.tablet";
+@import "home/home.mobile";
+
 
 
 // Session styles

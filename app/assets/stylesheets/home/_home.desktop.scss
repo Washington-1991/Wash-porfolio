@@ -1,0 +1,63 @@
+/* _home.desktop.scss
+   Overrides SOLO para Desktop (≥ 1025px)
+*/
+
+@media screen and (min-width: 1025px) {
+  .home-desktop {
+    .home-container {
+      /* si quieres que el contenedor maneje scroll interno */
+      min-height: 100vh;
+    }
+
+    .presentation {
+      height: 100vh;
+      width: 100%;
+      margin: 10vh 0 0 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* por si el contenido lo requiere */
+    }
+
+    .card-logo {
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        /* En shared ya tienes max-height: 320px etc.
+           Aquí solo pon overrides si quieres algo distinto en desktop */
+        max-height: 320px;
+      }
+    }
+
+    .card-text {
+      height: 100vh;
+      width: 50%;
+      padding: 16px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .card-title {
+        h1 {
+          /* En shared ya está a 48px.
+             Déjalo aquí solo si quieres “forzar” desktop. */
+          font-size: 48px;
+        }
+      }
+
+      .card-parapgraph {
+        p {
+          /* En shared ya está a 16px y justify.
+             Igual: déjalo solo si quieres asegurar desktop. */
+          font-size: 16px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

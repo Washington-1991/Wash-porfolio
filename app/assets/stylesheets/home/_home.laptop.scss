@@ -1,0 +1,62 @@
+/* _home.laptop.scss
+   Overrides SOLO para Laptop (769px – 1024px)
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Si tu partial laptop tiene un wrapper .home-laptop,
+     conviene anclarlo para que no afecte otros layouts */
+  .home-laptop {
+    .home-container {
+      min-height: 100vh; /* mantiene la home a pantalla completa */
+    }
+
+    .presentation {
+      /* En laptop pasamos a layout vertical */
+      min-height: 100vh;
+      margin: 10vh 0 0 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* Evita cosas raras si en shared está wrap */
+      flex-wrap: nowrap;
+    }
+
+    .card-logo {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* En laptop el logo puede ser un poco más chico que desktop */
+      img {
+        max-height: 280px;
+      }
+    }
+
+    .card-text {
+      width: 80%;
+      max-width: 800px;
+      margin: 2rem auto;
+      text-align: center;
+
+      /* Conservamos la estructura pero ajustamos tamaños */
+      .card-title {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .card-parapgraph {
+        p {
+          font-size: 15px;
+          text-align: justify; /* si prefieres center en laptop, cámbialo */
+        }
+      }
+    }
+  }
+}
