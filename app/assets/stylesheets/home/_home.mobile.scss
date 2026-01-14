@@ -6,13 +6,12 @@
   .home-mobile {
     .home-container {
       min-height: 100vh;
-      /* si quieres un poco de aire general en mobile */
       padding: 2px;
     }
 
     .presentation {
       min-height: 100vh;
-      margin: 28vh 0 0 0;
+      margin: 28vh 0 28px 0;
 
       display: flex;
       flex-direction: column;
