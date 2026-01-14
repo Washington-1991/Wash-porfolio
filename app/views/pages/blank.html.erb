@@ -1,16 +1,15 @@
-<%# HTML correspondiente a proyectos en ingles %>
 <div class="home-desktop">
-  <%= render "home/desktop" %>
+  <turbo-frame id="home_desktop" src="<%= home_layout_path(:desktop) %>"></turbo-frame>
 </div>
 
 <div class="home-laptop">
-  <%= render "home/laptop" %>
+  <turbo-frame id="home_laptop" src="<%= home_layout_path(:laptop) %>"></turbo-frame>
 </div>
 
 <div class="home-tablet">
-  <%= render "home/tablet" %>
+  <turbo-frame id="home_tablet" src="<%= home_layout_path(:tablet) %>"></turbo-frame>
 </div>
 
 <div class="home-mobile">
-  <%= render "home/mobile" %>
+  <turbo-frame id="home_mobile" src="<%= home_layout_path(:mobile) %>"></turbo-frame>
 </div>
