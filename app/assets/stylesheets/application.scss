@@ -13,13 +13,14 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/projects";
-@import "pages/home";
 @import "pages/contact";
 @import "pages/blank";
 @import "pages/prices";
 
 // Home styes
-@import "pages/home.shared";
+@import "home/home.shared";
+@import "home/home";
+
 
 // Session styles
 @import "pages/session";
