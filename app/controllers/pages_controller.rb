@@ -5,12 +5,12 @@ class PagesController < ApplicationController
 
   def home_layout
     kind = params[:kind].to_s
-
     allowed = %w[desktop laptop tablet mobile]
     kind = "desktop" unless allowed.include?(kind)
 
-    render partial: "home/#{kind}", formats: [:html], layout: false
+    render "home/layout", locals: { kind: kind }, layout: false
   end
+
 
 
   def home_esp

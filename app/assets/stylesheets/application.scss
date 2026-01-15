@@ -19,11 +19,11 @@
 
 // Home styles
 @import "home/home";
-@import "home/home.shared";
-@import "home/home.desktop";
-@import "home/home.laptop";
-@import "home/home.tablet";
-@import "home/home.mobile";
+@import "home/shared";
+@import "home/desktop";
+@import "home/laptop";
+@import "home/tablet";
+@import "home/mobile";
 
 // navbar styles
 @import "navbar/navbar.shared";
