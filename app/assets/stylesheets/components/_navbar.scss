@@ -1,42 +1,4 @@
-/* =========================
-   Navbar – Paszkowicz Group
-   Nueva versión (clean)
-========================= */
 
-/* =========================
-   navbar general
-========================= */
-.navbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 50;
-
-  padding: 4px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  /* estado inicial */
-  background: transparent;
-
-  /* ✅ para que border-bottom-color funcione al hacer scroll */
-  border-bottom: 1px solid transparent;
-
-  /* ✅ mejoras anti-flicker / performance */
-  will-change: background, backdrop-filter;
-  transform: translateZ(0);
-
-  /* animaciones suaves */
-  transition:
-    background 260ms ease,
-    backdrop-filter 260ms ease,
-    -webkit-backdrop-filter 260ms ease,
-    box-shadow 260ms ease,
-    border-color 260ms ease,
-    padding 260ms ease;
-}
 
 /* =========================
    navbar desktop
