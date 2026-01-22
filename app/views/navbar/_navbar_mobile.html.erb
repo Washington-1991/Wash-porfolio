@@ -1,0 +1,53 @@
+<nav class="navbar navbar-mobile">
+  <div class="navbar-left">
+    <a href="/" class="navbar-logo" aria-label="Home">
+      <img src="https://res.cloudinary.com/dcfmvazgl/image/upload/v1736335480/Wash%20portfolio/logo_fxcjk2.png" alt="Logo" />
+    </a>
+
+    <div class="navbar-links">
+      <a class="nav-btn" href="#projects">Projects</a>
+      <a class="nav-btn" href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="navbar-right">
+    <div class="dropdown">
+      <button class="nav-btn dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        Language<span class="chevron" aria-hidden="true"></span>
+      </button>
+
+      <div class="dropdown-menu" role="menu" aria-label="Language">
+        <a class="dropdown-item" href="?lang=en" role="menuitem">English</a>
+        <a class="dropdown-item" href="?lang=es" role="menuitem">Spanish</a>
+        <a class="dropdown-item" href="?lang=pt" role="menuitem">Portuguese</a>
+        <a class="dropdown-item" href="?lang=fr" role="menuitem">French</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (() => {
+    const initNavbarGlassOnScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      const scroller = document.querySelector(".home-container");
+      if (!navbar || !scroller) return;
+
+      const threshold = 24;
+
+      const onScroll = () => {
+        navbar.classList.toggle("is-scrolled", scroller.scrollTop > threshold);
+      };
+
+      onScroll();
+
+      // Evita duplicar listeners si Turbo vuelve a disparar
+      if (!scroller.dataset.navbarScrollBound) {
+        scroller.addEventListener("scroll", onScroll, { passive: true });
+        scroller.dataset.navbarScrollBound = "true";
+      }
+    };
+
+    document.addEventListener("turbo:load", initNavbarGlassOnScroll);
+  })();
+</script>
